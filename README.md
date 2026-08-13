@@ -141,13 +141,46 @@ references/
 
 ## How to use
 
-**怎么用** — 把整个目录放进你 Agent 的 skills 目录（如 WorkBuddy 的 `~/.workbuddy/skills/`，或 Claude Code 的 `~/.claude/skills/`），然后用自然语言触发即可：
+**怎么用** — 两步装好，两种方式启动。
 
-Drop the whole folder into your agent's skills directory (e.g. `~/.workbuddy/skills/` for WorkBuddy, or `~/.claude/skills/` for Claude Code), then trigger it in plain language:
+Two steps to install, two ways to launch.
 
-- 「帮我策划一场新品发布会」 / "Help me plan a product launch"
-- 「我们公司年会想做得不一样」 / "Make our annual gala different"
-- 「下个月有个招商会，帮我出个方案」 / "Plan a dealer conference next month"
+### 安装 · Install
+
+**方式一 · git clone**：
+
+```bash
+git clone https://github.com/DONGaOtang/ceyuan-skill.git
+```
+
+**方式二 · 下载 ZIP**：仓库主页 → Code → Download ZIP，解压即可。
+
+然后把整个文件夹放进你 Agent 的 skills 目录，**文件夹名可保留 `ceyuan-skill`**：
+
+| Agent | 安装路径 |
+|---|---|
+| WorkBuddy | `~/.workbuddy/skills/ceyuan-skill/` |
+| Claude Code | `~/.claude/skills/ceyuan-skill/` |
+| Codex | `~/.codex/skills/ceyuan-skill/` |
+| 通用 Agents | `~/.agents/skills/ceyuan-skill/` |
+
+> **注意**：`SKILL.md` 必须留在根目录，`references/` 子目录和里面 7 个文件原样保留，别改文件名、别改目录结构。
+> **Note**: keep `SKILL.md` at the root and the 7 files under `references/` untouched.
+
+### 启动 · Launch
+
+装好后，两种方式启动：
+
+- **显式命令**：输入 `/ceyuan` 或 `/策划`，或直接说「用策元」。
+- **自然语言**：直接说活动需求，自动命中——「帮我策划一场新品发布会」「我们公司年会想做得不一样」「下个月有个招商会」。
+
+Launch it either way:
+
+- **Explicit command**: type `/ceyuan` or just say "use Ceyuan".
+- **Natural language**: just describe your need — "Help me plan a product launch", "Make our annual gala different", "Plan a dealer conference next month".
+
+> **验证装好了**：说一句「用策元帮我策划个 XX」，如果它开始反问你「真实动机是什么」「哪些约束能改」，而不是直接丢模板，就说明装好了。
+> **Verify it works**: say "use Ceyuan to plan an XX" — if it starts asking about your real motive and challengeable constraints instead of dumping a template, it's installed correctly.
 
 策元会先追问你的**真实动机**和**可挑战的约束**，而不是直接丢一份模板给你。
 
