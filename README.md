@@ -47,14 +47,14 @@
 ```
 Step 1 · 拆解 ── 5 Whys 挖动机 + 七状态拆维度 + 问信息矿 + 字段表
 Step 2 · 重建 ── 第一性原理定目标 + 四层传导链判据（含主判据）
-Step 3 · 发散 ── 横纵双轴 + 心理推理卡 → 6-10 个创意（带推导路径）
+Step 3 · 发散 ── 横纵双轴 + 心理推理卡 → 先出 3 个锐利创意 + 跨界移植（带推导路径）
 Step 4 · 对抗 ── Steelman + 15 攻击角度 → 找根本缺陷
 Step 5 · 成型 ── 七节方案 + 闭环图 + 推导路径验证 + docx
 ```
 
 - **拆解**：用 5 Whys 把「表面需求」和「真实动机」分开（钱 / 权 / 关系 / 怕）；按七状态拆「办成什么」；主动问用户手上的独家资源（私域流量、会员数、上次复盘数据）；再把需求拆成字段表，标出哪些是「假硬约束」可挑战。
 - **重建**：抛开「同类活动怎么做」，回到第一性原理定目标；判据按「四层传导链 × 四维测量」定，标出主判据落在哪层。
-- **发散**：先做横纵双轴（纵向追时间、横向切截面）拿信息；用心理机制推理卡选支点，走「动机 → 情绪 → 行为」推理链；生成 6-10 个创意，每个标注推导路径 `[七状态] → [对象] → [形态] → [时空]`。
+- **发散**：先做横纵双轴（纵向追时间、横向切截面）拿信息；用心理机制推理卡选支点，走「动机 → 情绪 → 行为」推理链；**先出 3 个锐利创意（质量优先、数量不设死），强制跨界移植一次**（不相干行业怎么解决同一动机），每个标注推导路径 `[七状态] → [对象] → [形态] → [时空]`。
 - **对抗**：Steelman 先行，15 个攻击角度逐条过（含「推导路径定位错了没」），收敛出「一戳就塌」的根本缺陷，每条高严重度缺陷给可执行修法。
 - **成型**：按七节骨架输出完整方案（Big Idea → 传导链判据 → 体验 → 传播 → 执行 → 风险 → 评估）+ 四层闭环图 + 推导路径验证，过 QA / 合规 / 算术三重自检，导出 docx。
 
@@ -220,14 +220,14 @@ Every step's output is adversarially reviewed and must be confirmed before movin
 ```
 Step 1 · Deconstruct ── 5 Whys for motive + seven-state dimensions + info mine + field table
 Step 2 · Rebuild     ── first-principles goal + four-layer conduction criteria (1 primary)
-Step 3 · Diverge     ── diachronic/synchronic analysis + reasoning cards → 6-10 ideas (with derivation path)
+Step 3 · Diverge     ── diachronic/synchronic analysis + reasoning cards → 3 sharp ideas + cross-industry transplant (with derivation path)
 Step 4 · Adversarial ── Steelman + 15 attack angles → find the fatal flaw
 Step 5 · Finalize    ── 7-section plan + closed-loop diagram + derivation-path check + docx
 ```
 
 - **Deconstruct**: use 5 Whys to separate "surface request" from "real motive" (money / power / relationship / fear); unpack "achieve what" via the seven states; proactively ask for the user's exclusive resources (private traffic, membership count, last-event review data); break the request into a field table and mark which "hard constraints" are actually soft.
 - **Rebuild**: put aside "what peers do" and set the goal from first principles; define criteria on the "four-layer conduction chain × four-dimensional measurement", marking which layer the primary criterion sits on.
-- **Diverge**: gather info on two axes (diachronic: time; synchronic: cross-section); pick psychology levers via reasoning cards, walk the "motive → emotion → behavior" chain; generate 6-10 ideas, each tagged with a derivation path `[seven-state] → [object] → [form] → [space-time]`.
+- **Diverge**: gather info on two axes (diachronic: time; synchronic: cross-section); pick psychology levers via reasoning cards, walk the "motive → emotion → behavior" chain; first produce 3 sharp ideas (quality over quantity, no fixed count), force one cross-industry transplant, each tagged with a derivation path `[seven-state] → [object] → [form] → [space-time]`.
 - **Adversarial**: Steelman first, run 15 attack angles (including "is the derivation path wrong?"), converge on the one fatal flaw, and give an actionable fix for each high-severity defect.
 - **Finalize**: output the full plan across 7 sections (Big Idea → conduction criteria → experience → communication → execution → risk → evaluation) + a four-layer closed-loop diagram + a derivation-path check, pass QA / compliance / arithmetic checks, and export to docx.
 
