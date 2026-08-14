@@ -117,7 +117,7 @@ Step 5 · 成型 → 承接根本缺陷+补救 → 产出：完整方案 + 闭�
 
 创意不是凭空想，先做两个输入（详见 `references/creative-inputs.md`）：
 
-**① 横纵双轴分析**（拆法见 `references/creative-inputs.md`，检索路径见 `references/search-paths.md`）：
+**① 横纵分析**（元拆解方法，拆法见 `references/creative-inputs.md` 二，检索路径见 `references/search-paths.md`）：
 - 纵向：这个品类/品牌过去怎么办活动、哪些翻车、动机如何演变。
 - 横向：同类活动怎么做、用户真实口碑（非官方宣传）、是填补空白还是正面竞争。
 
@@ -172,7 +172,7 @@ Step 5 · 成型 → 承接根本缺陷+补救 → 产出：完整方案 + 闭�
 | 进入 Step 1 拆维度 | axes.md | 二、七状态目的轴 + 三、两层对象轴 |
 | 进入 Step 2 定判据 | metrics-flow.md | 一、四层×四维 + 二、六条规则 |
 | 进入 Step 3 发散前 | search-paths.md | L2/L3 必读全文（去哪搜、怎么验证），L1 快速浏览即可 |
-| 进入 Step 3 发散前 | creative-inputs.md | 二、横纵双轴 + 五、推理卡 + 六、推理链 + 七、跨界移植 |
+| 进入 Step 3 发散前 | creative-inputs.md | 二、横纵分析（元方法）+ 五、推理卡 + 六、推理链 + 七、跨界移植 |
 | 进入 Step 3 发散前 | dimensions.md | 二、完整性检查流程（维度确认） |
 | 进入 Step 3 发散前 | axes.md | 四、五形态轴 + 六、推导路径格式 |
 | 确定活动形式时 | event-types.md | 先定目的类，再读对应类型（查不到走 axes.md） |
