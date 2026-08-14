@@ -176,7 +176,7 @@ Step 5 · 成型 → 承接根本缺陷+补救 → 产出：完整方案 + 闭�
 | 进入 Step 3 发散前 | dimensions.md | 二、完整性检查流程（维度确认） |
 | 进入 Step 3 发散前 | axes.md | 四、五形态轴 + 六、推导路径格式 |
 | 确定活动形式时 | event-types.md | 先定目的类，再读对应类型（查不到走 axes.md） |
-| 用户提到具体行业 | industries.md | 只读该行业的四件套行 |
+| 用户提到具体行业 | industries.md | 只读该行业的五件套行（含标准模块） |
 | 进入 Step 4 对抗 | adversarial.md | 全文（15 攻击角度） |
 | 进入 Step 5 成型 | proposal-schema.md | 全文（七节骨架） |
 | 进入 Step 5 成型 | metrics-flow.md | 三、闭环图产出 + 四、回填规则 |

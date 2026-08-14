@@ -119,7 +119,7 @@ references/
 ├── metrics-flow.md           # 指标传导模型 + 闭环图 + 回填规则
 ├── creative-inputs.md        # 5 Whys + 横纵分析（元方法）+ 心理机制推理卡 + 推理链 + 跨界移植
 ├── event-types.md            # 活动类型清单（10 大类 + 案例锚点）
-├── industries.md             # 14 行业要点（调性/雷区/预算结构/合规红线）
+├── industries.md             # 16 行业要点（调性/雷区/预算结构/合规红线/标准模块）
 ├── adversarial.md            # 对抗审查规则 + 15 攻击角度
 ├── proposal-schema.md        # 方案七节结构模板 + 闭环图 + 推导路径验证
 ├── search-paths.md           # 检索路径库（含非消费端垂直源）
