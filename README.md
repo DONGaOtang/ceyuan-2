@@ -5,9 +5,9 @@
 > 把一句模糊的需求，经过「拆解 → 重建 → 发散 → 对抗 → 成型」五步，产出可落地的活动方案。
 > Turn a vague request into a deliverable event plan through a 5-step pipeline: **Deconstruct → Rebuild → Diverge → Adversarial → Finalize**.
 
-这不是一段普通提示词，而是一份**给 AI Agent 的 Skill（指令包）**。它内置了三套方法论——**第一性原理（First-principles）**、**横纵分析法（Diachronic/Synchronic Analysis）**、**对抗式审查（Red Team / Steelman）**——让 AI 不再套模板，而是像资深策划一样思考。
+这不是一段提示词，而是一条**会思考的策划流水线**。它内置三套方法论——**第一性原理（First-principles）**、**横纵分析法（Diachronic/Synchronic Analysis）**、**对抗式审查（Steelman + Red Team）**——还带三样别人没有的：**复杂度分级**（团建不套发布会流程）、**案例库长闭环**（做完写回、越用越强）、**能力按需增强**（核心自包含，绝不断链）。
 
-This is not a plain prompt — it is an **AI Agent Skill (instruction pack)**. It bakes in three methodologies: **first-principles thinking**, **diachronic/synchronic analysis**, and **red-team adversarial review (Steelman)** — so the AI thinks like a senior event planner, not a template filler.
+This is not a prompt — it's a **thinking pipeline**. It bakes in three methodologies — **first-principles thinking**, **diachronic/synchronic analysis**, **red-team adversarial review (Steelman + Red Team)** — plus three things others lack: **complexity routing** (a team-building won't get a launch's process), **a closed-loop case library** (feeds results back, gets stronger with use), and **on-demand capability enhancement** (self-contained core, never breaks).
 
 ---
 

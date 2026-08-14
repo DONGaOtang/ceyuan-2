@@ -1,1 +1,6 @@
 .workbuddy/
+
+# 非 skill 内容（工具 / 产物，不随仓库发布）
+*.docx
+*.py
+*.zip
