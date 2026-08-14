@@ -8,12 +8,60 @@
 <details open>
 <summary><strong>🇨🇳 中文文档</strong></summary>
 
+## 🚀 小白 30 秒上手
+
+**就三步：装 → 说 → 答。**
+
+**① 装**：把整个文件夹下载下来，放进你 AI 工具的 `skills` 目录（路径见下方「怎么用」）。
+
+**② 说**：直接说人话就行——
+
+- 「帮我策划一场新品发布会」
+- 「公司年会想做得不一样」
+- 「下个月有个招商会」
+
+**③ 答**：它不会直接甩你一份方案，会反过来问你几个问题，照着答就行。**答不上就说「不知道」，它不会卡住。**
+
+**它会问你什么（就这 3 类，别慌）：**
+
+| 它问 | 为什么问 | 答不上怎么办 |
+|---|---|---|
+| 为什么要办这个活动？ | 动机决定方案——「募资」和「卖货」是两种完全不同的发布会 | 说「不清楚」，它按最可能的先走 |
+| 钱谁出、预算大概多少？ | 决定做多大、做多重 | 说「没定」，它按轻量版先做 |
+| 你手上有啥现成的？（私域、会员、上次活动数据） | 这些它搜不到，只有你知道 | 说「没有」，它标出来再想办法 |
+
+**你会得到什么：**
+
+- 一份能落地的方案（含预算表、时间线、物料清单，导出 .docx）
+- 先出 3 个创意方向，你选一个，它帮你打磨到扛得住质疑
+
+**你会面临什么（提前打预防针）：**
+
+1. **它会反问你，不是一键出稿** —— 你可能觉得「怎么还问我」。这正是它和模板的区别：问清楚动机和预算，方案才不跑偏。你就当跟一个靠谱的策划在聊天。
+2. **每一步会停下来等你点头** —— 它出一步，你看一眼说「行」或「改」，才往下走。所以不会出现「跑偏了才后悔」。
+3. **需要你提供点内部信息** —— 谁付钱、上次活动数据这些它搜不到。答不上也没事，说「没有」，它标出来，不会死磕。
+
+**一个真实对话，感受一下：**
+
+```
+你：帮我策划个公司年会
+策元：先问一句——这次年会主要想达成什么？让员工开心、还是给领导看成果？
+你：主要是让大家放松，顺便表彰优秀员工
+策元：钱谁出？大概预算多少？
+你：行政预算，5 万左右
+策元：明白了，这是轻量活动。我先给你 3 个方向，不直接甩 50 页方案……
+```
+
+> 核心就一句：**它不是替你写方案，是陪你过招——你越说越清楚，它越做越准。**
+
+---
+
 ## 目录
 
 - [策元是什么](#zh-what)
 - [为什么不一样](#zh-why)
 - [五步流程](#zh-pipeline)
-- [三大核心机制](#zh-mechanisms)
+- [四大核心机制](#zh-mechanisms)
 - [五条铁律](#zh-rules)
 - [文件结构](#zh-structure)
 - [怎么用](#zh-usage)
@@ -53,47 +101,47 @@ Step 4 · 对抗 ── Steelman + 15 攻击角度 + 判词规则 → 找根本�
 Step 5 · 成型 ── 七节方案 + 闭环图 + 推导路径验证 + docx
 ```
 
-- **拆解**：用 5 Whys 把「表面需求」和「真实动机」分开（钱 / 权 / 关系 / 怕）；按七状态拆「办成什么」；主动问用户手上的独家资源（私域流量、会员数、上次复盘数据）；**必问钱流**（谁付钱、收入怎么构成、盈亏粗算）和**合规边界**（报批/消防/许可，一阶约束提前问，别拖到终审才发现报批不过）；再把需求拆成字段表，标出哪些是「假硬约束」可挑战。
+- **拆解**：用 5 Whys 把「表面需求」和「真实动机」分开（钱 / 权 / 关系 / 怕）；按七状态拆「办成什么」；主动问用户手上的独家资源（私域流量、会员数、上次复盘数据）；**必问钱流**（谁付钱、收入怎么构成、盈亏粗算）和**合规边界**（报批/消防/许可，一阶约束提前问）；再把需求拆成字段表，标出哪些是「假硬约束」可挑战。
 - **重建**：抛开「同类活动怎么做」，回到第一性原理定目标；判据按「四层传导链 × 四维测量」定，标出主判据落在哪层。
 - **发散（先自由发散，后收敛标注）**：横纵分析（纵向追时间、横向切截面，可挂载到任意拆解节点）拿信息；心理机制推理卡当发散燃料；**先出 3 个锐利的创意（质量优先、数量不设死）+ 强制跨界移植**；每个创意只给「一句核心概念 + 一句为什么有意思」；发散完再贴维度、推导路径标签，标签后置、不污染发散。
 - **对抗**：Steelman 先行，15 个攻击角度逐条过（含「推导路径定位错了没」），**判词规则——攻击是修不是杀**（默认落点「怎么让它可行」，只有攻击 13 才能判「别办了」），收敛出「一戳就塌」的根本缺陷。
 - **成型**：按七节骨架输出完整方案（Big Idea → 传导链判据 → 体验 → 传播 → 执行 → 风险 → 评估）+ 四层闭环图 + 推导路径验证，过 QA / 合规 / 算术三重自检，导出 docx。
 
 <a id="zh-mechanisms"></a>
-## 三大核心机制
+## 四大核心机制
 
-创意是策元的**天花板**，下面是**地板**——三样别人没有的完备性机制，保证创意落地时扛得住追问：
+创意是策元的**天花板**，下面是**地板**——四样完备性机制，保证创意落地时扛得住追问：
 
-### 1. 四维推导轴（清单会漏，推导轴不会）
+### 1. 横纵分析（贯穿全流程的元拆解方法）
+
+纵向追「时间演变」（过去怎么做、翻过什么车、动机怎么变），横向切「同期截面」（同类怎么做、真实口碑、生态位）。它不是 Step 3 的专属工具，是**贯穿全流程的元拆解能力**——Step 1 拆需求、Step 2 拆目标、Step 3 拆创意、Step 5 拆环节都能挂载，**按需不强制**。拆解对象由活动类型决定，不是拿通用环节清单硬套。
+
+### 2. 四维推导轴（清单会漏，推导轴不会）
 
 ```
 活动类型 = 七状态目的 × 两层对象 × 五形态 × 时空
 ```
 
-- **七状态目的**：认知 / 情感 / 行为 / 关系 / 资源 / **身份** / **生理能力**——后两个是常见清单漏掉的：剪彩揭牌是「确认身份资格」，体检培训是「改变身体能力」，都不属于前五类。
+- **七状态目的**：认知 / 情感 / 行为 / 关系 / 资源 / **身份** / **生理能力**——后两个是常见清单漏掉的：剪彩揭牌是「确认身份资格」，体检培训是「改变身体能力」。
 - **两层对象**：参与者（谁来现场）/ 受益者（谁最终获益）——公益/环保活动两者分离，必须分开写清。
 - **五形态**：接受 / 参与 / 仪式 / 连接 / 共创。
 - **时空**：线下 / 线上 / 混合 × 单次 / 周期。
 
 任何活动都能落进这四维的某个组合；推导不出来，说明它不是「活动」，或者轴又漏了（漏了就在对应维度加一个枚举值）。**清单是快速通道，推导轴保证完备。**
 
-### 2. 需求维度完整性（动机不够，维度才完整）
+### 3. 需求维度完整性（动机不够，维度才完整）
 
-动机只回答了「为什么办」，还没拆「办成什么、为谁办、承担几个功能」：
+动机只回答了「为什么办」，还没拆「办成什么、为谁办、承担几个功能」：目的维度（要改变受众哪个状态）、对象维度（参与者是谁、受益者是谁、诉求有没有打架）、功能维度（同时承担几个功能）。奥莱的病：只盯「促销」一个最显眼的维度，把「整体演绎」挤掉了。**显眼维度 ≠ 唯一维度。**
 
-- **目的维度**：这场活动要改变受众的哪个状态？
-- **对象维度**：参与者是谁、受益者是谁，各方诉求有没有互相打架？
-- **功能维度**：同时承担几个功能（商业转化 / 品牌演绎 / 内容传播 / 关系经营 / 体验创新 / 数据资产）。
-
-奥莱的病：只盯「促销」一个最显眼、最好量化的维度，把「整体演绎」挤掉了。**显眼维度 ≠ 唯一维度。**
-
-### 3. 指标传导模型（判据是链，不是并列 KPI）
+### 4. 指标传导模型（判据是链，不是并列 KPI）
 
 ```
 投入层 → 中间指标层 → 结果指标层 → 长线资产层
 ```
 
-每层按「数量 / 质量 / 效率 / 成本」四维枚举；主判据落在**结果指标层**，向上归因（由哪几个中间指标驱动）、向下归因（由哪项投入驱动）。每份方案产出一张**闭环图**，活动后逐层回填「目标 vs 实际」，**断在哪层，下次就补哪层**——这张断点就是喂回案例库的关键字段。
+每层按「数量 / 质量 / 效率 / 成本」四维枚举；主判据落在**结果指标层**，向上归因（由哪几个中间指标驱动）、向下归因（由哪项投入驱动）。每份方案产出一张**闭环图**，活动后逐层回填「目标 vs 实际」，**断在哪层，下次就补哪层**。
+
+> 一句话贯穿这四样：**具体内容（行业、类型、环节）都是「动态判断 + 搜索」现场生成的，硬编码清单只是快速通道，不是兜底。** 策元补的是「方法」，不是「知识」。
 
 <a id="zh-rules"></a>
 ## 五条铁律
@@ -119,7 +167,7 @@ references/
 ├── metrics-flow.md           # 指标传导模型 + 闭环图 + 回填规则
 ├── creative-inputs.md        # 5 Whys + 横纵分析（元方法）+ 心理机制推理卡 + 推理链 + 跨界移植
 ├── event-types.md            # 活动类型清单（10 大类 + 案例锚点）
-├── industries.md             # 16 行业要点（调性/雷区/预算结构/合规红线/标准模块）
+├── industries.md             # 16 行业要点（调性/雷区/预算结构/合规红线/标准模块，示例快速通道 + 动态判断）
 ├── adversarial.md            # 对抗审查规则 + 15 攻击角度
 ├── proposal-schema.md        # 方案七节结构模板 + 闭环图 + 推导路径验证
 ├── search-paths.md           # 检索路径库（含非消费端垂直源）
@@ -159,8 +207,6 @@ git clone https://github.com/DONGaOtang/ceyuan-skill.git
 
 > **验证装好了**：说一句「用策元帮我策划个 XX」，如果它开始反问你「真实动机是什么」「钱从哪来、谁付钱」，而不是直接丢模板，就说明装好了。
 
-策元会先追问你的**真实动机**、**钱流**和**可挑战的约束**，然后陪你过招，而不是直接丢一份模板给你。
-
 <a id="zh-keywords"></a>
 ## 关键词
 
@@ -182,12 +228,60 @@ git clone https://github.com/DONGaOtang/ceyuan-skill.git
 <details>
 <summary><strong>🇬🇧 English</strong></summary>
 
+## 🚀 Quick start in 30 seconds
+
+**Three steps: Install → Ask → Answer.**
+
+**① Install**: download the whole folder and drop it into your agent's `skills` directory (paths below).
+
+**② Ask**: just talk normally —
+
+- "Help me plan a product launch"
+- "Make our annual gala different"
+- "Plan a dealer conference next month"
+
+**③ Answer**: it won't dump a plan on you — it'll ask a few questions back. Just answer as best you can. **Don't know? Say "I don't know" — it won't get stuck.**
+
+**What it'll ask (just these 3, don't panic):**
+
+| It asks | Why | If you don't know |
+|---|---|---|
+| Why hold this event? | Motive decides the plan — "fundraising" vs. "selling" are two different launches | Say "unclear", it proceeds on the most likely one |
+| Who pays? Roughly how much? | Decides scale and depth | Say "undecided", it does a lightweight version first |
+| What do you already have? (private traffic, members, last-event data) | Things it can't search, only you know | Say "none", it flags it and works around it |
+
+**What you'll get:**
+
+- A landable plan (budget table, timeline, materials list, exported to .docx)
+- 3 creative directions first — you pick one, it sharpens it until it survives scrutiny
+
+**What to expect (heads-up):**
+
+1. **It asks back, it's not one-click** — you might think "why is it asking me". That's the difference from templates: motive and budget clarified, the plan won't drift. Treat it like chatting with a solid planner.
+2. **It pauses at each step for your nod** — it outputs a step, you glance and say "ok" or "change", then it moves on. So no "I regret it after it drifted".
+3. **It needs a bit of inside info** — who pays, last-event data, things it can't search. Don't have it? Say "none", it flags it, won't nag.
+
+**A real exchange, to feel it:**
+
+```
+You: Help me plan our company's annual gala
+Ceyuan: First question — what's the main goal? Keep employees happy, or show results to the boss?
+You: Mostly to relax everyone, and recognize top performers
+Ceyuan: Who pays? Roughly what budget?
+You: Admin budget, about 50k RMB
+Ceyuan: Got it, that's a lightweight event. I'll start with 3 directions, not a 50-page plan...
+```
+
+> The one-liner: **it doesn't write the plan for you — it spars with you. The clearer you get, the sharper it gets.**
+
+---
+
 ## Table of Contents
 
 - [What is Ceyuan](#en-what)
 - [Why it's different](#en-why)
 - [The 5-step pipeline](#en-pipeline)
-- [Three core mechanisms](#en-mechanisms)
+- [Four core mechanisms](#en-mechanisms)
 - [Five iron rules](#en-rules)
 - [File structure](#en-structure)
 - [How to use](#en-usage)
@@ -227,47 +321,47 @@ Step 4 · Adversarial ── Steelman + 15 attack angles + fix-not-kill rule →
 Step 5 · Finalize    ── 7-section plan + closed-loop diagram + derivation-path check + docx
 ```
 
-- **Deconstruct**: use 5 Whys to separate "surface request" from "real motive" (money / power / relationship / fear); unpack "achieve what" via the seven states; proactively ask for the user's exclusive resources (private traffic, membership count, last-event review data); **must-ask money-flow** (who pays, how revenue is composed, rough P&L) and **compliance boundary** (permits / fire capacity / licenses — a first-order constraint, ask early, don't discover at final review that the permit won't pass); then break the request into a field table and mark which "hard constraints" are actually soft.
+- **Deconstruct**: use 5 Whys to separate "surface request" from "real motive" (money / power / relationship / fear); unpack "achieve what" via the seven states; proactively ask for the user's exclusive resources (private traffic, membership count, last-event review data); **must-ask money-flow** (who pays, how revenue is composed, rough P&L) and **compliance boundary** (permits / fire capacity / licenses — a first-order constraint); then break the request into a field table and mark which "hard constraints" are actually soft.
 - **Rebuild**: put aside "what peers do" and set the goal from first principles; define criteria on the "four-layer conduction chain × four-dimensional measurement", marking which layer the primary criterion sits on.
-- **Diverge (free divergence first, then convergence labeling)**: gather info on two axes (diachronic: time; synchronic: cross-section); use reasoning cards as divergence fuel; **start with 3 sharp ideas (quality first, no hard quota) + a forced cross-industry transplant**; each idea gets only "one core concept + why it's interesting"; only after diverging do you attach dimension and derivation-path labels — labeling comes later, never pollutes divergence.
+- **Diverge (free divergence first, then convergence labeling)**: gather info via diachronic/synchronic analysis (time vs. cross-section, mountable at any decomposition node); use reasoning cards as divergence fuel; **start with 3 sharp ideas (quality first, no hard quota) + a forced cross-industry transplant**; each idea gets only "one core concept + why it's interesting"; only after diverging do you attach dimension and derivation-path labels.
 - **Adversarial**: Steelman first, run 15 attack angles (including "is the derivation path wrong?"), apply the **fix-not-kill rule** (default landing is "how to make it feasible"; only attack #13 may judge "don't hold it"), and converge on the one fatal flaw.
 - **Finalize**: output the full plan across 7 sections (Big Idea → conduction criteria → experience → communication → execution → risk → evaluation) + a four-layer closed-loop diagram + a derivation-path check, pass QA / compliance / arithmetic checks, and export to docx.
 
 <a id="en-mechanisms"></a>
-## Three core mechanisms
+## Four core mechanisms
 
-Creativity is Ceyuan's **ceiling**; below it is the **floor** — three completeness mechanisms no one else has, so your creative idea survives scrutiny when it lands:
+Creativity is Ceyuan's **ceiling**; below it is the **floor** — four completeness mechanisms, so your creative idea survives scrutiny when it lands:
 
-### 1. Four-dimensional derivation axis (a list misses; an axis doesn't)
+### 1. Diachronic/synchronic analysis (a meta-decomposition method across the whole flow)
+
+Diachronic tracks time-evolution (how it was done, past failures, how motive shifted); synchronic cuts the cross-section (how peers do it, real word-of-mouth, ecological niche). It's not a Step-3-only tool — it's a **meta-decomposition capability across the whole flow**: Step 1 decompose requirements, Step 2 decompose goals, Step 3 decompose ideas, Step 5 decompose execution. Mount it wherever decomposition is needed, on demand. *What* to decompose is decided by the event type, not a generic checklist.
+
+### 2. Four-dimensional derivation axis (a list misses; an axis doesn't)
 
 ```
 event type = seven-state purpose × two-level object × five forms × space-time
 ```
 
-- **Seven-state purpose**: cognition / emotion / behavior / relationship / resource / **identity** / **physical capability** — the last two are what common lists miss: groundbreaking and plaque-unveiling are "confirming identity", health check-ups and training are "changing physical capability", neither fits the first five.
+- **Seven-state purpose**: cognition / emotion / behavior / relationship / resource / **identity** / **physical capability** — the last two are what common lists miss: groundbreaking and plaque-unveiling are "confirming identity", health check-ups and training are "changing physical capability".
 - **Two-level object**: participant (who shows up) / beneficiary (who ultimately benefits) — for charity/CSR events the two separate, and must be written out separately.
 - **Five forms**: accept / participate / ritual / connect / co-create.
 - **Space-time**: offline / online / hybrid × one-off / periodic.
 
 Any event lands in some combination of these four dimensions; if it doesn't derive, either it isn't an "event", or the axis missed a value (add one — don't rebuild). **The list is a fast lane; the axis guarantees completeness.**
 
-### 2. Demand-dimension completeness (motive isn't enough)
+### 3. Demand-dimension completeness (motive isn't enough)
 
-Motive only answers "why hold it" — it doesn't yet unpack "achieve what, for whom, how many functions":
+Motive only answers "why hold it" — it doesn't yet unpack "achieve what, for whom, how many functions": purpose dimension (which audience state to change), object dimension (who participates, who benefits, do demands conflict), function dimension (how many functions at once). The outlet-mall disease: fixating on "promotion" — the most visible dimension — and squeezing out "overall storytelling". **The visible dimension ≠ the only dimension.**
 
-- **Purpose dimension**: which state of the audience does this event change?
-- **Object dimension**: who participates, who benefits, and do their demands conflict?
-- **Function dimension**: how many functions it carries at once (commercial conversion / brand storytelling / content spread / relationship management / experience innovation / data asset).
-
-The outlet-mall disease: fixating on "promotion" — the most visible, most measurable dimension — and squeezing out "overall storytelling". **The visible dimension ≠ the only dimension.**
-
-### 3. Metric conduction model (criteria are a chain, not parallel KPIs)
+### 4. Metric conduction model (criteria are a chain, not parallel KPIs)
 
 ```
 input layer → intermediate layer → outcome layer → long-term asset layer
 ```
 
-Each layer enumerates by "quantity / quality / efficiency / cost"; the primary criterion sits on the **outcome layer**, attributed upward (which intermediate metrics drive it) and downward (which input drives those). Every plan produces a **closed-loop diagram**; after the event, each layer is back-filled with "target vs actual" — **whichever layer broke, that's what you fix next time**. That break-point is the key field fed back into the case library.
+Each layer enumerates by "quantity / quality / efficiency / cost"; the primary criterion sits on the **outcome layer**, attributed upward (which intermediate metrics drive it) and downward (which input drives those). Every plan produces a **closed-loop diagram**; after the event, each layer is back-filled with "target vs actual" — **whichever layer broke, that's what you fix next time**.
+
+> One line ties these four together: **concrete content (industries, event types, execution modules) is generated on the fly by "dynamic judgment + search"; hard-coded lists are just fast lanes, never the fallback.** Ceyuan adds *methods*, not *knowledge*.
 
 <a id="en-rules"></a>
 ## Five iron rules
@@ -291,9 +385,9 @@ references/
 ├── axes.md                   # four-dimensional derivation axis (7 states × 2 objects × 5 forms × space-time)
 ├── dimensions.md             # demand-dimension completeness checklist
 ├── metrics-flow.md           # metric conduction model + closed-loop diagram + back-fill rules
-├── creative-inputs.md        # 5 Whys + diachronic/synchronic + psychology reasoning cards + reasoning chain + cross-industry transplant
+├── creative-inputs.md        # 5 Whys + diachronic/synchronic (meta method) + psychology reasoning cards + reasoning chain + cross-industry transplant
 ├── event-types.md            # event-type playbook (10 categories + case anchors)
-├── industries.md             # 14 industry notes (tone/red flags/budget/compliance)
+├── industries.md             # 16 industry notes (tone/red flags/budget/compliance/standard modules — fast-lane examples + dynamic judgment)
 ├── adversarial.md            # adversarial review rules + 15 attack angles
 ├── proposal-schema.md        # 7-section proposal template + closed-loop diagram + derivation-path check
 ├── search-paths.md           # search-path library (incl. non-consumer vertical sources)
@@ -332,8 +426,6 @@ Launch it either way:
 - **Natural language**: just describe your need — "Help me plan a product launch", "Make our annual gala different", "Plan a dealer conference next month".
 
 > **Verify it works**: say "use Ceyuan to plan an XX" — if it starts asking about your real motive and "who pays, where the money comes from" instead of dumping a template, it's installed correctly.
-
-Ceyuan will first ask about your **real motive**, **money-flow**, and **challengeable constraints** — then spar with you, not just dump a template on you.
 
 <a id="en-keywords"></a>
 ## Search keywords
