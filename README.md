@@ -61,7 +61,7 @@
 - [策元是什么](#zh-what)
 - [为什么不一样](#zh-why)
 - [五步流程](#zh-pipeline)
-- [四大核心机制](#zh-mechanisms)
+- [核心机制](#zh-mechanisms)
 - [五条铁律](#zh-rules)
 - [文件结构](#zh-structure)
 - [怎么用](#zh-usage)
@@ -81,12 +81,12 @@
 市面上的策划工具大多是两种：**模板填空**（给你一堆方案模板自己填）和**一问一答**（丢一个需求吐一份方案）。策元是第三种——一个**懂创意的陪练**：
 
 1. **灵感是你的，策元负责逼出来（陪练，不是生成器）** — 不替你脑暴，陪你过招。每个想法都过一轮测试再出手，而不是丢给你一份「AI 觉得不错」的方案。
-2. **发散和收敛彻底分开（过早贴标签会压死创意）** — 发散时创意自由飞（只给「核心概念 + 为什么有意思」），维度、推导路径这些标签全部后置到收敛阶段。过早贴标签 = 给创意套枷锁，创意点会死。
-3. **先出 3 个锐利的，不设数量死限（质量优先）** — 3 个扎得深的，胜过 10 个平庸的。不满意再按量扩。
-4. **强制跨界移植（用不相干的行业逼灵感）** — 殡仪业怎么做仪式感、游戏业怎么做留存、宗教怎么做峰终时刻。一个完全不相干的行业怎么解你的动机，往往就是破局的点。
+2. **发散是乘法，不是加法（交叉网络引擎）** — 创意 = 锚点 × 可变域。锁定活动锚点（发布会=悬念、快闪=稀缺），从热点 / 文化 / 情绪 / 跨界 / 感官 / 冲突六个可变域实时调取要素，用「嫁接 / 双域碰撞 / 三域撞击」撞出 N×M 个反直觉组合——而不是线性列 N 个方向。
+3. **发散和收敛彻底分开（过早贴标签会压死创意）** — 发散时创意自由飞（只给「核心概念 + 为什么有意思」），维度、推导路径这些标签全部后置到收敛阶段。过早贴标签 = 给创意套枷锁，创意点会死。
+4. **先出 3 个锐利的，不设数量死限（质量优先）** — 交叉出 10–20 个候选，挑最反直觉的 3–5 个。3 个扎得深的，胜过 10 个平庸的。
 5. **活动是手段，不是目的（第一性原理）** — 同是「发布会」，动机是「募资」还是「卖货」，方案是两种物种。先用 5 Whys 挖出真实动机，再决定形式。动机错了，后面全错。
-6. **心理机制是推理卡，不是名词表** — 每个机制带「理论出处 + 触发条件 + 失效边界」，当发散燃料用，选的是「触发条件成立」的那个，不是顺眼的那个。
-7. **攻击是修，不是杀（Red Team + Steelman）** — 15 个攻击角度逐条过，但每条攻击的默认落点是「怎么让它可行」（给修法、给预案、给降级版），不是判它死。最有创意的想法第一眼永远最不可落地，对抗是把它修成能落地，不是把它杀了。
+6. **攻击是修，不是杀（Red Team + Steelman）** — 15 个攻击角度逐条过，但每条攻击的默认落点是「怎么让它可行」（给修法、给预案、给降级版），不是判它死。最有创意的想法第一眼永远最不可落地，对抗是把它修成能落地，不是把它杀了。
+7. **具体内容动态生成，不靠堆清单** — 行业、活动类型、执行环节都是「动态判断 + 搜索」现场生成的，硬编码清单只是快速通道，不是兜底。策元补的是「方法」，不是「知识」。
 
 <a id="zh-pipeline"></a>
 ## 五步流程
@@ -96,52 +96,45 @@
 ```
 Step 1 · 拆解 ── 5 Whys 挖动机 + 七状态拆维度 + 问信息矿 + 钱流/合规 + 字段表
 Step 2 · 重建 ── 第一性原理定目标 + 四层传导链判据（含主判据）
-Step 3 · 发散 ── 先自由发散（3 个锐利 + 跨界移植）→ 后收敛标注（维度/推导路径）
+Step 3 · 发散 ── 交叉网络乘法引擎（锚点 × 6 可变域）→ 先自由发散 → 后收敛标注
 Step 4 · 对抗 ── Steelman + 15 攻击角度 + 判词规则 → 找根本缺陷
 Step 5 · 成型 ── 七节方案 + 闭环图 + 推导路径验证 + docx
 ```
 
 - **拆解**：用 5 Whys 把「表面需求」和「真实动机」分开（钱 / 权 / 关系 / 怕）；按七状态拆「办成什么」；主动问用户手上的独家资源（私域流量、会员数、上次复盘数据）；**必问钱流**（谁付钱、收入怎么构成、盈亏粗算）和**合规边界**（报批/消防/许可，一阶约束提前问）；再把需求拆成字段表，标出哪些是「假硬约束」可挑战。
 - **重建**：抛开「同类活动怎么做」，回到第一性原理定目标；判据按「四层传导链 × 四维测量」定，标出主判据落在哪层。
-- **发散（先自由发散，后收敛标注）**：横纵分析（纵向追时间、横向切截面，可挂载到任意拆解节点）拿信息；心理机制推理卡当发散燃料；**先出 3 个锐利的创意（质量优先、数量不设死）+ 强制跨界移植**；每个创意只给「一句核心概念 + 一句为什么有意思」；发散完再贴维度、推导路径标签，标签后置、不污染发散。
+- **发散（先自由发散，后收敛标注）**：先跑**交叉网络**——锁定活动锚点，从热点 / 文化 / 情绪 / 跨界 / 感官 / 冲突六个可变域实时调取要素，用「嫁接 / 双域碰撞 / 三域撞击」撞出反直觉候选，挑最反直觉的 3–5 个；每个创意只给「一句核心概念 + 一句为什么有意思」；发散完再贴维度、推导路径标签，标签后置、不污染发散。
 - **对抗**：Steelman 先行，15 个攻击角度逐条过（含「推导路径定位错了没」），**判词规则——攻击是修不是杀**（默认落点「怎么让它可行」，只有攻击 13 才能判「别办了」），收敛出「一戳就塌」的根本缺陷。
 - **成型**：按七节骨架输出完整方案（Big Idea → 传导链判据 → 体验 → 传播 → 执行 → 风险 → 评估）+ 四层闭环图 + 推导路径验证，过 QA / 合规 / 算术三重自检，导出 docx。
 
 <a id="zh-mechanisms"></a>
-## 四大核心机制
+## 核心机制
 
-创意是策元的**天花板**，下面是**地板**——四样完备性机制，保证创意落地时扛得住追问：
+策元的内核是「**一个乘法引擎 + 四块地基**」——引擎负责逼出创意（天花板），地基负责扛住攻击（地板）。
 
-### 1. 横纵分析（贯穿全流程的元拆解方法）
-
-纵向追「时间演变」（过去怎么做、翻过什么车、动机怎么变），横向切「同期截面」（同类怎么做、真实口碑、生态位）。它不是 Step 3 的专属工具，是**贯穿全流程的元拆解能力**——Step 1 拆需求、Step 2 拆目标、Step 3 拆创意、Step 5 拆环节都能挂载，**按需不强制**。拆解对象由活动类型决定，不是拿通用环节清单硬套。
-
-### 2. 四维推导轴（清单会漏，推导轴不会）
+### 🚀 创意引擎 · 交叉网络（发散总引擎）
 
 ```
-活动类型 = 七状态目的 × 两层对象 × 五形态 × 时空
+创意 = 锚点 × 可变域 → 反直觉组合
 ```
 
-- **七状态目的**：认知 / 情感 / 行为 / 关系 / 资源 / **身份** / **生理能力**——后两个是常见清单漏掉的：剪彩揭牌是「确认身份资格」，体检培训是「改变身体能力」。
-- **两层对象**：参与者（谁来现场）/ 受益者（谁最终获益）——公益/环保活动两者分离，必须分开写清。
-- **五形态**：接受 / 参与 / 仪式 / 连接 / 共创。
-- **时空**：线下 / 线上 / 混合 × 单次 / 周期。
+- **锚点域（1 个，不变）**：活动的核心元素——发布会=悬念、快闪=稀缺、答谢会=专属、招商会=信任、年会=归属。
+- **可变域（6 个，动态生成，不硬编码）**：H 热点（及时性）/ C 文化（共鸣）/ E 情绪（底层）/ X 跨界（借机制）/ S 感官（五感）/ T 冲突（张力）。
+- **交叉算子（3 种）**：① 嫁接（把外部要素焊到锚点上）② 双域碰撞（锚点 × 任一变域）③ 三域撞击（锚点 × 两个变域，撞出「只有这个组合才有」的创意）。
+- **产出**：交叉出 10–20 个候选，挑最反直觉的 3–5 个，只给「一句核心概念 + 一句为什么有意思」，不做评判（评判交给 Step 4）。
+- **热点借势铁律**：借势，不是蹭——提取热点背后的「情绪」当燃料，不贴热点标签（「塌房」→ 提取「对真诚的渴望」，而不是蹭明星名字）。
 
-任何活动都能落进这四维的某个组合；推导不出来，说明它不是「活动」，或者轴又漏了（漏了就在对应维度加一个枚举值）。**清单是快速通道，推导轴保证完备。**
+> 横纵分析（产素材）、心理机制推理卡（产情绪）、跨界移植（产机制）不是并列动作，而是交叉网络的**输入**——分别喂进 H/C 域、E 域、X 域。发散时先跑交叉网络，缺哪个域再回头调对应方法。
 
-### 3. 需求维度完整性（动机不够，维度才完整）
+### 🧱 地基 · 四样完备性机制
 
-动机只回答了「为什么办」，还没拆「办成什么、为谁办、承担几个功能」：目的维度（要改变受众哪个状态）、对象维度（参与者是谁、受益者是谁、诉求有没有打架）、功能维度（同时承担几个功能）。奥莱的病：只盯「促销」一个最显眼的维度，把「整体演绎」挤掉了。**显眼维度 ≠ 唯一维度。**
+**1. 横纵分析（贯穿全流程的元拆解方法）** — 纵向追「时间演变」、横向切「同期截面」，Step 1 拆需求、Step 2 拆目标、Step 3 拆创意、Step 5 拆环节都能挂载，按需不强制；拆解对象由活动类型决定，不是通用清单硬套。
 
-### 4. 指标传导模型（判据是链，不是并列 KPI）
+**2. 四维推导轴（清单会漏，推导轴不会）** — `七状态目的 × 两层对象 × 五形态 × 时空`。七状态里「身份」（剪彩揭牌）和「生理能力」（体检培训）是常见清单漏掉的；公益/环保的参与者与受益者分离。任何活动都能落进这四维，推导不出来说明它不是「活动」或轴又漏了。
 
-```
-投入层 → 中间指标层 → 结果指标层 → 长线资产层
-```
+**3. 需求维度完整性（动机不够，维度才完整）** — 动机只答「为什么办」，还要拆「办成什么、为谁办、承担几个功能」。奥莱只盯「促销」一个显眼维度，把「整体演绎」挤掉了。**显眼维度 ≠ 唯一维度。**
 
-每层按「数量 / 质量 / 效率 / 成本」四维枚举；主判据落在**结果指标层**，向上归因（由哪几个中间指标驱动）、向下归因（由哪项投入驱动）。每份方案产出一张**闭环图**，活动后逐层回填「目标 vs 实际」，**断在哪层，下次就补哪层**。
-
-> 一句话贯穿这四样：**具体内容（行业、类型、环节）都是「动态判断 + 搜索」现场生成的，硬编码清单只是快速通道，不是兜底。** 策元补的是「方法」，不是「知识」。
+**4. 指标传导模型（判据是链，不是并列 KPI）** — `投入层 → 中间指标层 → 结果指标层 → 长线资产层`，每层按「数量/质量/效率/成本」四维枚举。每份方案产出一张闭环图，活动后逐层回填「目标 vs 实际」，**断在哪层，下次就补哪层**。
 
 <a id="zh-rules"></a>
 ## 五条铁律
@@ -162,12 +155,12 @@ Step 5 · 成型 ── 七节方案 + 闭环图 + 推导路径验证 + docx
 ```
 SKILL.md                     # 主流程：五步 + 五条铁律 + 复杂度分级 + 数据流图
 references/
+├── creative-inputs.md        # 交叉网络（发散总引擎）+ 5 Whys + 横纵分析 + 心理推理卡 + 跨界移植
 ├── axes.md                   # 四维推导轴（七状态 × 两层对象 × 五形态 × 时空）
 ├── dimensions.md             # 需求维度完整性清单（三轴防角度缺失）
 ├── metrics-flow.md           # 指标传导模型 + 闭环图 + 回填规则
-├── creative-inputs.md        # 5 Whys + 交叉网络（发散总引擎）+ 横纵分析（元方法）+ 心理机制推理卡 + 推理链 + 跨界移植
 ├── event-types.md            # 活动类型清单（10 大类 + 案例锚点）
-├── industries.md             # 16 行业要点（调性/雷区/预算结构/合规红线/标准模块，示例快速通道 + 动态判断）
+├── industries.md             # 16 行业要点（调性/雷区/预算/合规/标准模块，示例快速通道 + 动态判断）
 ├── adversarial.md            # 对抗审查规则 + 15 攻击角度
 ├── proposal-schema.md        # 方案七节结构模板 + 闭环图 + 推导路径验证
 ├── search-paths.md           # 检索路径库（含非消费端垂直源）
@@ -212,7 +205,7 @@ git clone https://github.com/DONGaOtang/ceyuan-skill.git
 
 方便检索（GitHub 搜索 / 搜索引擎 / Skill 市场）：
 
-- 中文：活动策划、活动方案、发布会、年会、路演、招商会、营销活动、线下活动、AI Agent、Skill、提示词工程、第一性原理、对抗式审查、红队、营销策划、创意陪练、横纵分析、指标模型、跨界移植、开工仪式、危机公关
+- 中文：活动策划、活动方案、发布会、年会、路演、招商会、营销活动、线下活动、AI Agent、Skill、提示词工程、第一性原理、对抗式审查、红队、营销策划、创意陪练、横纵分析、交叉网络、指标模型、跨界移植、开工仪式、危机公关
 
 **推荐 GitHub Topics**（仓库主页 → 齿轮 → Topics 添加）：
 
@@ -281,7 +274,7 @@ Ceyuan: Got it, that's a lightweight event. I'll start with 3 directions, not a 
 - [What is Ceyuan](#en-what)
 - [Why it's different](#en-why)
 - [The 5-step pipeline](#en-pipeline)
-- [Four core mechanisms](#en-mechanisms)
+- [Core mechanisms](#en-mechanisms)
 - [Five iron rules](#en-rules)
 - [File structure](#en-structure)
 - [How to use](#en-usage)
@@ -301,12 +294,12 @@ It answers not "how to make the event fun", but "**what business goal this event
 Most planning tools are either **template-fillers** or **one-shot Q&A generators**. Ceyuan is the third kind — a **sparring partner that gets creativity**:
 
 1. **Your inspiration, Ceyuan's job to force it out (a sparring partner, not a generator)** — it doesn't brainstorm for you, it spars with you. Every idea gets tested before it ships, instead of dumping a "this AI thought it was cool" plan on you.
-2. **Divergence and convergence are strictly separated (labeling too early kills ideas)** — during divergence, ideas fly free (only "core concept + why it's interesting"); dimension and derivation-path labels are all postponed to the convergence stage. Labeling too early = handcuffs on the idea.
-3. **Start with 3 sharp ideas, no hard quota (quality first)** — 3 deep ones beat 10 mediocre ones. Expand only if unsatisfied.
-4. **Forced cross-industry transplant (borrow inspiration from unrelated industries)** — how funeral homes do ritual, how games do retention, how religions do peak-end moments. How a totally unrelated industry solves your motive is often the breakthrough.
+2. **Divergence is multiplication, not addition (the cross-network engine)** — idea = anchor × variable domains. Lock the event anchor (launch = suspense, pop-up = scarcity), pull elements in real time from six domains (hot topic / culture / emotion / cross-industry / senses / conflict), and collide them via "graft / dual-domain collision / triple-domain impact" into N×M counter-intuitive combos — not a linear list of N directions.
+3. **Divergence and convergence are strictly separated (labeling too early kills ideas)** — during divergence, ideas fly free (only "core concept + why it's interesting"); dimension and derivation-path labels are all postponed to the convergence stage. Labeling too early = handcuffs on the idea.
+4. **Start with 3 sharp ideas, no hard quota (quality first)** — cross out 10–20 candidates, keep the 3–5 most counter-intuitive. 3 deep ones beat 10 mediocre ones.
 5. **An event is a means, not an end (first-principles)** — a "product launch" driven by fundraising vs. sales-channel stocking are two different species. Dig out the real motive with 5 Whys before choosing a format. Wrong motive → wrong everything.
-6. **Psychology levers are reasoning cards, not a noun list** — each carries "theoretical origin + trigger condition + failure boundary", used as divergence fuel; you pick the one whose *trigger condition holds*, not the one that looks nice.
-7. **Attack to fix, not to kill (Red Team + Steelman)** — 15 attack angles run through, but each attack's default landing is "how to make it feasible" (a fix, a plan B, a downgrade), not a death sentence. The most creative idea is always the least landable at first glance — the review is there to *repair* it into something landable, not to kill it.
+6. **Attack to fix, not to kill (Red Team + Steelman)** — 15 attack angles run through, but each attack's default landing is "how to make it feasible" (a fix, a plan B, a downgrade), not a death sentence. The most creative idea is always the least landable at first glance — the review is there to *repair* it into something landable, not to kill it.
+7. **Concrete content is generated dynamically, not stacked in lists** — industries, event types, and execution modules are generated on the fly by "dynamic judgment + search"; hard-coded lists are just fast lanes, never the fallback. Ceyuan adds *methods*, not *knowledge*.
 
 <a id="en-pipeline"></a>
 ## The 5-step pipeline
@@ -316,52 +309,45 @@ Every step's output is adversarially reviewed and must be confirmed before movin
 ```
 Step 1 · Deconstruct ── 5 Whys + seven-state dimensions + info mine + money-flow/compliance + field table
 Step 2 · Rebuild     ── first-principles goal + four-layer conduction criteria (1 primary)
-Step 3 · Diverge     ── free divergence first (3 sharp ideas + cross-industry transplant) → convergence labeling after
+Step 3 · Diverge     ── cross-network engine (anchor × 6 domains) → free divergence → convergence labeling
 Step 4 · Adversarial ── Steelman + 15 attack angles + fix-not-kill rule → find the fatal flaw
 Step 5 · Finalize    ── 7-section plan + closed-loop diagram + derivation-path check + docx
 ```
 
 - **Deconstruct**: use 5 Whys to separate "surface request" from "real motive" (money / power / relationship / fear); unpack "achieve what" via the seven states; proactively ask for the user's exclusive resources (private traffic, membership count, last-event review data); **must-ask money-flow** (who pays, how revenue is composed, rough P&L) and **compliance boundary** (permits / fire capacity / licenses — a first-order constraint); then break the request into a field table and mark which "hard constraints" are actually soft.
 - **Rebuild**: put aside "what peers do" and set the goal from first principles; define criteria on the "four-layer conduction chain × four-dimensional measurement", marking which layer the primary criterion sits on.
-- **Diverge (free divergence first, then convergence labeling)**: gather info via diachronic/synchronic analysis (time vs. cross-section, mountable at any decomposition node); use reasoning cards as divergence fuel; **start with 3 sharp ideas (quality first, no hard quota) + a forced cross-industry transplant**; each idea gets only "one core concept + why it's interesting"; only after diverging do you attach dimension and derivation-path labels.
+- **Diverge (free divergence first, then convergence labeling)**: run the **cross-network** first — lock the anchor, pull elements from six domains (hot topic / culture / emotion / cross-industry / senses / conflict), collide them via "graft / dual-domain collision / triple-domain impact" into counter-intuitive candidates, keep the 3–5 most counter-intuitive; each idea gets only "one core concept + why it's interesting"; only after diverging do you attach dimension and derivation-path labels.
 - **Adversarial**: Steelman first, run 15 attack angles (including "is the derivation path wrong?"), apply the **fix-not-kill rule** (default landing is "how to make it feasible"; only attack #13 may judge "don't hold it"), and converge on the one fatal flaw.
 - **Finalize**: output the full plan across 7 sections (Big Idea → conduction criteria → experience → communication → execution → risk → evaluation) + a four-layer closed-loop diagram + a derivation-path check, pass QA / compliance / arithmetic checks, and export to docx.
 
 <a id="en-mechanisms"></a>
-## Four core mechanisms
+## Core mechanisms
 
-Creativity is Ceyuan's **ceiling**; below it is the **floor** — four completeness mechanisms, so your creative idea survives scrutiny when it lands:
+Ceyuan's core is "**one multiplication engine + four foundations**" — the engine forces out creativity (the ceiling), the foundations survive attack (the floor).
 
-### 1. Diachronic/synchronic analysis (a meta-decomposition method across the whole flow)
-
-Diachronic tracks time-evolution (how it was done, past failures, how motive shifted); synchronic cuts the cross-section (how peers do it, real word-of-mouth, ecological niche). It's not a Step-3-only tool — it's a **meta-decomposition capability across the whole flow**: Step 1 decompose requirements, Step 2 decompose goals, Step 3 decompose ideas, Step 5 decompose execution. Mount it wherever decomposition is needed, on demand. *What* to decompose is decided by the event type, not a generic checklist.
-
-### 2. Four-dimensional derivation axis (a list misses; an axis doesn't)
+### 🚀 Creative engine · Cross-network (the divergence master engine)
 
 ```
-event type = seven-state purpose × two-level object × five forms × space-time
+idea = anchor × variable domains → counter-intuitive combos
 ```
 
-- **Seven-state purpose**: cognition / emotion / behavior / relationship / resource / **identity** / **physical capability** — the last two are what common lists miss: groundbreaking and plaque-unveiling are "confirming identity", health check-ups and training are "changing physical capability".
-- **Two-level object**: participant (who shows up) / beneficiary (who ultimately benefits) — for charity/CSR events the two separate, and must be written out separately.
-- **Five forms**: accept / participate / ritual / connect / co-create.
-- **Space-time**: offline / online / hybrid × one-off / periodic.
+- **Anchor domain (1, fixed)**: the event's core element — launch = suspense, pop-up = scarcity, appreciation gala = exclusivity, dealer conference = trust, annual gala = belonging.
+- **Variable domains (6, generated dynamically, not hard-coded)**: H hot-topic (timeliness) / C culture (resonance) / E emotion (underlying) / X cross-industry (borrowed mechanism) / S senses (five senses) / T conflict (tension).
+- **Collision operators (3)**: ① graft (weld an external element onto the anchor) ② dual-domain collision (anchor × one domain) ③ triple-domain impact (anchor × two domains — a combo only this combination yields).
+- **Output**: cross out 10–20 candidates, keep the 3–5 most counter-intuitive, each with only "one core concept + why it's interesting", no judgment (judgment is Step 4's job).
+- **Hot-topic iron rule**: ride the trend, don't leech — extract the *emotion* behind a hot topic as fuel, don't stick the hot topic's label on it (a "scandal" → extract "the yearning for sincerity", not the celebrity's name).
 
-Any event lands in some combination of these four dimensions; if it doesn't derive, either it isn't an "event", or the axis missed a value (add one — don't rebuild). **The list is a fast lane; the axis guarantees completeness.**
+> Diachronic/synchronic analysis (feeds material), psychology reasoning cards (feeds emotion), and cross-industry transplant (feeds mechanism) are not parallel actions — they are the cross-network's **inputs**, feeding the H/C, E, and X domains respectively. Run the cross-network first; only pull the corresponding method when a domain is empty.
 
-### 3. Demand-dimension completeness (motive isn't enough)
+### 🧱 Foundations · Four completeness mechanisms
 
-Motive only answers "why hold it" — it doesn't yet unpack "achieve what, for whom, how many functions": purpose dimension (which audience state to change), object dimension (who participates, who benefits, do demands conflict), function dimension (how many functions at once). The outlet-mall disease: fixating on "promotion" — the most visible dimension — and squeezing out "overall storytelling". **The visible dimension ≠ the only dimension.**
+**1. Diachronic/synchronic analysis (a meta-decomposition method across the whole flow)** — diachronic tracks time-evolution, synchronic cuts the cross-section; mountable at Step 1 (requirements), Step 2 (goals), Step 3 (ideas), Step 5 (execution), on demand. *What* to decompose is decided by the event type, not a generic checklist.
 
-### 4. Metric conduction model (criteria are a chain, not parallel KPIs)
+**2. Four-dimensional derivation axis (a list misses; an axis doesn't)** — `seven-state purpose × two-level object × five forms × space-time`. The seven states include "identity" (groundbreaking) and "physical capability" (health check-up) that common lists miss; charity/CSR separates participant from beneficiary. Any event lands in these four dimensions.
 
-```
-input layer → intermediate layer → outcome layer → long-term asset layer
-```
+**3. Demand-dimension completeness (motive isn't enough)** — motive only answers "why hold it"; also unpack "achieve what, for whom, how many functions". An outlet mall fixated on "promotion" squeezed out "overall storytelling". **The visible dimension ≠ the only dimension.**
 
-Each layer enumerates by "quantity / quality / efficiency / cost"; the primary criterion sits on the **outcome layer**, attributed upward (which intermediate metrics drive it) and downward (which input drives those). Every plan produces a **closed-loop diagram**; after the event, each layer is back-filled with "target vs actual" — **whichever layer broke, that's what you fix next time**.
-
-> One line ties these four together: **concrete content (industries, event types, execution modules) is generated on the fly by "dynamic judgment + search"; hard-coded lists are just fast lanes, never the fallback.** Ceyuan adds *methods*, not *knowledge*.
+**4. Metric conduction model (criteria are a chain, not parallel KPIs)** — `input → intermediate → outcome → long-term asset`, each layer enumerated by "quantity/quality/efficiency/cost". Every plan produces a closed-loop diagram; back-fill "target vs actual" layer by layer after the event — **whichever layer broke, that's what you fix next time**.
 
 <a id="en-rules"></a>
 ## Five iron rules
@@ -382,10 +368,10 @@ One main file + 10 reference files, loaded on demand:
 ```
 SKILL.md                     # main flow: 5 steps + 5 rules + complexity routing + data flow
 references/
+├── creative-inputs.md        # cross-network (divergence engine) + 5 Whys + diachronic/synchronic + reasoning cards + cross-industry transplant
 ├── axes.md                   # four-dimensional derivation axis (7 states × 2 objects × 5 forms × space-time)
 ├── dimensions.md             # demand-dimension completeness checklist
 ├── metrics-flow.md           # metric conduction model + closed-loop diagram + back-fill rules
-├── creative-inputs.md        # 5 Whys + creative intersection network (divergence engine) + diachronic/synchronic (meta method) + psychology reasoning cards + reasoning chain + cross-industry transplant
 ├── event-types.md            # event-type playbook (10 categories + case anchors)
 ├── industries.md             # 16 industry notes (tone/red flags/budget/compliance/standard modules — fast-lane examples + dynamic judgment)
 ├── adversarial.md            # adversarial review rules + 15 attack angles
@@ -432,7 +418,7 @@ Launch it either way:
 
 For discoverability (GitHub search / search engines / skill marketplaces):
 
-- English: event planning, event marketing, marketing campaign, event management, AI agent skill, AI skill, prompt engineering, first-principles, red team, steelman, brainstorming, Claude skill, WorkBuddy, creative sparring, cross-industry, metrics model, KPI, event type
+- English: event planning, event marketing, marketing campaign, event management, AI agent skill, AI skill, prompt engineering, first-principles, red team, steelman, brainstorming, Claude skill, WorkBuddy, creative sparring, cross-network, cross-industry, metrics model, KPI, event type
 
 **Recommended GitHub topics** (Repo → gear → Topics):
 
