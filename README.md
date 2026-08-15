@@ -165,7 +165,7 @@ references/
 ├── axes.md                   # 四维推导轴（七状态 × 两层对象 × 五形态 × 时空）
 ├── dimensions.md             # 需求维度完整性清单（三轴防角度缺失）
 ├── metrics-flow.md           # 指标传导模型 + 闭环图 + 回填规则
-├── creative-inputs.md        # 5 Whys + 横纵分析（元方法）+ 心理机制推理卡 + 推理链 + 跨界移植
+├── creative-inputs.md        # 5 Whys + 交叉网络（发散总引擎）+ 横纵分析（元方法）+ 心理机制推理卡 + 推理链 + 跨界移植
 ├── event-types.md            # 活动类型清单（10 大类 + 案例锚点）
 ├── industries.md             # 16 行业要点（调性/雷区/预算结构/合规红线/标准模块，示例快速通道 + 动态判断）
 ├── adversarial.md            # 对抗审查规则 + 15 攻击角度
@@ -385,7 +385,7 @@ references/
 ├── axes.md                   # four-dimensional derivation axis (7 states × 2 objects × 5 forms × space-time)
 ├── dimensions.md             # demand-dimension completeness checklist
 ├── metrics-flow.md           # metric conduction model + closed-loop diagram + back-fill rules
-├── creative-inputs.md        # 5 Whys + diachronic/synchronic (meta method) + psychology reasoning cards + reasoning chain + cross-industry transplant
+├── creative-inputs.md        # 5 Whys + creative intersection network (divergence engine) + diachronic/synchronic (meta method) + psychology reasoning cards + reasoning chain + cross-industry transplant
 ├── event-types.md            # event-type playbook (10 categories + case anchors)
 ├── industries.md             # 16 industry notes (tone/red flags/budget/compliance/standard modules — fast-lane examples + dynamic judgment)
 ├── adversarial.md            # adversarial review rules + 15 attack angles
