@@ -1,9 +1,9 @@
-# 策元 · Ceyuan
+# 策元2 · Ceyuan2
 
 **活动策划方案生成器 · Event Planning Skill**
 
-> **灵感是你的，策元负责把它逼出来、打磨到扛得住攻击。** 不替你想创意，陪你过招。
-> **Your inspiration, Ceyuan's job is to force it out and sharpen it until it survives attack.** It doesn't brainstorm for you — it spars with you.
+> **灵感是你的，策元2负责把它逼出来、打磨到扛得住攻击。** 不替你想创意，陪你过招。
+> **Your inspiration, Ceyuan2's job is to force it out and sharpen it until it survives attack.** It doesn't brainstorm for you — it spars with you.
 
 <details open>
 <summary><strong>🇨🇳 中文文档</strong></summary>
@@ -45,11 +45,11 @@
 
 ```
 你：帮我策划个公司年会
-策元：先问一句——这次年会主要想达成什么？让员工开心、还是给领导看成果？
+策元2：先问一句——这次年会主要想达成什么？让员工开心、还是给领导看成果？
 你：主要是让大家放松，顺便表彰优秀员工
-策元：钱谁出？大概预算多少？
+策元2：钱谁出？大概预算多少？
 你：行政预算，5 万左右
-策元：明白了，这是轻量活动。我先给你 3 个方向，不直接甩 50 页方案……
+策元2：明白了，这是轻量活动。我先给你 3 个方向，不直接甩 50 页方案……
 ```
 
 > 核心就一句：**它不是替你写方案，是陪你过招——你越说越清楚，它越做越准。**
@@ -58,7 +58,7 @@
 
 ## 目录
 
-- [策元是什么](#zh-what)
+- [策元2是什么](#zh-what)
 - [为什么不一样](#zh-why)
 - [五步流程](#zh-pipeline)
 - [核心机制](#zh-mechanisms)
@@ -69,24 +69,24 @@
 - [许可](#zh-license)
 
 <a id="zh-what"></a>
-## 策元是什么
+## 策元2是什么
 
-策元是一个**「创意陪练」型 AI Skill**——不替你想创意，陪你过招，把一句模糊需求逼成可落地的活动方案。它覆盖的不只是发布会、年会、快闪、招商会这些消费端活动，还包括开工仪式、校招宣讲、危机公关、政企招商这些容易被忽略的非消费端活动。
+策元2是一个**「创意陪练」型 AI Skill**——不替你想创意，陪你过招，把一句模糊需求逼成可落地的活动方案。它覆盖的不只是发布会、年会、快闪、招商会这些消费端活动，还包括开工仪式、校招宣讲、危机公关、政企招商这些容易被忽略的非消费端活动。
 
 它回答的不是「这个活动怎么做得热闹」，而是「这个活动**本质上要达成什么商业目的、覆盖几个维度、踩中什么心理、怎么衡量才算成功**」——然后用对抗式审查把你的创意打磨到扛得住攻击。
 
 <a id="zh-why"></a>
 ## 为什么不一样
 
-市面上的策划工具大多是两种：**模板填空**（给你一堆方案模板自己填）和**一问一答**（丢一个需求吐一份方案）。策元是第三种——一个**懂创意的陪练**：
+市面上的策划工具大多是两种：**模板填空**（给你一堆方案模板自己填）和**一问一答**（丢一个需求吐一份方案）。策元2是第三种——一个**懂创意的陪练**：
 
-1. **灵感是你的，策元负责逼出来（陪练，不是生成器）** — 不替你脑暴，陪你过招。每个想法都过一轮测试再出手，而不是丢给你一份「AI 觉得不错」的方案。
+1. **灵感是你的，策元2负责逼出来（陪练，不是生成器）** — 不替你脑暴，陪你过招。每个想法都过一轮测试再出手，而不是丢给你一份「AI 觉得不错」的方案。
 2. **发散是乘法，不是加法（交叉网络引擎）** — 创意 = 锚点 × 可变域。锁定活动锚点（发布会=悬念、快闪=稀缺），从热点 / 文化 / 情绪 / 跨界 / 感官 / 冲突六个可变域实时调取要素，用「嫁接 / 双域碰撞 / 三域撞击」撞出 N×M 个反直觉组合——而不是线性列 N 个方向。
 3. **发散和收敛彻底分开（过早贴标签会压死创意）** — 发散时创意自由飞（只给「核心概念 + 为什么有意思」），维度、推导路径这些标签全部后置到收敛阶段。过早贴标签 = 给创意套枷锁，创意点会死。
 4. **先出 3 个锐利的，不设数量死限（质量优先）** — 交叉出 10–20 个候选，挑最反直觉的 3–5 个。3 个扎得深的，胜过 10 个平庸的。
 5. **活动是手段，不是目的（第一性原理）** — 同是「发布会」，动机是「募资」还是「卖货」，方案是两种物种。先用 5 Whys 挖出真实动机，再决定形式。动机错了，后面全错。
 6. **攻击是修，不是杀（Red Team + Steelman）** — 15 个攻击角度逐条过，但每条攻击的默认落点是「怎么让它可行」（给修法、给预案、给降级版），不是判它死。最有创意的想法第一眼永远最不可落地，对抗是把它修成能落地，不是把它杀了。
-7. **具体内容动态生成，不靠堆清单** — 行业、活动类型、执行环节都是「动态判断 + 搜索」现场生成的，硬编码清单只是快速通道，不是兜底。策元补的是「方法」，不是「知识」。
+7. **具体内容动态生成，不靠堆清单** — 行业、活动类型、执行环节都是「动态判断 + 搜索」现场生成的，硬编码清单只是快速通道，不是兜底。策元2补的是「方法」，不是「知识」。
 
 <a id="zh-pipeline"></a>
 ## 五步流程
@@ -110,7 +110,7 @@ Step 5 · 成型 ── 七节方案 + 闭环图 + 推导路径验证 + docx
 <a id="zh-mechanisms"></a>
 ## 核心机制
 
-策元的内核是「**一个乘法引擎 + 四块地基**」——引擎负责逼出创意（天花板），地基负责扛住攻击（地板）。
+策元2的内核是「**一个乘法引擎 + 四块地基**」——引擎负责逼出创意（天花板），地基负责扛住攻击（地板）。
 
 ### 🚀 创意引擎 · 交叉网络（发散总引擎）
 
@@ -195,10 +195,10 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 装好后，两种方式启动：
 
-- **显式命令**：输入 `/ceyuan2` 或 `/策划`，或直接说「用策元」。
+- **显式命令**：输入 `/ceyuan2` 或 `/策划`，或直接说「用策元2」。
 - **自然语言**：直接说活动需求，自动命中——「帮我策划一场新品发布会」「我们公司年会想做得不一样」「下个月有个招商会」。
 
-> **验证装好了**：说一句「用策元帮我策划个 XX」，如果它开始反问你「真实动机是什么」「钱从哪来、谁付钱」，而不是直接丢模板，就说明装好了。
+> **验证装好了**：说一句「用策元2帮我策划个 XX」，如果它开始反问你「真实动机是什么」「钱从哪来、谁付钱」，而不是直接丢模板，就说明装好了。
 
 <a id="zh-keywords"></a>
 ## 关键词
@@ -258,11 +258,11 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 ```
 You: Help me plan our company's annual gala
-Ceyuan: First question — what's the main goal? Keep employees happy, or show results to the boss?
+Ceyuan2: First question — what's the main goal? Keep employees happy, or show results to the boss?
 You: Mostly to relax everyone, and recognize top performers
-Ceyuan: Who pays? Roughly what budget?
+Ceyuan2: Who pays? Roughly what budget?
 You: Admin budget, about 50k RMB
-Ceyuan: Got it, that's a lightweight event. I'll start with 3 directions, not a 50-page plan...
+Ceyuan2: Got it, that's a lightweight event. I'll start with 3 directions, not a 50-page plan...
 ```
 
 > The one-liner: **it doesn't write the plan for you — it spars with you. The clearer you get, the sharper it gets.**
@@ -271,7 +271,7 @@ Ceyuan: Got it, that's a lightweight event. I'll start with 3 directions, not a 
 
 ## Table of Contents
 
-- [What is Ceyuan](#en-what)
+- [What is Ceyuan2](#en-what)
 - [Why it's different](#en-why)
 - [The 5-step pipeline](#en-pipeline)
 - [Core mechanisms](#en-mechanisms)
@@ -282,24 +282,24 @@ Ceyuan: Got it, that's a lightweight event. I'll start with 3 directions, not a 
 - [License](#en-license)
 
 <a id="en-what"></a>
-## What is Ceyuan
+## What is Ceyuan2
 
-Ceyuan is a **creative-sparring AI Skill** — it doesn't brainstorm for you, it spars with you, forcing a vague request into a deliverable event plan. It covers not only consumer-facing events (product launches, annual galas, pop-ups, dealer conferences) but also easily-overlooked non-consumer ones: groundbreaking ceremonies, campus recruiting talks, crisis PR, and government-business investment roadshows.
+Ceyuan2 is a **creative-sparring AI Skill** — it doesn't brainstorm for you, it spars with you, forcing a vague request into a deliverable event plan. It covers not only consumer-facing events (product launches, annual galas, pop-ups, dealer conferences) but also easily-overlooked non-consumer ones: groundbreaking ceremonies, campus recruiting talks, crisis PR, and government-business investment roadshows.
 
 It answers not "how to make the event fun", but "**what business goal this event is really for, how many dimensions it covers, what psychology it triggers, and how success is measured**" — then adversarially sharpens your idea until it survives attack.
 
 <a id="en-why"></a>
 ## Why it's different
 
-Most planning tools are either **template-fillers** or **one-shot Q&A generators**. Ceyuan is the third kind — a **sparring partner that gets creativity**:
+Most planning tools are either **template-fillers** or **one-shot Q&A generators**. Ceyuan2 is the third kind — a **sparring partner that gets creativity**:
 
-1. **Your inspiration, Ceyuan's job to force it out (a sparring partner, not a generator)** — it doesn't brainstorm for you, it spars with you. Every idea gets tested before it ships, instead of dumping a "this AI thought it was cool" plan on you.
+1. **Your inspiration, Ceyuan2's job to force it out (a sparring partner, not a generator)** — it doesn't brainstorm for you, it spars with you. Every idea gets tested before it ships, instead of dumping a "this AI thought it was cool" plan on you.
 2. **Divergence is multiplication, not addition (the cross-network engine)** — idea = anchor × variable domains. Lock the event anchor (launch = suspense, pop-up = scarcity), pull elements in real time from six domains (hot topic / culture / emotion / cross-industry / senses / conflict), and collide them via "graft / dual-domain collision / triple-domain impact" into N×M counter-intuitive combos — not a linear list of N directions.
 3. **Divergence and convergence are strictly separated (labeling too early kills ideas)** — during divergence, ideas fly free (only "core concept + why it's interesting"); dimension and derivation-path labels are all postponed to the convergence stage. Labeling too early = handcuffs on the idea.
 4. **Start with 3 sharp ideas, no hard quota (quality first)** — cross out 10–20 candidates, keep the 3–5 most counter-intuitive. 3 deep ones beat 10 mediocre ones.
 5. **An event is a means, not an end (first-principles)** — a "product launch" driven by fundraising vs. sales-channel stocking are two different species. Dig out the real motive with 5 Whys before choosing a format. Wrong motive → wrong everything.
 6. **Attack to fix, not to kill (Red Team + Steelman)** — 15 attack angles run through, but each attack's default landing is "how to make it feasible" (a fix, a plan B, a downgrade), not a death sentence. The most creative idea is always the least landable at first glance — the review is there to *repair* it into something landable, not to kill it.
-7. **Concrete content is generated dynamically, not stacked in lists** — industries, event types, and execution modules are generated on the fly by "dynamic judgment + search"; hard-coded lists are just fast lanes, never the fallback. Ceyuan adds *methods*, not *knowledge*.
+7. **Concrete content is generated dynamically, not stacked in lists** — industries, event types, and execution modules are generated on the fly by "dynamic judgment + search"; hard-coded lists are just fast lanes, never the fallback. Ceyuan2 adds *methods*, not *knowledge*.
 
 <a id="en-pipeline"></a>
 ## The 5-step pipeline
@@ -323,7 +323,7 @@ Step 5 · Finalize    ── 7-section plan + closed-loop diagram + derivation-p
 <a id="en-mechanisms"></a>
 ## Core mechanisms
 
-Ceyuan's core is "**one multiplication engine + four foundations**" — the engine forces out creativity (the ceiling), the foundations survive attack (the floor).
+Ceyuan2's core is "**one multiplication engine + four foundations**" — the engine forces out creativity (the ceiling), the foundations survive attack (the floor).
 
 ### 🚀 Creative engine · Cross-network (the divergence master engine)
 
@@ -408,10 +408,10 @@ Then drop the whole folder into your agent's skills directory (you may keep the 
 
 Launch it either way:
 
-- **Explicit command**: type `/ceyuan2` or just say "use Ceyuan".
+- **Explicit command**: type `/ceyuan2` or just say "use Ceyuan2".
 - **Natural language**: just describe your need — "Help me plan a product launch", "Make our annual gala different", "Plan a dealer conference next month".
 
-> **Verify it works**: say "use Ceyuan to plan an XX" — if it starts asking about your real motive and "who pays, where the money comes from" instead of dumping a template, it's installed correctly.
+> **Verify it works**: say "use Ceyuan2 to plan an XX" — if it starts asking about your real motive and "who pays, where the money comes from" instead of dumping a template, it's installed correctly.
 
 <a id="en-keywords"></a>
 ## Search keywords
