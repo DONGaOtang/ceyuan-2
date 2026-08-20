@@ -175,19 +175,19 @@ references/
 **方式一 · git clone**：
 
 ```bash
-git clone https://github.com/DONGaOtang/ceyuan-skill.git
+git clone https://github.com/DONGaOtang/ceyuan-2.git
 ```
 
 **方式二 · 下载 ZIP**：仓库主页 → Code → Download ZIP，解压即可。
 
-然后把整个文件夹放进你 Agent 的 skills 目录，**文件夹名可保留 `ceyuan-skill`**：
+然后把整个文件夹放进你 Agent 的 skills 目录，**文件夹名可保留 `ceyuan-2`**：
 
 | Agent | 安装路径 |
 |---|---|
-| WorkBuddy | `~/.workbuddy/skills/ceyuan-skill/` |
-| Claude Code | `~/.claude/skills/ceyuan-skill/` |
-| Codex | `~/.codex/skills/ceyuan-skill/` |
-| 通用 Agents | `~/.agents/skills/ceyuan-skill/` |
+| WorkBuddy | `~/.workbuddy/skills/ceyuan-2/` |
+| Claude Code | `~/.claude/skills/ceyuan-2/` |
+| Codex | `~/.codex/skills/ceyuan-2/` |
+| 通用 Agents | `~/.agents/skills/ceyuan-2/` |
 
 > **注意**：`SKILL.md` 必须留在根目录，`references/` 子目录和里面 10 个文件原样保留，别改文件名、别改目录结构。
 
@@ -388,19 +388,19 @@ references/
 **Option 1 · git clone**:
 
 ```bash
-git clone https://github.com/DONGaOtang/ceyuan-skill.git
+git clone https://github.com/DONGaOtang/ceyuan-2.git
 ```
 
 **Option 2 · Download ZIP**: repo page → Code → Download ZIP, then extract.
 
-Then drop the whole folder into your agent's skills directory (you may keep the folder name `ceyuan-skill`):
+Then drop the whole folder into your agent's skills directory (you may keep the folder name `ceyuan-2`):
 
 | Agent | Install path |
 |---|---|
-| WorkBuddy | `~/.workbuddy/skills/ceyuan-skill/` |
-| Claude Code | `~/.claude/skills/ceyuan-skill/` |
-| Codex | `~/.codex/skills/ceyuan-skill/` |
-| Generic Agents | `~/.agents/skills/ceyuan-skill/` |
+| WorkBuddy | `~/.workbuddy/skills/ceyuan-2/` |
+| Claude Code | `~/.claude/skills/ceyuan-2/` |
+| Codex | `~/.codex/skills/ceyuan-2/` |
+| Generic Agents | `~/.agents/skills/ceyuan-2/` |
 
 > **Note**: keep `SKILL.md` at the root and the 10 files under `references/` untouched — don't rename or restructure them.
 
