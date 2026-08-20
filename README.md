@@ -195,7 +195,7 @@ git clone https://github.com/DONGaOtang/ceyuan-skill.git
 
 装好后，两种方式启动：
 
-- **显式命令**：输入 `/ceyuan` 或 `/策划`，或直接说「用策元」。
+- **显式命令**：输入 `/ceyuan2` 或 `/策划`，或直接说「用策元」。
 - **自然语言**：直接说活动需求，自动命中——「帮我策划一场新品发布会」「我们公司年会想做得不一样」「下个月有个招商会」。
 
 > **验证装好了**：说一句「用策元帮我策划个 XX」，如果它开始反问你「真实动机是什么」「钱从哪来、谁付钱」，而不是直接丢模板，就说明装好了。
@@ -408,7 +408,7 @@ Then drop the whole folder into your agent's skills directory (you may keep the 
 
 Launch it either way:
 
-- **Explicit command**: type `/ceyuan` or just say "use Ceyuan".
+- **Explicit command**: type `/ceyuan2` or just say "use Ceyuan".
 - **Natural language**: just describe your need — "Help me plan a product launch", "Make our annual gala different", "Plan a dealer conference next month".
 
 > **Verify it works**: say "use Ceyuan to plan an XX" — if it starts asking about your real motive and "who pays, where the money comes from" instead of dumping a template, it's installed correctly.
