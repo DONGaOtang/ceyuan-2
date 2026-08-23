@@ -1,438 +1,327 @@
-# 策元2 · Ceyuan2
+# 策元2 Ceyuan2
 
-**活动策划方案生成器 · Event Planning Skill**
+> 一个给活动策划用的 AI Skill。它不会一上来套模板，而是先帮你把需求问清楚，再一步步生成能落地、能解释、能被老板或客户质疑后仍站得住的活动方案。
 
-> **灵感是你的，策元2负责把它逼出来、打磨到扛得住攻击。** 不替你想创意，陪你过招。
-> **Your inspiration, Ceyuan2's job is to force it out and sharpen it until it survives attack.** It doesn't brainstorm for you — it spars with you.
+![策元2从扩散到收口的活动策划 OS](assets/ceyuan2-skill-scope-map.png)
 
-<details open>
-<summary><strong>🇨🇳 中文文档</strong></summary>
+## 先说人话：它到底是干什么的？
 
-## 🚀 小白 30 秒上手
+你可以把策元2理解成一个“活动策划总监陪练”。
 
-**就三步：装 → 说 → 答。**
+普通 AI 经常这样做：
 
-**① 装**：把整个文件夹下载下来，放进你 AI 工具的 `skills` 目录（路径见下方「怎么用」）。
+```text
+你：帮我做一个发布会方案
+AI：好的，以下是发布会流程：签到、领导致辞、产品介绍、互动抽奖、合影……
+```
 
-**② 说**：直接说人话就行——
+这类答案看起来完整，但经常没用。因为它没弄清楚几个关键问题：
 
-- 「帮我策划一场新品发布会」
-- 「公司年会想做得不一样」
-- 「下个月有个招商会」
+- 这场活动到底是为了卖货、融资、招商、造势、维系关系，还是给内部汇报？
+- 谁掏钱？谁拍板？谁到场？谁会反对？
+- 活动成功到底看什么？到场人数、线索、订单、媒体曝光、领导满意，还是长期品牌资产？
+- 创意只是换个主题包装，还是改变了用户行为？
+- 方案被老板、客户、赞助商、政府、执行团队质疑时，能不能扛住？
 
-**③ 答**：它不会直接甩你一份方案，会反过来问你几个问题，照着答就行。**答不上就说「不知道」，它不会卡住。**
+策元2做的事，就是把这些问题提前拆开，然后再写方案。
 
-**它会问你什么（就这 3 类，别慌）：**
+## 适合谁用？
 
-| 它问 | 为什么问 | 答不上怎么办 |
+适合：
+
+- 市场、品牌、公关、新媒体、运营、销售支持团队
+- 需要写活动方案、发布会方案、招商会方案、年会方案、峰会论坛方案的人
+- 乙方策划、广告公司、活动公司、咨询顾问
+- 想把“有个想法”变成“能上交方案”的人
+
+不太适合：
+
+- 只想 10 秒钟拿一份通用模板的人
+- 完全不愿意回答背景信息的人
+- 已经确定只要照搬旧活动流程，不想重新判断目标的人
+
+## 它能做哪些活动？
+
+它不只做热闹的 To C 活动，也覆盖很多容易被模板忽略的场景。
+
+| 类型 | 例子 | 它重点解决什么 |
 |---|---|---|
-| 为什么要办这个活动？ | 动机决定方案——「募资」和「卖货」是两种完全不同的发布会 | 说「不清楚」，它按最可能的先走 |
-| 钱谁出、预算大概多少？ | 决定做多大、做多重 | 说「没定」，它按轻量版先做 |
-| 你手上有啥现成的？（私域、会员、上次活动数据） | 这些它搜不到，只有你知道 | 说「没有」，它标出来再想办法 |
+| 品牌与传播 | 新品发布会、快闪、市集、品牌周年庆 | 怎么让活动有记忆点、传播点、可解释的创意机制 |
+| 销售与招商 | 招商会、经销商大会、展会、品鉴会 | 怎么把活动接到线索、跟进、成交和 CRM 回填 |
+| 内部活动 | 年会、团建、表彰会、内部文化活动 | 怎么避免流程化、尴尬化、只剩领导讲话 |
+| 政企与仪式 | 开工仪式、揭牌仪式、政企推介会 | 怎么处理身份、秩序、合规、审美风险 |
+| 内容型 campaign | 小红书/抖音/视频号活动、UGC 征集、线上线下联动 | 怎么把内容机制和活动机制连起来 |
+| 高端私域 | 私享会、高端客户答谢、金融/医疗/艺术文化活动 | 怎么避免廉价感、冒犯感和身份错位 |
 
-**你会得到什么：**
+## 零基础 3 分钟上手
 
-- 一份能落地的方案（含预算表、时间线、物料清单，导出 .docx）
-- 先出 3 个创意方向，你选一个，它帮你打磨到扛得住质疑
+### 第一步：安装
 
-**你会面临什么（提前打预防针）：**
-
-1. **它会反问你，不是一键出稿** —— 你可能觉得「怎么还问我」。这正是它和模板的区别：问清楚动机和预算，方案才不跑偏。你就当跟一个靠谱的策划在聊天。
-2. **每一步会停下来等你点头** —— 它出一步，你看一眼说「行」或「改」，才往下走。所以不会出现「跑偏了才后悔」。
-3. **需要你提供点内部信息** —— 谁付钱、上次活动数据这些它搜不到。答不上也没事，说「没有」，它标出来，不会死磕。
-
-**一个真实对话，感受一下：**
-
-```
-你：帮我策划个公司年会
-策元2：先问一句——这次年会主要想达成什么？让员工开心、还是给领导看成果？
-你：主要是让大家放松，顺便表彰优秀员工
-策元2：钱谁出？大概预算多少？
-你：行政预算，5 万左右
-策元2：明白了，这是轻量活动。我先给你 3 个方向，不直接甩 50 页方案……
-```
-
-> 核心就一句：**它不是替你写方案，是陪你过招——你越说越清楚，它越做越准。**
-
----
-
-## 目录
-
-- [策元2是什么](#zh-what)
-- [为什么不一样](#zh-why)
-- [五步流程](#zh-pipeline)
-- [核心机制](#zh-mechanisms)
-- [五条铁律](#zh-rules)
-- [文件结构](#zh-structure)
-- [怎么用](#zh-usage)
-- [关键词](#zh-keywords)
-- [许可](#zh-license)
-
-<a id="zh-what"></a>
-## 策元2是什么
-
-策元2是一个**「创意陪练」型 AI Skill**——不替你想创意，陪你过招，把一句模糊需求逼成可落地的活动方案。它覆盖的不只是发布会、年会、快闪、招商会这些消费端活动，还包括开工仪式、校招宣讲、危机公关、政企招商这些容易被忽略的非消费端活动。
-
-它回答的不是「这个活动怎么做得热闹」，而是「这个活动**本质上要达成什么商业目的、覆盖几个维度、踩中什么心理、怎么衡量才算成功**」——然后用对抗式审查把你的创意打磨到扛得住攻击。
-
-<a id="zh-why"></a>
-## 为什么不一样
-
-市面上的策划工具大多是两种：**模板填空**（给你一堆方案模板自己填）和**一问一答**（丢一个需求吐一份方案）。策元2是第三种——一个**懂创意的陪练**：
-
-1. **灵感是你的，策元2负责逼出来（陪练，不是生成器）** — 不替你脑暴，陪你过招。每个想法都过一轮测试再出手，而不是丢给你一份「AI 觉得不错」的方案。
-2. **发散是乘法，不是加法（交叉网络引擎）** — 创意 = 锚点 × 可变域。锁定活动锚点（发布会=悬念、快闪=稀缺），从热点 / 文化 / 情绪 / 跨界 / 感官 / 冲突六个可变域实时调取要素，用「嫁接 / 双域碰撞 / 三域撞击」撞出 N×M 个反直觉组合——而不是线性列 N 个方向。
-3. **发散和收敛彻底分开（过早贴标签会压死创意）** — 发散时创意自由飞（只给「核心概念 + 为什么有意思」），维度、推导路径这些标签全部后置到收敛阶段。过早贴标签 = 给创意套枷锁，创意点会死。
-4. **先出 3 个锐利的，不设数量死限（质量优先）** — 交叉出 10–20 个候选，挑最反直觉的 3–5 个。3 个扎得深的，胜过 10 个平庸的。
-5. **活动是手段，不是目的（第一性原理）** — 同是「发布会」，动机是「募资」还是「卖货」，方案是两种物种。先用 5 Whys 挖出真实动机，再决定形式。动机错了，后面全错。
-6. **攻击是修，不是杀（Red Team + Steelman）** — 15 个攻击角度逐条过，但每条攻击的默认落点是「怎么让它可行」（给修法、给预案、给降级版），不是判它死。最有创意的想法第一眼永远最不可落地，对抗是把它修成能落地，不是把它杀了。
-7. **具体内容动态生成，不靠堆清单** — 行业、活动类型、执行环节都是「动态判断 + 搜索」现场生成的，硬编码清单只是快速通道，不是兜底。策元2补的是「方法」，不是「知识」。
-
-<a id="zh-pipeline"></a>
-## 五步流程
-
-每一步产出都必须过一轮对抗式审查，且必须等你确认才进入下一步。入口先按预算、受众、合规三个信号做**复杂度分级**——团建（L1）走精简流程，发布会（L2）走完整五步，峰会（L3）再加完整检索，不会给 30 分钟的团建套 300 万发布会的流程。
-
-```
-Step 1 · 拆解 ── 5 Whys 挖动机 + 七状态拆维度 + 问信息矿 + 钱流/合规 + 字段表
-Step 2 · 重建 ── 第一性原理定目标 + 四层传导链判据（含主判据）
-Step 3 · 发散 ── 交叉网络乘法引擎（锚点 × 6 可变域）→ 创意闪卡 + 待验证假设
-Step 4 · 对抗 ── Steelman + 15 攻击角度 + 判词规则 → 根本缺陷 + 实验判据
-Step 5 · 成型 ── 方案结构 + 闭环图 + 实验计划 + 推导路径验证 + docx
-```
-
-- **拆解**：用 5 Whys 把「表面需求」和「真实动机」分开（钱 / 权 / 关系 / 怕）；按七状态拆「办成什么」；主动问用户手上的独家资源（私域流量、会员数、上次复盘数据）；**必问钱流**（谁付钱、收入怎么构成、盈亏粗算）和**合规边界**（报批/消防/许可，一阶约束提前问）；再把需求拆成字段表，标出哪些是「假硬约束」可挑战。
-- **重建**：抛开「同类活动怎么做」，回到第一性原理定目标；判据按「四层传导链 × 四维测量」定，标出主判据落在哪层。
-- **发散（先自由发散，后收敛标注）**：先跑**交叉网络**——锁定活动锚点，从热点 / 文化 / 情绪 / 跨界 / 感官 / 冲突六个可变域实时调取要素，用「嫁接 / 双域碰撞 / 三域撞击」撞出反直觉候选，挑最反直觉的 3–5 个；每个创意只给「一句核心概念 + 一句为什么有意思」，同时标出「待验证假设 + 最小实验」；发散完再贴维度、推导路径标签，标签后置、不污染发散。
-- **对抗**：Steelman 先行，15 个攻击角度逐条过（含「推导路径定位错了没」），**判词规则——攻击是修不是杀**（默认落点「怎么让它可行」，只有攻击 13 才能判「别办了」），收敛出「一戳就塌」的根本缺陷；对依赖用户反应的缺陷补实验判据。
-- **成型**：按方案骨架输出完整方案（Big Idea → 传导链判据 → 体验 → 传播 → 实验计划 → 执行 → 风险 → 评估）+ 四层闭环图 + 推导路径验证，过 QA / 实验验证 / 合规 / 算术自检，导出 docx。
-
-<a id="zh-mechanisms"></a>
-## 核心机制
-
-策元2的内核是「**一个乘法引擎 + 四块地基**」——引擎负责逼出创意（天花板），地基负责扛住攻击（地板）。
-
-### 🚀 创意引擎 · 交叉网络（发散总引擎）
-
-```
-创意 = 锚点 × 可变域 → 反直觉组合
-```
-
-- **锚点域（1 个，不变）**：活动的核心元素——发布会=悬念、快闪=稀缺、答谢会=专属、招商会=信任、年会=归属。
-- **可变域（6 个，动态生成，不硬编码）**：H 热点（及时性）/ C 文化（共鸣）/ E 情绪（底层）/ X 跨界（借机制）/ S 感官（五感）/ T 冲突（张力）。
-- **交叉算子（3 种）**：① 嫁接（把外部要素焊到锚点上）② 双域碰撞（锚点 × 任一变域）③ 三域撞击（锚点 × 两个变域，撞出「只有这个组合才有」的创意）。
-- **产出**：交叉出 10–20 个候选，挑最反直觉的 3–5 个，只给「一句核心概念 + 一句为什么有意思」，不做评判（评判交给 Step 4）。
-- **热点借势铁律**：借势，不是蹭——提取热点背后的「情绪」当燃料，不贴热点标签（「塌房」→ 提取「对真诚的渴望」，而不是蹭明星名字）。
-
-> 横纵分析（产素材）、心理机制推理卡（产情绪）、跨界移植（产机制）不是并列动作，而是交叉网络的**输入**——分别喂进 H/C 域、E 域、X 域。发散时先跑交叉网络，缺哪个域再回头调对应方法。
-
-### 🧱 地基 · 四样完备性机制
-
-**1. 横纵分析（贯穿全流程的元拆解方法）** — 纵向追「时间演变」、横向切「同期截面」，Step 1 拆需求、Step 2 拆目标、Step 3 拆创意、Step 5 拆环节都能挂载，按需不强制；拆解对象由活动类型决定，不是通用清单硬套。
-
-**2. 四维推导轴（清单会漏，推导轴不会）** — `七状态目的 × 两层对象 × 五形态 × 时空`。七状态里「身份」（剪彩揭牌）和「生理能力」（体检培训）是常见清单漏掉的；公益/环保的参与者与受益者分离。任何活动都能落进这四维，推导不出来说明它不是「活动」或轴又漏了。
-
-**3. 需求维度完整性（动机不够，维度才完整）** — 动机只答「为什么办」，还要拆「办成什么、为谁办、承担几个功能」。奥莱只盯「促销」一个显眼维度，把「整体演绎」挤掉了。**显眼维度 ≠ 唯一维度。**
-
-**4. 指标传导模型（判据是链，不是并列 KPI）** — `投入层 → 中间指标层 → 结果指标层 → 长线资产层`，每层按「数量/质量/效率/成本」四维枚举。每份方案产出一张闭环图，活动后逐层回填「目标 vs 实际」，**断在哪层，下次就补哪层**。
-
-**5. 实验验证层（防止自以为对）** — `假设 → 版本 → 实验 → 数据 → 选择 → 回填`。Red Team 证明方案逻辑不蠢，实验验证证明真实世界有没有反应。严格 AB 测试只是其中一种；样本不足时用邀约话术、海报标题、私域小样本、销售预演、现场彩排做方向性预检。
-
-<a id="zh-rules"></a>
-## 五条铁律
-
-不可违反的底线：
-
-1. **拆到底**：只信不可再拆的事实，行业惯例/预算/形式默认可挑战。
-2. **先立后破**：审查前先 steelman 成最强版，禁止打稻草人。
-3. **你不点头，不往下走**：每步产出后强制暂停，等确认。
-4. **信息横纵双轴地拿**：纵向追时间，横向切截面，一手来源优先，信息不足就补搜，绝不编造。
-5. **能力优先**：按能力检索本地 Skill 增强，检索不到就内置兜底，绝不断链。
-
-<a id="zh-structure"></a>
-## 文件结构
-
-一个主文件 + 11 个引用文件，按需加载，读到哪段停哪段：
-
-```
-SKILL.md                     # 主流程：五步 + 五条铁律 + 复杂度分级 + 数据流图
-references/
-├── creative-inputs.md        # 交叉网络（发散总引擎）+ 5 Whys + 横纵分析 + 心理推理卡 + 跨界移植
-├── axes.md                   # 四维推导轴（七状态 × 两层对象 × 五形态 × 时空）
-├── dimensions.md             # 需求维度完整性清单（三轴防角度缺失）
-├── metrics-flow.md           # 指标传导模型 + 闭环图 + 回填规则
-├── experiment-validation.md   # AB 测试 + 最小预检 + 实验结论回填
-├── event-types.md            # 活动类型清单（10 大类 + 案例锚点）
-├── industries.md             # 16 行业要点（调性/雷区/预算/合规/标准模块，示例快速通道 + 动态判断）
-├── adversarial.md            # 对抗审查规则 + 15 攻击角度
-├── proposal-schema.md        # 方案结构模板 + 实验计划 + 闭环图 + 推导路径验证
-├── search-paths.md           # 检索路径库（含非消费端垂直源）
-└── skill-routing.md          # 能力检索增强表
-```
-
-<a id="zh-usage"></a>
-## 怎么用
-
-### 安装
-
-**方式一 · git clone**：
+方式一，使用 Git：
 
 ```bash
 git clone https://github.com/DONGaOtang/ceyuan-2.git
 ```
 
-**方式二 · 下载 ZIP**：仓库主页 → Code → Download ZIP，解压即可。
+方式二，直接下载：
 
-然后把整个文件夹放进你 Agent 的 skills 目录，**文件夹名可保留 `ceyuan-2`**：
+打开仓库页面，点击 `Code`，选择 `Download ZIP`，解压。
 
-| Agent | 安装路径 |
+然后把整个文件夹放到你的 Agent skills 目录里。
+
+| 工具 | 推荐路径 |
 |---|---|
-| WorkBuddy | `~/.workbuddy/skills/ceyuan-2/` |
-| Claude Code | `~/.claude/skills/ceyuan-2/` |
 | Codex | `~/.codex/skills/ceyuan-2/` |
+| Claude Code | `~/.claude/skills/ceyuan-2/` |
+| WorkBuddy | `~/.workbuddy/skills/ceyuan-2/` |
 | 通用 Agents | `~/.agents/skills/ceyuan-2/` |
 
-> **注意**：`SKILL.md` 必须留在根目录，`references/` 子目录和里面 10 个文件原样保留，别改文件名、别改目录结构。
+关键点只有两个：
 
-### 启动
+- `SKILL.md` 必须在文件夹根目录。
+- `references/` 文件夹必须一起保留，不要只复制 `SKILL.md`。
 
-装好后，两种方式启动：
+### 第二步：启动
 
-- **显式命令**：输入 `/ceyuan2` 或 `/策划`，或直接说「用策元2」。
-- **自然语言**：直接说活动需求，自动命中——「帮我策划一场新品发布会」「我们公司年会想做得不一样」「下个月有个招商会」。
+你可以直接说：
 
-> **验证装好了**：说一句「用策元2帮我策划个 XX」，如果它开始反问你「真实动机是什么」「钱从哪来、谁付钱」，而不是直接丢模板，就说明装好了。
+```text
+用策元2，帮我策划一场新品发布会
+```
 
-<a id="zh-keywords"></a>
+也可以更简单：
+
+```text
+帮我做一个公司年会方案
+```
+
+只要你的需求里有“活动、策划、方案、发布会、年会、招商会、快闪、峰会、campaign”等信号，它就应该被触发。
+
+### 第三步：回答问题
+
+它不会立刻甩给你一份 50 页方案，而是先问你一些问题。别怕，答不上就说“不知道”。
+
+| 它会问 | 为什么必须问 | 你可以怎么答 |
+|---|---|---|
+| 为什么要办这场活动？ | 动机错了，方案全错。卖货和招商不是同一种活动。 | “主要想拿销售线索”“老板想做品牌声量”“其实是客户关系维护” |
+| 谁付钱？预算多少？ | 预算决定方案体量，也决定哪些创意不能装。 | “预算还没定，先按 10 万以内想”“甲方出钱，但供应商要赞助” |
+| 给谁看？谁拍板？ | 给老板、客户、政府、用户看的方案，写法完全不同。 | “先给老板过会”“要拿去竞标”“给内部执行团队用” |
+| 有什么内部资源？ | 私域、会员、销售名单、老客户、场地资源，AI 搜不到。 | “有 3000 个会员”“销售有 200 个重点客户名单”“没有现成资源” |
+| 有没有不能碰的东西？ | 合规、品牌禁区、审美风险，晚发现就返工。 | “不能太网红”“不能提价格战”“政府领导会到场” |
+
+## 第一次怎么问？直接复制这些
+
+如果你什么都没准备，用这个：
+
+```text
+用策元2帮我策划一场活动。
+我现在只有一个模糊想法：{写你的活动想法}。
+请先不要直接写完整方案，先问我必须补充的信息。
+```
+
+如果你要给老板看，用这个：
+
+```text
+用策元2做一份能给老板过会的活动方案。
+活动类型：{发布会/年会/招商会/峰会/快闪等}
+目标：{你认为的目标，不确定也可以写不确定}
+预算：{大概预算}
+时间地点：{已知信息}
+请先判断这是什么局，再给我方案结构。
+```
+
+如果你是乙方，要提案或竞标，用这个：
+
+```text
+用策元2帮我做乙方提案。
+客户背景：{客户是谁}
+项目需求：{客户原话}
+竞争情况：{是否比稿/竞标/已有供应商}
+预算和交付：{已知信息}
+请先拆解甲方真实动机、决策人关注点和提案风险。
+```
+
+如果你要做新媒体 campaign，用这个：
+
+```text
+用策元2策划一个线上线下联动 campaign。
+品牌/产品：{是什么}
+目标人群：{谁}
+平台：{小红书/抖音/视频号/B站/私域等}
+目标：{曝光/报名/线索/成交/UGC/品牌认知}
+请先给我活动机制，不要只写内容选题。
+```
+
+## 它的工作流程
+
+策元2不是“写方案机器”，而是一个从混乱到收口的流程。
+
+![策元2完整流程图](assets/ceyuan2-skill-full-flow-mindmap.png)
+
+简单说，它会走 7 个阶段：
+
+| 阶段 | 它在做什么 | 你会看到什么 |
+|---|---|---|
+| Step 0 判局分流 | 先判断这是甲方自用、乙方提案、To C、To B、To G、内部活动还是 campaign | 分流判断表、主路由、风险预判 |
+| Step 1 拆 Brief | 把模糊需求拆成真实动机、受众、资源、钱流、合规和创意禁区 | 需求字段表、缺失信息清单 |
+| Step 2 建目标 | 把“办得好”改成可衡量目标 | 主判据、辅助指标、四层指标链 |
+| Step 3 发散创意 | 用交叉网络生成多个不落俗套的方向 | 3 到 5 张创意闪卡 |
+| Step 3.5 反陈旧审查 | 检查创意是不是只换皮、不换机制 | 陈旧风险、审美风险、身份错位风险 |
+| Step 4 Red Team 对抗 | 先把创意说到最强，再攻击它 | 根本缺陷、修法、降级方案 |
+| Step 5/6 成案与终审 | 写成能上交的方案，并模拟老板/客户打回 | 完整方案、预算、时间线、风险、终审意见 |
+
+## 一个极简例子
+
+输入：
+
+```text
+帮我策划一个 5 万预算的公司年会，100 人左右，不想太无聊。
+```
+
+普通模板可能会给：
+
+```text
+签到入场 -> 领导致辞 -> 节目表演 -> 抽奖 -> 晚宴 -> 合影
+```
+
+策元2会先拆：
+
+| 问题 | 可能判断 |
+|---|---|
+| 这是不是“热闹”问题？ | 不一定。可能是员工疲惫、团队断层、优秀员工缺少被看见。 |
+| 100 人、5 万预算意味着什么？ | 不适合大舞美，适合小机制、高参与、强记忆点。 |
+| 成功怎么看？ | 到场率、参与率、员工内容产出、优秀员工被记住、活动后满意度。 |
+| 创意不能只是什么？ | 不能只是换主题色、换口号、换主持词。 |
+
+然后它可能给 3 个方向：
+
+| 方向 | 核心概念 | 为什么不是普通年会 |
+|---|---|---|
+| 公司小史馆 | 每个团队贡献一个“今年最有代表性物件” | 把成果从 PPT 变成可触摸的共同记忆 |
+| 反向颁奖礼 | 员工提名那些平时没人看见但真正救场的人 | 把表彰从领导视角改成同伴视角 |
+| 明年预演局 | 每组用 5 分钟演出“明年最想发生的一件事” | 把年会从总结会改成共同想象 |
+
+之后才进入对抗、预算、流程、物料、风险和执行排期。
+
+## 最终会产出什么？
+
+根据活动复杂度，它可能产出不同深度的交付件。
+
+| 交付深度 | 适合场景 | 通常包含 |
+|---|---|---|
+| 一页创意 | 你只想先拿方向 | Big Idea、目标、核心机制、传播钩子 |
+| 标准方案 | 常规活动、内部提案 | 背景、目标、创意、流程、传播、执行、预算、风险 |
+| 全案执行版 | 大型活动、跨团队协作 | 分工表、物料表、倒排期、现场流程、供应商边界、应急预案 |
+| 竞标/招商版 | 乙方提案、赞助提案 | 客户视角、商业价值、权益设计、报价边界、验收口径 |
+
+正式方案通常会包含：
+
+- 一句话 Big Idea
+- 活动目标和成功标准
+- 受众与参与路径
+- 创意机制和现场体验
+- 传播设计
+- 实验或预检计划
+- 执行时间线
+- 人员分工
+- 物料清单
+- 预算表
+- 风险预案
+- 复盘指标
+- 待确认事项
+
+## 它和普通提示词有什么区别？
+
+| 普通提示词 | 策元2 |
+|---|---|
+| 直接生成方案 | 先判局，再生成 |
+| 容易套模板 | 有反陈旧审查 |
+| 只问活动类型 | 会问钱流、资源、决策人、合规边界 |
+| 创意靠灵感 | 用“锚点 × 热点/文化/情绪/跨界/感官/冲突”生成 |
+| 方案看起来完整 | 会模拟质疑，把根本缺陷打出来 |
+| 活动结束就结束 | 要求指标回填和案例库回流 |
+
+## 文件结构
+
+你不需要一开始读懂所有文件。零基础只要记住：
+
+- `SKILL.md` 是入口，相当于总导演。
+- `references/` 是工具箱，相当于不同专家的工作手册。
+- README 是给人看的说明书，不参与实际运行。
+
+```text
+ceyuan-2/
+├── README.md
+├── SKILL.md
+├── LICENSE
+├── assets/
+│   ├── ceyuan2-skill-scope-map.png
+│   └── ceyuan2-skill-full-flow-mindmap.png
+└── references/
+    ├── triage-router.md
+    ├── ai-role-prompts.md
+    ├── creative-inputs.md
+    ├── anti-stale-creative.md
+    ├── experiment-validation.md
+    ├── proposal-schema.md
+    └── ...
+```
+
+常用参考模块：
+
+| 文件 | 作用 |
+|---|---|
+| `triage-router.md` | 判断这是什么活动局 |
+| `ai-role-prompts.md` | 让 AI 在不同阶段切换角色 |
+| `creative-inputs.md` | 生成创意方向 |
+| `anti-stale-creative.md` | 检查创意是不是陈旧模板 |
+| `experiment-validation.md` | 设计 AB 测试或低成本预检 |
+| `boardroom-proposal-schema.md` | 写能上交的正式方案 |
+| `pitch-battle.md` | 乙方竞标、比稿、招商提案 |
+| `metrics-flow.md` | 建立活动后的指标闭环 |
+
+## 常见问题
+
+### 我不会策划，可以用吗？
+
+可以。它本来就是给“脑子里有一点想法，但不知道怎么拆、怎么写、怎么上交”的人用的。你只要能回答基本事实：活动给谁看、为什么办、大概多少钱、有什么限制。
+
+### 我什么信息都没有怎么办？
+
+直接说“不知道”。策元2会把未知项标出来，并先按最可能的情况做轻量版判断。它不会因为你答不上预算就停止工作。
+
+### 它会不会问太多？
+
+会问，但不是为了折磨你。活动方案最容易翻车的地方，基本都藏在前期问题里：动机、预算、决策人、资源、合规、审美边界。少问几句，后面可能返工几十页。
+
+### 能不能让它一次性写完？
+
+可以。你可以说：
+
+```text
+用策元2直接跑完整流程，中间不要暂停。信息不足的地方请标注假设。
+```
+
+但更推荐你至少在创意方向出来后选一次。否则它可能把一个你根本不喜欢的方向打磨得很完整。
+
+### 它能导出 docx 吗？
+
+取决于你使用的 Agent 环境是否有文档生成能力。策元2会优先尝试调用本地 docx/Word 相关能力；如果环境不支持，它会先给 Markdown 版方案。
+
+### 需要联网吗？
+
+不一定。普通内部活动可以不联网。涉及行业法规、城市报批、消防、广告法、竞品案例、近期热点时，应该联网核实，不能凭印象写。
+
 ## 关键词
 
-方便检索（GitHub 搜索 / 搜索引擎 / Skill 市场）：
+活动策划、活动方案、发布会、年会、招商会、峰会论坛、快闪、市集、路演、品牌活动、新媒体 campaign、AI Skill、AI Agent、提示词工程、第一性原理、Red Team、对抗式审查、营销策划、创意陪练、指标闭环。
 
-- 中文：活动策划、活动方案、发布会、年会、路演、招商会、营销活动、线下活动、AI Agent、Skill、提示词工程、第一性原理、对抗式审查、红队、营销策划、创意陪练、横纵分析、交叉网络、指标模型、跨界移植、开工仪式、危机公关
+推荐 GitHub Topics：
 
-**推荐 GitHub Topics**（仓库主页 → 齿轮 → Topics 添加）：
-
-`event-planning` `event-marketing` `marketing` `ai-agent` `ai-skill` `prompt-engineering` `claude-skill` `workbuddy` `red-team` `first-principles` `chinese` `marketing-campaign`
-
-<a id="zh-license"></a>
-## 许可
-
-本项目采用 MIT 许可，可自由使用、修改、分发，用于商业或非商业用途。详见 `LICENSE` 文件。
-
-</details>
-
-<details>
-<summary><strong>🇬🇧 English</strong></summary>
-
-## 🚀 Quick start in 30 seconds
-
-**Three steps: Install → Ask → Answer.**
-
-**① Install**: download the whole folder and drop it into your agent's `skills` directory (paths below).
-
-**② Ask**: just talk normally —
-
-- "Help me plan a product launch"
-- "Make our annual gala different"
-- "Plan a dealer conference next month"
-
-**③ Answer**: it won't dump a plan on you — it'll ask a few questions back. Just answer as best you can. **Don't know? Say "I don't know" — it won't get stuck.**
-
-**What it'll ask (just these 3, don't panic):**
-
-| It asks | Why | If you don't know |
-|---|---|---|
-| Why hold this event? | Motive decides the plan — "fundraising" vs. "selling" are two different launches | Say "unclear", it proceeds on the most likely one |
-| Who pays? Roughly how much? | Decides scale and depth | Say "undecided", it does a lightweight version first |
-| What do you already have? (private traffic, members, last-event data) | Things it can't search, only you know | Say "none", it flags it and works around it |
-
-**What you'll get:**
-
-- A landable plan (budget table, timeline, materials list, exported to .docx)
-- 3 creative directions first — you pick one, it sharpens it until it survives scrutiny
-
-**What to expect (heads-up):**
-
-1. **It asks back, it's not one-click** — you might think "why is it asking me". That's the difference from templates: motive and budget clarified, the plan won't drift. Treat it like chatting with a solid planner.
-2. **It pauses at each step for your nod** — it outputs a step, you glance and say "ok" or "change", then it moves on. So no "I regret it after it drifted".
-3. **It needs a bit of inside info** — who pays, last-event data, things it can't search. Don't have it? Say "none", it flags it, won't nag.
-
-**A real exchange, to feel it:**
-
-```
-You: Help me plan our company's annual gala
-Ceyuan2: First question — what's the main goal? Keep employees happy, or show results to the boss?
-You: Mostly to relax everyone, and recognize top performers
-Ceyuan2: Who pays? Roughly what budget?
-You: Admin budget, about 50k RMB
-Ceyuan2: Got it, that's a lightweight event. I'll start with 3 directions, not a 50-page plan...
+```text
+event-planning event-marketing marketing-campaign ai-agent ai-skill prompt-engineering red-team first-principles chinese
 ```
 
-> The one-liner: **it doesn't write the plan for you — it spars with you. The clearer you get, the sharper it gets.**
-
----
-
-## Table of Contents
-
-- [What is Ceyuan2](#en-what)
-- [Why it's different](#en-why)
-- [The 5-step pipeline](#en-pipeline)
-- [Core mechanisms](#en-mechanisms)
-- [Five iron rules](#en-rules)
-- [File structure](#en-structure)
-- [How to use](#en-usage)
-- [Search keywords](#en-keywords)
-- [License](#en-license)
-
-<a id="en-what"></a>
-## What is Ceyuan2
-
-Ceyuan2 is a **creative-sparring AI Skill** — it doesn't brainstorm for you, it spars with you, forcing a vague request into a deliverable event plan. It covers not only consumer-facing events (product launches, annual galas, pop-ups, dealer conferences) but also easily-overlooked non-consumer ones: groundbreaking ceremonies, campus recruiting talks, crisis PR, and government-business investment roadshows.
-
-It answers not "how to make the event fun", but "**what business goal this event is really for, how many dimensions it covers, what psychology it triggers, and how success is measured**" — then adversarially sharpens your idea until it survives attack.
-
-<a id="en-why"></a>
-## Why it's different
-
-Most planning tools are either **template-fillers** or **one-shot Q&A generators**. Ceyuan2 is the third kind — a **sparring partner that gets creativity**:
-
-1. **Your inspiration, Ceyuan2's job to force it out (a sparring partner, not a generator)** — it doesn't brainstorm for you, it spars with you. Every idea gets tested before it ships, instead of dumping a "this AI thought it was cool" plan on you.
-2. **Divergence is multiplication, not addition (the cross-network engine)** — idea = anchor × variable domains. Lock the event anchor (launch = suspense, pop-up = scarcity), pull elements in real time from six domains (hot topic / culture / emotion / cross-industry / senses / conflict), and collide them via "graft / dual-domain collision / triple-domain impact" into N×M counter-intuitive combos — not a linear list of N directions.
-3. **Divergence and convergence are strictly separated (labeling too early kills ideas)** — during divergence, ideas fly free (only "core concept + why it's interesting"); dimension and derivation-path labels are all postponed to the convergence stage. Labeling too early = handcuffs on the idea.
-4. **Start with 3 sharp ideas, no hard quota (quality first)** — cross out 10–20 candidates, keep the 3–5 most counter-intuitive. 3 deep ones beat 10 mediocre ones.
-5. **An event is a means, not an end (first-principles)** — a "product launch" driven by fundraising vs. sales-channel stocking are two different species. Dig out the real motive with 5 Whys before choosing a format. Wrong motive → wrong everything.
-6. **Attack to fix, not to kill (Red Team + Steelman)** — 15 attack angles run through, but each attack's default landing is "how to make it feasible" (a fix, a plan B, a downgrade), not a death sentence. The most creative idea is always the least landable at first glance — the review is there to *repair* it into something landable, not to kill it.
-7. **Concrete content is generated dynamically, not stacked in lists** — industries, event types, and execution modules are generated on the fly by "dynamic judgment + search"; hard-coded lists are just fast lanes, never the fallback. Ceyuan2 adds *methods*, not *knowledge*.
-
-<a id="en-pipeline"></a>
-## The 5-step pipeline
-
-Every step's output is adversarially reviewed and must be confirmed before moving on. At the entry, three signals (budget / audience / compliance) drive **complexity routing** — team-building (L1) uses a lean path, product launch (L2) the full pipeline, summit (L3) adds full research. A 30-minute team-building won't get a 3-million-yuan launch process.
-
-```
-Step 1 · Deconstruct ── 5 Whys + seven-state dimensions + info mine + money-flow/compliance + field table
-Step 2 · Rebuild     ── first-principles goal + four-layer conduction criteria (1 primary)
-Step 3 · Diverge     ── cross-network engine (anchor × 6 domains) → idea cards + testable hypotheses
-Step 4 · Adversarial ── Steelman + 15 attack angles + fix-not-kill rule → fatal flaw + experiment criteria
-Step 5 · Finalize    ── proposal structure + closed-loop diagram + experiment plan + derivation-path check + docx
-```
-
-- **Deconstruct**: use 5 Whys to separate "surface request" from "real motive" (money / power / relationship / fear); unpack "achieve what" via the seven states; proactively ask for the user's exclusive resources (private traffic, membership count, last-event review data); **must-ask money-flow** (who pays, how revenue is composed, rough P&L) and **compliance boundary** (permits / fire capacity / licenses — a first-order constraint); then break the request into a field table and mark which "hard constraints" are actually soft.
-- **Rebuild**: put aside "what peers do" and set the goal from first principles; define criteria on the "four-layer conduction chain × four-dimensional measurement", marking which layer the primary criterion sits on.
-- **Diverge (free divergence first, then convergence labeling)**: run the **cross-network** first — lock the anchor, pull elements from six domains (hot topic / culture / emotion / cross-industry / senses / conflict), collide them via "graft / dual-domain collision / triple-domain impact" into counter-intuitive candidates, keep the 3–5 most counter-intuitive; each idea gets only "one core concept + why it's interesting"; only after diverging do you attach dimension and derivation-path labels.
-- **Adversarial**: Steelman first, run 15 attack angles (including "is the derivation path wrong?"), apply the **fix-not-kill rule** (default landing is "how to make it feasible"; only attack #13 may judge "don't hold it"), and converge on the one fatal flaw.
-- **Finalize**: output the full plan (Big Idea → conduction criteria → experience → communication → experiment plan → execution → risk → evaluation) + a four-layer closed-loop diagram + a derivation-path check, pass QA / experiment validation / compliance / arithmetic checks, and export to docx.
-
-<a id="en-mechanisms"></a>
-## Core mechanisms
-
-Ceyuan2's core is "**one multiplication engine + four foundations**" — the engine forces out creativity (the ceiling), the foundations survive attack (the floor).
-
-### 🚀 Creative engine · Cross-network (the divergence master engine)
-
-```
-idea = anchor × variable domains → counter-intuitive combos
-```
-
-- **Anchor domain (1, fixed)**: the event's core element — launch = suspense, pop-up = scarcity, appreciation gala = exclusivity, dealer conference = trust, annual gala = belonging.
-- **Variable domains (6, generated dynamically, not hard-coded)**: H hot-topic (timeliness) / C culture (resonance) / E emotion (underlying) / X cross-industry (borrowed mechanism) / S senses (five senses) / T conflict (tension).
-- **Collision operators (3)**: ① graft (weld an external element onto the anchor) ② dual-domain collision (anchor × one domain) ③ triple-domain impact (anchor × two domains — a combo only this combination yields).
-- **Output**: cross out 10–20 candidates, keep the 3–5 most counter-intuitive, each with only "one core concept + why it's interesting", no judgment (judgment is Step 4's job).
-- **Hot-topic iron rule**: ride the trend, don't leech — extract the *emotion* behind a hot topic as fuel, don't stick the hot topic's label on it (a "scandal" → extract "the yearning for sincerity", not the celebrity's name).
-
-> Diachronic/synchronic analysis (feeds material), psychology reasoning cards (feeds emotion), and cross-industry transplant (feeds mechanism) are not parallel actions — they are the cross-network's **inputs**, feeding the H/C, E, and X domains respectively. Run the cross-network first; only pull the corresponding method when a domain is empty.
-
-### 🧱 Foundations · Four completeness mechanisms
-
-**1. Diachronic/synchronic analysis (a meta-decomposition method across the whole flow)** — diachronic tracks time-evolution, synchronic cuts the cross-section; mountable at Step 1 (requirements), Step 2 (goals), Step 3 (ideas), Step 5 (execution), on demand. *What* to decompose is decided by the event type, not a generic checklist.
-
-**2. Four-dimensional derivation axis (a list misses; an axis doesn't)** — `seven-state purpose × two-level object × five forms × space-time`. The seven states include "identity" (groundbreaking) and "physical capability" (health check-up) that common lists miss; charity/CSR separates participant from beneficiary. Any event lands in these four dimensions.
-
-**3. Demand-dimension completeness (motive isn't enough)** — motive only answers "why hold it"; also unpack "achieve what, for whom, how many functions". An outlet mall fixated on "promotion" squeezed out "overall storytelling". **The visible dimension ≠ the only dimension.**
-
-**4. Metric conduction model (criteria are a chain, not parallel KPIs)** — `input → intermediate → outcome → long-term asset`, each layer enumerated by "quantity/quality/efficiency/cost". Every plan produces a closed-loop diagram; back-fill "target vs actual" layer by layer after the event — **whichever layer broke, that's what you fix next time**.
-
-**5. Experiment validation layer (prevents self-confirming strategy)** — `hypothesis → variant → experiment → data → decision → back-fill`. Red Team proves the idea is not logically weak; experiment validation checks whether the real audience reacts. Strict A/B testing is one option; when sample size is limited, use invitation-copy tests, poster-title tests, private-community prechecks, sales rehearsals, or onsite dry runs as directional validation.
-
-<a id="en-rules"></a>
-## Five iron rules
-
-Non-negotiable:
-
-1. **Deconstruct to the bottom** — trust only irreducible facts; convention, budget, format are challengeable by default.
-2. **Steelman before you strike** — never attack a strawman.
-3. **No confirmation, no next step** — force-stop after every step.
-4. **Gather on two axes** — diachronic (time) + synchronic (cross-section), primary sources first, search more when short, never fabricate.
-5. **Capability first** — scan local skills to enhance, fall back to built-in methods when none, never break.
-
-<a id="en-structure"></a>
-## File structure
-
-One main file + 11 reference files, loaded on demand:
-
-```
-SKILL.md                     # main flow: 5 steps + 5 rules + complexity routing + data flow
-references/
-├── creative-inputs.md        # cross-network (divergence engine) + 5 Whys + diachronic/synchronic + reasoning cards + cross-industry transplant
-├── axes.md                   # four-dimensional derivation axis (7 states × 2 objects × 5 forms × space-time)
-├── dimensions.md             # demand-dimension completeness checklist
-├── metrics-flow.md           # metric conduction model + closed-loop diagram + back-fill rules
-├── experiment-validation.md   # A/B tests + minimum prechecks + experiment-learning back-fill
-├── event-types.md            # event-type playbook (10 categories + case anchors)
-├── industries.md             # 16 industry notes (tone/red flags/budget/compliance/standard modules — fast-lane examples + dynamic judgment)
-├── adversarial.md            # adversarial review rules + 15 attack angles
-├── proposal-schema.md        # proposal structure + experiment plan + closed-loop diagram + derivation-path check
-├── search-paths.md           # search-path library (incl. non-consumer vertical sources)
-└── skill-routing.md          # capability enhancement table
-```
-
-<a id="en-usage"></a>
-## How to use
-
-### Install
-
-**Option 1 · git clone**:
-
-```bash
-git clone https://github.com/DONGaOtang/ceyuan-2.git
-```
-
-**Option 2 · Download ZIP**: repo page → Code → Download ZIP, then extract.
-
-Then drop the whole folder into your agent's skills directory (you may keep the folder name `ceyuan-2`):
-
-| Agent | Install path |
-|---|---|
-| WorkBuddy | `~/.workbuddy/skills/ceyuan-2/` |
-| Claude Code | `~/.claude/skills/ceyuan-2/` |
-| Codex | `~/.codex/skills/ceyuan-2/` |
-| Generic Agents | `~/.agents/skills/ceyuan-2/` |
-
-> **Note**: keep `SKILL.md` at the root and the 10 files under `references/` untouched — don't rename or restructure them.
-
-### Launch
-
-Launch it either way:
-
-- **Explicit command**: type `/ceyuan2` or just say "use Ceyuan2".
-- **Natural language**: just describe your need — "Help me plan a product launch", "Make our annual gala different", "Plan a dealer conference next month".
-
-> **Verify it works**: say "use Ceyuan2 to plan an XX" — if it starts asking about your real motive and "who pays, where the money comes from" instead of dumping a template, it's installed correctly.
-
-<a id="en-keywords"></a>
-## Search keywords
-
-For discoverability (GitHub search / search engines / skill marketplaces):
-
-- English: event planning, event marketing, marketing campaign, event management, AI agent skill, AI skill, prompt engineering, first-principles, red team, steelman, brainstorming, Claude skill, WorkBuddy, creative sparring, cross-network, cross-industry, metrics model, KPI, event type
-
-**Recommended GitHub topics** (Repo → gear → Topics):
-
-`event-planning` `event-marketing` `marketing` `ai-agent` `ai-skill` `prompt-engineering` `claude-skill` `workbuddy` `red-team` `first-principles` `chinese` `marketing-campaign`
-
-<a id="en-license"></a>
 ## License
 
-This project is MIT licensed — free to use, modify, and distribute for commercial or non-commercial purposes. See the `LICENSE` file.
-
-</details>
+MIT License. See `LICENSE`.
