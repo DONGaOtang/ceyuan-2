@@ -1,4 +1,11 @@
 .workbuddy/
+.dsh-repair/
+.dsh-research/
+output/
+research/
+findings.md
+progress.md
+task_plan.md
 
 # 非 skill 内容（工具 / 产物，不随仓库发布）
 *.docx

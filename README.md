@@ -96,16 +96,16 @@
 ```
 Step 1 · 拆解 ── 5 Whys 挖动机 + 七状态拆维度 + 问信息矿 + 钱流/合规 + 字段表
 Step 2 · 重建 ── 第一性原理定目标 + 四层传导链判据（含主判据）
-Step 3 · 发散 ── 交叉网络乘法引擎（锚点 × 6 可变域）→ 先自由发散 → 后收敛标注
-Step 4 · 对抗 ── Steelman + 15 攻击角度 + 判词规则 → 找根本缺陷
-Step 5 · 成型 ── 七节方案 + 闭环图 + 推导路径验证 + docx
+Step 3 · 发散 ── 交叉网络乘法引擎（锚点 × 6 可变域）→ 创意闪卡 + 待验证假设
+Step 4 · 对抗 ── Steelman + 15 攻击角度 + 判词规则 → 根本缺陷 + 实验判据
+Step 5 · 成型 ── 方案结构 + 闭环图 + 实验计划 + 推导路径验证 + docx
 ```
 
 - **拆解**：用 5 Whys 把「表面需求」和「真实动机」分开（钱 / 权 / 关系 / 怕）；按七状态拆「办成什么」；主动问用户手上的独家资源（私域流量、会员数、上次复盘数据）；**必问钱流**（谁付钱、收入怎么构成、盈亏粗算）和**合规边界**（报批/消防/许可，一阶约束提前问）；再把需求拆成字段表，标出哪些是「假硬约束」可挑战。
 - **重建**：抛开「同类活动怎么做」，回到第一性原理定目标；判据按「四层传导链 × 四维测量」定，标出主判据落在哪层。
-- **发散（先自由发散，后收敛标注）**：先跑**交叉网络**——锁定活动锚点，从热点 / 文化 / 情绪 / 跨界 / 感官 / 冲突六个可变域实时调取要素，用「嫁接 / 双域碰撞 / 三域撞击」撞出反直觉候选，挑最反直觉的 3–5 个；每个创意只给「一句核心概念 + 一句为什么有意思」；发散完再贴维度、推导路径标签，标签后置、不污染发散。
-- **对抗**：Steelman 先行，15 个攻击角度逐条过（含「推导路径定位错了没」），**判词规则——攻击是修不是杀**（默认落点「怎么让它可行」，只有攻击 13 才能判「别办了」），收敛出「一戳就塌」的根本缺陷。
-- **成型**：按七节骨架输出完整方案（Big Idea → 传导链判据 → 体验 → 传播 → 执行 → 风险 → 评估）+ 四层闭环图 + 推导路径验证，过 QA / 合规 / 算术三重自检，导出 docx。
+- **发散（先自由发散，后收敛标注）**：先跑**交叉网络**——锁定活动锚点，从热点 / 文化 / 情绪 / 跨界 / 感官 / 冲突六个可变域实时调取要素，用「嫁接 / 双域碰撞 / 三域撞击」撞出反直觉候选，挑最反直觉的 3–5 个；每个创意只给「一句核心概念 + 一句为什么有意思」，同时标出「待验证假设 + 最小实验」；发散完再贴维度、推导路径标签，标签后置、不污染发散。
+- **对抗**：Steelman 先行，15 个攻击角度逐条过（含「推导路径定位错了没」），**判词规则——攻击是修不是杀**（默认落点「怎么让它可行」，只有攻击 13 才能判「别办了」），收敛出「一戳就塌」的根本缺陷；对依赖用户反应的缺陷补实验判据。
+- **成型**：按方案骨架输出完整方案（Big Idea → 传导链判据 → 体验 → 传播 → 实验计划 → 执行 → 风险 → 评估）+ 四层闭环图 + 推导路径验证，过 QA / 实验验证 / 合规 / 算术自检，导出 docx。
 
 <a id="zh-mechanisms"></a>
 ## 核心机制
@@ -136,6 +136,8 @@ Step 5 · 成型 ── 七节方案 + 闭环图 + 推导路径验证 + docx
 
 **4. 指标传导模型（判据是链，不是并列 KPI）** — `投入层 → 中间指标层 → 结果指标层 → 长线资产层`，每层按「数量/质量/效率/成本」四维枚举。每份方案产出一张闭环图，活动后逐层回填「目标 vs 实际」，**断在哪层，下次就补哪层**。
 
+**5. 实验验证层（防止自以为对）** — `假设 → 版本 → 实验 → 数据 → 选择 → 回填`。Red Team 证明方案逻辑不蠢，实验验证证明真实世界有没有反应。严格 AB 测试只是其中一种；样本不足时用邀约话术、海报标题、私域小样本、销售预演、现场彩排做方向性预检。
+
 <a id="zh-rules"></a>
 ## 五条铁律
 
@@ -150,7 +152,7 @@ Step 5 · 成型 ── 七节方案 + 闭环图 + 推导路径验证 + docx
 <a id="zh-structure"></a>
 ## 文件结构
 
-一个主文件 + 10 个引用文件，按需加载，读到哪段停哪段：
+一个主文件 + 11 个引用文件，按需加载，读到哪段停哪段：
 
 ```
 SKILL.md                     # 主流程：五步 + 五条铁律 + 复杂度分级 + 数据流图
@@ -159,10 +161,11 @@ references/
 ├── axes.md                   # 四维推导轴（七状态 × 两层对象 × 五形态 × 时空）
 ├── dimensions.md             # 需求维度完整性清单（三轴防角度缺失）
 ├── metrics-flow.md           # 指标传导模型 + 闭环图 + 回填规则
+├── experiment-validation.md   # AB 测试 + 最小预检 + 实验结论回填
 ├── event-types.md            # 活动类型清单（10 大类 + 案例锚点）
 ├── industries.md             # 16 行业要点（调性/雷区/预算/合规/标准模块，示例快速通道 + 动态判断）
 ├── adversarial.md            # 对抗审查规则 + 15 攻击角度
-├── proposal-schema.md        # 方案七节结构模板 + 闭环图 + 推导路径验证
+├── proposal-schema.md        # 方案结构模板 + 实验计划 + 闭环图 + 推导路径验证
 ├── search-paths.md           # 检索路径库（含非消费端垂直源）
 └── skill-routing.md          # 能力检索增强表
 ```
@@ -309,16 +312,16 @@ Every step's output is adversarially reviewed and must be confirmed before movin
 ```
 Step 1 · Deconstruct ── 5 Whys + seven-state dimensions + info mine + money-flow/compliance + field table
 Step 2 · Rebuild     ── first-principles goal + four-layer conduction criteria (1 primary)
-Step 3 · Diverge     ── cross-network engine (anchor × 6 domains) → free divergence → convergence labeling
-Step 4 · Adversarial ── Steelman + 15 attack angles + fix-not-kill rule → find the fatal flaw
-Step 5 · Finalize    ── 7-section plan + closed-loop diagram + derivation-path check + docx
+Step 3 · Diverge     ── cross-network engine (anchor × 6 domains) → idea cards + testable hypotheses
+Step 4 · Adversarial ── Steelman + 15 attack angles + fix-not-kill rule → fatal flaw + experiment criteria
+Step 5 · Finalize    ── proposal structure + closed-loop diagram + experiment plan + derivation-path check + docx
 ```
 
 - **Deconstruct**: use 5 Whys to separate "surface request" from "real motive" (money / power / relationship / fear); unpack "achieve what" via the seven states; proactively ask for the user's exclusive resources (private traffic, membership count, last-event review data); **must-ask money-flow** (who pays, how revenue is composed, rough P&L) and **compliance boundary** (permits / fire capacity / licenses — a first-order constraint); then break the request into a field table and mark which "hard constraints" are actually soft.
 - **Rebuild**: put aside "what peers do" and set the goal from first principles; define criteria on the "four-layer conduction chain × four-dimensional measurement", marking which layer the primary criterion sits on.
 - **Diverge (free divergence first, then convergence labeling)**: run the **cross-network** first — lock the anchor, pull elements from six domains (hot topic / culture / emotion / cross-industry / senses / conflict), collide them via "graft / dual-domain collision / triple-domain impact" into counter-intuitive candidates, keep the 3–5 most counter-intuitive; each idea gets only "one core concept + why it's interesting"; only after diverging do you attach dimension and derivation-path labels.
 - **Adversarial**: Steelman first, run 15 attack angles (including "is the derivation path wrong?"), apply the **fix-not-kill rule** (default landing is "how to make it feasible"; only attack #13 may judge "don't hold it"), and converge on the one fatal flaw.
-- **Finalize**: output the full plan across 7 sections (Big Idea → conduction criteria → experience → communication → execution → risk → evaluation) + a four-layer closed-loop diagram + a derivation-path check, pass QA / compliance / arithmetic checks, and export to docx.
+- **Finalize**: output the full plan (Big Idea → conduction criteria → experience → communication → experiment plan → execution → risk → evaluation) + a four-layer closed-loop diagram + a derivation-path check, pass QA / experiment validation / compliance / arithmetic checks, and export to docx.
 
 <a id="en-mechanisms"></a>
 ## Core mechanisms
@@ -349,6 +352,8 @@ idea = anchor × variable domains → counter-intuitive combos
 
 **4. Metric conduction model (criteria are a chain, not parallel KPIs)** — `input → intermediate → outcome → long-term asset`, each layer enumerated by "quantity/quality/efficiency/cost". Every plan produces a closed-loop diagram; back-fill "target vs actual" layer by layer after the event — **whichever layer broke, that's what you fix next time**.
 
+**5. Experiment validation layer (prevents self-confirming strategy)** — `hypothesis → variant → experiment → data → decision → back-fill`. Red Team proves the idea is not logically weak; experiment validation checks whether the real audience reacts. Strict A/B testing is one option; when sample size is limited, use invitation-copy tests, poster-title tests, private-community prechecks, sales rehearsals, or onsite dry runs as directional validation.
+
 <a id="en-rules"></a>
 ## Five iron rules
 
@@ -363,7 +368,7 @@ Non-negotiable:
 <a id="en-structure"></a>
 ## File structure
 
-One main file + 10 reference files, loaded on demand:
+One main file + 11 reference files, loaded on demand:
 
 ```
 SKILL.md                     # main flow: 5 steps + 5 rules + complexity routing + data flow
@@ -372,10 +377,11 @@ references/
 ├── axes.md                   # four-dimensional derivation axis (7 states × 2 objects × 5 forms × space-time)
 ├── dimensions.md             # demand-dimension completeness checklist
 ├── metrics-flow.md           # metric conduction model + closed-loop diagram + back-fill rules
+├── experiment-validation.md   # A/B tests + minimum prechecks + experiment-learning back-fill
 ├── event-types.md            # event-type playbook (10 categories + case anchors)
 ├── industries.md             # 16 industry notes (tone/red flags/budget/compliance/standard modules — fast-lane examples + dynamic judgment)
 ├── adversarial.md            # adversarial review rules + 15 attack angles
-├── proposal-schema.md        # 7-section proposal template + closed-loop diagram + derivation-path check
+├── proposal-schema.md        # proposal structure + experiment plan + closed-loop diagram + derivation-path check
 ├── search-paths.md           # search-path library (incl. non-consumer vertical sources)
 └── skill-routing.md          # capability enhancement table
 ```
