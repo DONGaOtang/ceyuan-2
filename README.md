@@ -1,6 +1,10 @@
 # 策元2 Ceyuan2
 
 > 一个给活动策划用的 AI Skill。它不会一上来套模板，而是先帮你把需求问清楚，再一步步生成能落地、能解释、能被老板或客户质疑后仍站得住的活动方案。
+>
+> An AI Skill for event planning. It does not start with a template. It first clarifies the brief, then helps you build an event plan that can be executed, explained, and defended under scrutiny.
+
+**Language:** [中文](#先说人话它到底是干什么的) | [English](#english-version)
 
 ![策元2从扩散到收口的活动策划 OS](assets/ceyuan2-skill-scope-map.png)
 
@@ -325,3 +329,329 @@ event-planning event-marketing marketing-campaign ai-agent ai-skill prompt-engin
 ## License
 
 MIT License. See `LICENSE`.
+
+---
+
+# English Version
+
+> Ceyuan2 is an AI Skill for event planning. Think of it as a senior event-planning sparring partner: it helps you clarify the brief, rebuild the goal, generate sharper ideas, attack weak assumptions, and turn the result into a plan people can actually use.
+
+![Ceyuan2 event planning OS](assets/ceyuan2-skill-scope-map.png)
+
+## What Is Ceyuan2?
+
+Most AI event-planning answers look complete but are shallow:
+
+```text
+You: Help me plan a product launch.
+AI: Sure. Here is the agenda: registration, opening speech, product demo, lucky draw, group photo...
+```
+
+That is not a strategy. It is a recycled schedule.
+
+Ceyuan2 starts earlier. Before writing the plan, it asks the questions that decide whether the plan will work:
+
+- Is this event for sales, fundraising, channel recruitment, brand awareness, relationship management, internal reporting, or public credibility?
+- Who pays, who approves, who attends, and who may object?
+- What does success mean: attendance, leads, orders, media exposure, executive approval, or long-term brand assets?
+- Is the idea actually changing participant behavior, or just repainting an old format?
+- Can the plan survive questions from the boss, client, sponsor, government stakeholder, or execution team?
+
+Ceyuan2 breaks those questions down first, then writes.
+
+## Who Is It For?
+
+Ceyuan2 is useful for:
+
+- Marketing, brand, PR, social media, operations, and sales enablement teams
+- People writing event proposals, product launches, annual galas, dealer conferences, summits, and campaign plans
+- Agencies, event companies, consultants, and proposal teams
+- Anyone trying to turn “we have an idea” into “we can submit this plan”
+
+It is not ideal for:
+
+- People who only want a generic template in 10 seconds
+- Users unwilling to provide any background information
+- Teams that already know they only want to repeat last year's event
+
+## What Kinds of Events Can It Handle?
+
+Ceyuan2 is not limited to flashy consumer events. It also covers B2B, internal, government-facing, and content-led campaigns.
+
+| Type | Examples | What Ceyuan2 Focuses On |
+|---|---|---|
+| Brand and communication | Product launches, pop-ups, markets, brand anniversaries | Memory points, shareability, and explainable creative mechanisms |
+| Sales and channel growth | Dealer conferences, exhibitions, tastings,招商-style events | Lead capture, follow-up, conversion, and CRM feedback |
+| Internal events | Annual galas, team building, recognition ceremonies | Avoiding empty speeches, awkward performances, and generic awards |
+| Government and ceremonial events | Groundbreaking, unveiling, public-private roadshows | Identity, order, compliance, tone, and aesthetic risk |
+| Content-led campaigns | RedNote/Xiaohongshu, Douyin/TikTok-style campaigns, UGC, O2O activations | Connecting content mechanics with event mechanics |
+| Premium private events | Private salons, VIP appreciation, finance/medical/art events | Avoiding cheapness, overexposure, and status mismatch |
+
+## 3-Minute Beginner Setup
+
+### Step 1: Install
+
+Option 1, use Git:
+
+```bash
+git clone https://github.com/DONGaOtang/ceyuan-2.git
+```
+
+Option 2, download manually:
+
+Open the repository page, click `Code`, choose `Download ZIP`, then unzip it.
+
+Move the whole folder into your agent's skills directory.
+
+| Tool | Recommended Path |
+|---|---|
+| Codex | `~/.codex/skills/ceyuan-2/` |
+| Claude Code | `~/.claude/skills/ceyuan-2/` |
+| WorkBuddy | `~/.workbuddy/skills/ceyuan-2/` |
+| Generic Agents | `~/.agents/skills/ceyuan-2/` |
+
+Two things matter:
+
+- `SKILL.md` must stay at the root of the folder.
+- Keep the `references/` folder. Do not copy only `SKILL.md`.
+
+### Step 2: Start It
+
+You can say:
+
+```text
+Use Ceyuan2 to help me plan a product launch.
+```
+
+Or simply:
+
+```text
+Help me create an annual company event plan.
+```
+
+If your request includes signals like event, event plan, campaign, launch, annual gala, dealer conference, pop-up, summit, or activation, the skill should be triggered.
+
+### Step 3: Answer Its Questions
+
+Ceyuan2 will not immediately dump a 50-page plan. It will ask a few questions first. If you do not know the answer, say “I don't know.”
+
+| It Asks | Why It Matters | Example Answer |
+|---|---|---|
+| Why are you holding this event? | If the motive is wrong, the whole plan is wrong. Selling and channel recruitment are different events. | “We mainly need sales leads.” “The boss wants brand visibility.” “This is really client relationship maintenance.” |
+| Who pays, and what is the budget? | Budget decides the scale and filters out fake creativity. | “Budget is not fixed. Think under 100k RMB first.” “The client pays, but sponsors may cover part of it.” |
+| Who will read or approve the plan? | A plan for a boss, a client, a government stakeholder, or an execution team is written differently. | “For internal approval first.” “For a competitive agency pitch.” “For the execution team.” |
+| What resources do you already have? | Private traffic, member lists, sales leads, venues, and previous data cannot be guessed by AI. | “We have 3,000 members.” “Sales has 200 key accounts.” “No existing resources.” |
+| What must not be touched? | Compliance, brand taboos, and tone risks are expensive to discover late. | “Cannot look too internet-celebrity.” “Do not mention price war.” “Government leaders will attend.” |
+
+## First Prompts You Can Copy
+
+If you have almost nothing prepared:
+
+```text
+Use Ceyuan2 to help me plan an event.
+I only have a vague idea: {describe your idea}.
+Do not write the full plan yet. First ask me the essential questions.
+```
+
+If the plan is for your boss:
+
+```text
+Use Ceyuan2 to create an event proposal for executive approval.
+Event type: {launch / annual gala / dealer conference / summit / pop-up}
+Goal: {your best guess, even if uncertain}
+Budget: {rough budget}
+Time and location: {known information}
+First judge what kind of strategic situation this is, then give me the proposal structure.
+```
+
+If you are an agency or vendor preparing a pitch:
+
+```text
+Use Ceyuan2 to help me build an agency proposal.
+Client background: {who the client is}
+Client brief: {their original request}
+Competition: {pitch / incumbent vendor / open tender / unknown}
+Budget and deliverables: {known information}
+First identify the client's real motive, decision-maker concerns, and pitch risks.
+```
+
+If you are building a social/content campaign:
+
+```text
+Use Ceyuan2 to plan an online-offline campaign.
+Brand/product: {what it is}
+Audience: {who}
+Platforms: {RedNote/Xiaohongshu, Douyin/TikTok, WeChat Channels, Bilibili, private traffic, etc.}
+Goal: {awareness / sign-ups / leads / sales / UGC / brand recognition}
+Start with the participation mechanism, not just content topics.
+```
+
+## Workflow
+
+Ceyuan2 is not a “write me a plan” machine. It is a process that moves from messy input to a submit-ready output.
+
+![Ceyuan2 full workflow](assets/ceyuan2-skill-full-flow-mindmap.png)
+
+In plain terms, it works in 7 stages:
+
+| Stage | What It Does | What You See |
+|---|---|---|
+| Step 0 Triage | Determines whether this is client-side, agency-side, To C, To B, To G, internal, or campaign work | Routing table, main route, risk forecast |
+| Step 1 Deconstruct Brief | Breaks a vague request into motive, audience, resources, money flow, compliance, and creative boundaries | Brief field table, missing information list |
+| Step 2 Rebuild Goal | Turns “make it good” into measurable success criteria | Primary criterion, supporting metrics, four-layer metric chain |
+| Step 3 Diverge Ideas | Uses a cross-network method to generate non-template directions | 3 to 5 idea cards |
+| Step 3.5 Anti-Stale Review | Checks whether the idea is just old wine in a new package | Stale-template risks, aesthetic risks, identity mismatch |
+| Step 4 Red Team | Steelmans the idea first, then attacks it | Fatal assumption, repairs, fallback versions |
+| Step 5/6 Final Plan and Review | Turns the result into a proposal and simulates approval-room objections | Full plan, budget, timeline, risks, final review |
+
+## A Tiny Example
+
+Input:
+
+```text
+Help me plan a company annual gala for about 100 people with a 50k RMB budget. We don't want it to be boring.
+```
+
+A generic template may produce:
+
+```text
+Registration -> leader speech -> performances -> lucky draw -> dinner -> group photo
+```
+
+Ceyuan2 first asks what is really going on:
+
+| Question | Possible Judgment |
+|---|---|
+| Is this really a “make it lively” problem? | Not necessarily. It may be about fatigue, team fragmentation, or invisible contributors. |
+| What does 100 people and 50k RMB imply? | Big stage production is unlikely. Small mechanisms, high participation, and strong memory points are better. |
+| What counts as success? | Attendance, participation, employee-generated content, recognition recall, post-event satisfaction. |
+| What must the idea avoid? | It cannot just change the theme color, slogan, or host script. |
+
+Then it may propose directions like:
+
+| Direction | Core Concept | Why It Is Not a Generic Gala |
+|---|---|---|
+| Company Mini-Museum | Each team contributes one object that represents the year | Turns achievements from slides into shared memory |
+| Reverse Awards | Employees nominate people who quietly saved important work | Moves recognition from leadership-only judgment to peer recognition |
+| Next-Year Rehearsal | Each team performs one thing they want to make true next year | Turns the gala from a recap into collective imagination |
+
+Only after that does it move into adversarial review, budget, schedule, materials, risks, and execution planning.
+
+## What Will It Produce?
+
+The output depth depends on event complexity.
+
+| Output Depth | Best For | Usually Includes |
+|---|---|---|
+| One-page idea | You only need a direction first | Big Idea, goal, core mechanism, communication hook |
+| Standard proposal | Normal events and internal proposals | Background, goal, idea, flow, communication, execution, budget, risks |
+| Full execution plan | Large events and cross-team delivery | Responsibility table, materials list, reverse timeline, onsite schedule, vendor boundaries, emergency plans |
+| Pitch or sponsorship version | Agency pitch, tender, sponsorship proposal | Client perspective, business value, rights package, pricing boundary, acceptance criteria |
+
+A formal plan usually includes:
+
+- One-sentence Big Idea
+- Event goals and success criteria
+- Audience and participation path
+- Creative mechanism and onsite experience
+- Communication plan
+- Experiment or pretest plan
+- Execution timeline
+- Role assignment
+- Materials list
+- Budget table
+- Risk plan
+- Review metrics
+- Open questions and assumptions
+
+## How Is It Different From a Normal Prompt?
+
+| Normal Prompt | Ceyuan2 |
+|---|---|
+| Generates immediately | Triage first, then generates |
+| Easily falls into templates | Has an anti-stale review |
+| Only asks for event type | Asks about money flow, resources, decision-makers, compliance boundaries |
+| Treats creativity as inspiration | Uses anchor x topic/culture/emotion/cross-industry/senses/conflict |
+| Looks complete on paper | Simulates objections and exposes fatal assumptions |
+| Ends when the event ends | Requires metric feedback and case-library learning |
+
+## File Structure
+
+You do not need to understand every file at first.
+
+- `SKILL.md` is the entry point, like the director.
+- `references/` is the toolbox, like a set of specialist manuals.
+- `README.md` is only the human-facing guide.
+
+```text
+ceyuan-2/
+├── README.md
+├── SKILL.md
+├── LICENSE
+├── assets/
+│   ├── ceyuan2-skill-scope-map.png
+│   └── ceyuan2-skill-full-flow-mindmap.png
+└── references/
+    ├── triage-router.md
+    ├── ai-role-prompts.md
+    ├── creative-inputs.md
+    ├── anti-stale-creative.md
+    ├── experiment-validation.md
+    ├── proposal-schema.md
+    └── ...
+```
+
+Common reference modules:
+
+| File | Purpose |
+|---|---|
+| `triage-router.md` | Decides what kind of event situation this is |
+| `ai-role-prompts.md` | Switches the AI into the right professional role at each step |
+| `creative-inputs.md` | Generates creative directions |
+| `anti-stale-creative.md` | Checks whether an idea is just a stale template |
+| `experiment-validation.md` | Designs A/B tests or low-cost pretests |
+| `boardroom-proposal-schema.md` | Builds a proposal that can be submitted |
+| `pitch-battle.md` | Supports agency pitches, tenders, and sponsorship proposals |
+| `metrics-flow.md` | Builds the post-event metric feedback loop |
+
+## FAQ
+
+### Can I use it if I am not an event planner?
+
+Yes. It is designed for people who have a rough idea but do not know how to break it down, sharpen it, and submit it. You only need to answer basic facts: who the event is for, why it exists, roughly how much money is available, and what constraints apply.
+
+### What if I do not have enough information?
+
+Say “I don't know.” Ceyuan2 will mark unknown items and proceed with explicit assumptions. It will not stop just because the budget is unclear.
+
+### Will it ask too many questions?
+
+It will ask, but for a reason. Most event failures are hidden in the early brief: motive, budget, decision-maker, resources, compliance, and tone. A few questions up front can prevent dozens of pages of rework later.
+
+### Can I make it write everything in one pass?
+
+Yes. Use:
+
+```text
+Use Ceyuan2 to run the full process without pausing. Mark assumptions wherever information is missing.
+```
+
+Still, it is usually better to choose a creative direction once before it writes the full plan.
+
+### Can it export docx?
+
+That depends on your agent environment. Ceyuan2 will try to use local docx/Word-generation capabilities when available. If not, it will provide a Markdown plan first.
+
+### Does it need internet access?
+
+Not always. Internal events can often be planned offline. But for regulations, city approvals, fire safety, advertising law, competitor cases, or recent trends, the agent should verify current information instead of guessing.
+
+## Keywords
+
+event planning, event proposal, product launch, annual gala, dealer conference, summit, pop-up, market event, roadshow, brand activation, social campaign, AI Skill, AI Agent, prompt engineering, first principles, Red Team, adversarial review, marketing planning, creative sparring, metric feedback loop.
+
+Recommended GitHub Topics:
+
+```text
+event-planning event-marketing marketing-campaign ai-agent ai-skill prompt-engineering red-team first-principles chinese
+```
