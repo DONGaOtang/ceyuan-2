@@ -1,40 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
-  <title id="title">策元2最终产出阶梯</title>
-  <desc id="desc">用年轻化黄黑海报风展示策元2按活动复杂度裁剪一页创意、标准方案、全案执行、竞标招商四类交付。</desc>
-  <defs>
-    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".8" numOctaves="3"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .14"/></feComponentTransfer></filter>
-    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L11,4 z" fill="#111827"/></marker>
-    <style>
-      .bg{fill:#edf0ea}.ink{fill:#111827;font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#374151;font-family:Arial,"Microsoft YaHei",sans-serif}
-      .yellow{fill:#ffe600}.black{fill:#111827}.white{fill:#fffdf0}.stroke{stroke:#111827;stroke-width:4}.heavy{stroke:#111827;stroke-width:7}
-      .big{font-size:60px;font-weight:900}.h2{font-size:30px;font-weight:900}.body{font-size:19px}.small{font-size:16px}
-    </style>
-  </defs>
-  <rect width="1400" height="760" class="bg"/><rect width="1400" height="760" filter="url(#grain)"/><rect x="28" y="28" width="1344" height="704" fill="none" class="heavy"/>
-  <text x="58" y="84" class="ink small" font-weight="900">OUTPUT LADDER</text>
-  <text x="58" y="154" class="ink big">最终会产出什么？</text>
-  <rect x="58" y="174" width="590" height="18" class="yellow"/>
-  <text x="58" y="226" class="muted body">策元2不会给所有活动套同一份大模板。它按体量、读者、用途裁剪交付深度。</text>
-
-  <g transform="translate(58 286)">
-    <rect x="0" y="230" width="280" height="150" rx="18" class="white stroke"/>
-    <rect x="0" y="230" width="280" height="52" rx="18" class="yellow stroke"/>
-    <text x="28" y="264" class="ink h2">A 一页创意</text><text x="30" y="322" class="ink body">先看方向</text><text x="30" y="354" class="muted small">Big Idea / 核心玩法 / 最大风险</text>
-
-    <rect x="338" y="154" width="280" height="226" rx="18" class="white stroke"/>
-    <rect x="338" y="154" width="280" height="52" rx="18" class="black"/>
-    <text x="366" y="188" fill="#ffe600" class="h2" font-family="Arial,'Microsoft YaHei',sans-serif">B 标准方案</text><text x="368" y="246" class="ink body">常规活动</text><text x="368" y="280" class="muted small">背景与洞察</text><text x="368" y="312" class="muted small">叙事与创意</text><text x="368" y="344" class="muted small">流程 / 传播 / 预算 / 风险</text>
-
-    <rect x="676" y="78" width="280" height="302" rx="18" class="white stroke"/>
-    <rect x="676" y="78" width="280" height="52" rx="18" class="yellow stroke"/>
-    <text x="704" y="112" class="ink h2">C 全案执行</text><text x="706" y="170" class="ink body">大型落地</text><text x="706" y="204" class="muted small">关键路径 / RACI</text><text x="706" y="236" class="muted small">Run of Show</text><text x="706" y="268" class="muted small">物料供应商</text><text x="706" y="300" class="muted small">应急合规</text><text x="706" y="332" class="muted small">数据采集表</text>
-
-    <rect x="1014" y="0" width="280" height="380" rx="18" class="black"/>
-    <rect x="1014" y="0" width="280" height="52" rx="18" class="yellow"/>
-    <text x="1042" y="34" class="ink h2">D 竞标/招商</text><text x="1044" y="92" fill="#fffdf0" class="body" font-family="Arial,'Microsoft YaHei',sans-serif">要说服别人投</text><text x="1044" y="128" fill="#ffe600" class="small" font-family="Arial,'Microsoft YaHei',sans-serif">Pitch Battle</text><text x="1044" y="160" fill="#ffe600" class="small" font-family="Arial,'Microsoft YaHei',sans-serif">赞助权益 / 报价边界</text><text x="1044" y="192" fill="#ffe600" class="small" font-family="Arial,'Microsoft YaHei',sans-serif">履约证明 / 压价应对</text><text x="1044" y="224" fill="#ffe600" class="small" font-family="Arial,'Microsoft YaHei',sans-serif">客户老板打动点</text><text x="1044" y="256" fill="#ffe600" class="small" font-family="Arial,'Microsoft YaHei',sans-serif">中标力评分</text>
-
-    <path d="M286 304H330" fill="none" stroke="#111827" stroke-width="6" marker-end="url(#arrow)"/><path d="M624 267H668" fill="none" stroke="#111827" stroke-width="6" marker-end="url(#arrow)"/><path d="M962 229H1006" fill="none" stroke="#111827" stroke-width="6" marker-end="url(#arrow)"/>
+  <title id="title">策元2最终产出阶梯</title><desc id="desc">按活动复杂度裁剪一页创意、标准方案、全案执行、竞标招商四类交付。</desc>
+  <defs><filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".72" numOctaves="3"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .1"/></feComponentTransfer></filter><style>.ink{fill:#101010;font-family:Arial,"Microsoft YaHei",sans-serif}.cream{fill:#f5f1e7}.yellow{fill:#ffd400}.red{fill:#ef3d2f}.line{stroke:#101010;stroke-width:5}.big{font-size:70px;font-weight:900}.h{font-size:25px;font-weight:900}.body{font-size:18px}.small{font-size:15px;font-weight:700}</style></defs>
+  <rect width="1400" height="760" class="cream"/><rect width="1400" height="760" filter="url(#grain)"/><rect x="30" y="30" width="1340" height="700" fill="none" class="line"/><rect x="30" y="30" width="22" height="700" class="yellow"/>
+  <text x="82" y="82" class="ink small">CEYUAN2 / OUTPUT LADDER / 03</text><text x="82" y="164" class="ink big">最终会产出什么？</text><rect x="82" y="184" width="510" height="16" class="yellow"/><text x="82" y="240" class="ink body">不是每个需求都值得一份 80 页方案。交付深度跟着风险、读者和用途走。</text>
+  <g transform="translate(82 308)">
+    <path d="M0 320H1264" class="line"/><path d="M0 320V250M330 320V170M660 320V90M990 320V10" class="line"/>
+    <g transform="translate(0 82)"><rect width="290" height="238" fill="#fffdf5" class="line"/><rect width="290" height="52" class="yellow line"/><text x="22" y="35" class="ink h">A / 一页创意</text><text x="22" y="100" class="ink body">方向先过关</text><text x="22" y="140" class="ink small">Big Idea</text><text x="22" y="168" class="ink small">核心玩法</text><text x="22" y="196" class="ink small">最大风险</text></g>
+    <g transform="translate(330 2)"><rect width="290" height="318" fill="#fffdf5" class="line"/><rect width="290" height="52" class="ink"/><text x="22" y="35" fill="#ffd400" class="h">B / 标准方案</text><text x="22" y="100" class="ink body">常规活动</text><text x="22" y="140" class="ink small">背景与洞察</text><text x="22" y="168" class="ink small">叙事与创意</text><text x="22" y="196" class="ink small">流程 / 传播 / 预算</text><text x="22" y="224" class="ink small">风险与复盘</text></g>
+    <g transform="translate(660 -78)"><rect width="290" height="398" class="yellow line"/><text x="22" y="42" class="ink h">C / 全案执行</text><text x="22" y="100" class="ink body">大型落地</text><text x="22" y="140" class="ink small">关键路径 / RACI</text><text x="22" y="168" class="ink small">Run of Show</text><text x="22" y="196" class="ink small">物料与供应商</text><text x="22" y="224" class="ink small">应急 / 合规</text><text x="22" y="252" class="ink small">数据采集表</text></g>
+    <g transform="translate(990 -158)"><rect width="290" height="478" class="red line"/><text x="22" y="42" fill="#f5f1e7" class="h">D / 竞标招商</text><text x="22" y="100" fill="#f5f1e7" class="body">要说服别人投</text><text x="22" y="148" fill="#f5f1e7" class="small">Pitch Battle</text><text x="22" y="180" fill="#f5f1e7" class="small">赞助权益 / 报价边界</text><text x="22" y="212" fill="#f5f1e7" class="small">履约证明 / 压价应对</text><text x="22" y="244" fill="#f5f1e7" class="small">客户老板打动点</text><text x="22" y="276" fill="#f5f1e7" class="small">中标力评分</text></g>
   </g>
-  <rect x="82" y="666" width="1236" height="44" rx="22" class="yellow stroke"/>
-  <text x="110" y="695" class="ink body" font-weight="900">活动结束后：目标 vs 实际 → 指标回填 → 实验结论回填 → 下次复用/禁用</text>
+  <rect x="82" y="680" width="1220" height="28" class="yellow"/><text x="98" y="701" class="ink small">活动后：目标 vs 实际 → 指标回填 → 实验结论 → 下次复用 / 禁用</text>
 </svg>
