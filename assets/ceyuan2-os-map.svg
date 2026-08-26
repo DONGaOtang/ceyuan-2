@@ -1,41 +1,44 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1400" height="840" viewBox="0 0 1400 840" role="img" aria-labelledby="title desc">
-  <title id="title">Ceyuan2 activity planning operating system</title>
-  <desc id="desc">A bilingual overview of Ceyuan2: triage, research, behavior change, business model, China-market narrative, creative mechanism, delivery system, red team, final proposal, and final review.</desc>
+  <title id="title">策元2十步状态机</title>
+  <desc id="desc">策元2从判局、信息采集、行为改变、经营模型、叙事、创意、交付、对抗、成案到终审的十步状态机。</desc>
   <defs>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".76" numOctaves="3"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .14"/></feComponentTransfer></filter>
+    <pattern id="dots" width="18" height="18" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.3" fill="#111827" opacity=".18"/></pattern>
+    <marker id="arrow" markerWidth="12" markerHeight="12" refX="10" refY="4" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,8 L11,4 z" fill="#111827"/></marker>
     <style>
-      .bg{fill:#f8fafc}.ink{fill:#102033;font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#526173;font-family:Arial,"Microsoft YaHei",sans-serif}
-      .panel{fill:#fff;stroke:#cbd5e1;stroke-width:2}.teal{fill:#0f766e}.blue{fill:#1d4ed8}.red{fill:#b91c1c}.gold{fill:#b45309}.green{fill:#15803d}
-      .line{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#94a3b8;stroke-width:2;stroke-dasharray:7 7;fill:none;marker-end:url(#arrow)}
-      .small{font-size:18px}.mid{font-size:22px;font-weight:700}.big{font-size:36px;font-weight:800}.num{fill:#fff;font-size:26px;font-weight:800;font-family:Arial,sans-serif}
+      .bg{fill:#e6ebe4}.ink{fill:#111827;font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#374151;font-family:Arial,"Microsoft YaHei",sans-serif}
+      .yellow{fill:#ffe600}.black{fill:#111827}.white{fill:#fffdf0}.stroke{stroke:#111827;stroke-width:4}.heavy{stroke:#111827;stroke-width:7}
+      .big{font-size:58px;font-weight:900}.h2{font-size:30px;font-weight:900}.h3{font-size:24px;font-weight:900}.body{font-size:17px}.small{font-size:14px;font-weight:700}
     </style>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
   </defs>
-  <rect class="bg" width="1400" height="840"/>
-  <text x="48" y="58" class="ink big">策元2 / Ceyuan2：从模糊 Brief 到可上交方案</text>
-  <text x="50" y="94" class="muted small">先判局，不套模板；先行为改变，再创意；先交付系统，再成案。</text>
-  <rect x="40" y="125" width="1320" height="116" rx="18" class="panel"/>
-  <text x="68" y="160" class="ink mid">默认运行规则 / Default Operating Rule</text>
-  <text x="68" y="195" class="muted small">每次默认只执行一个 Step；硬暂停点必须等用户确认。</text>
-  <text x="68" y="222" class="muted small">One step per turn by default. Hard checkpoints must stop for confirmation.</text>
-  <rect x="910" y="154" width="410" height="54" rx="12" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
-  <text x="936" y="188" class="red mid">“直接写完整方案” ≠ 跳过门禁</text>
-  <g transform="translate(42,282)">
-    <rect class="panel" x="0" y="0" width="252" height="150" rx="16"/><circle cx="34" cy="36" r="24" class="blue"/><text x="26" y="45" class="num">0</text><text x="72" y="42" class="ink mid">判局分流</text><text x="24" y="78" class="muted small">甲方/乙方/To C/To B/To G</text><text x="24" y="106" class="muted small">体量、交付件、叙事强度</text><text x="24" y="134" class="red small">缺 3 项以上：停下提问</text>
-    <rect class="panel" x="288" y="0" width="252" height="150" rx="16"/><circle cx="322" cy="36" r="24" class="teal"/><text x="314" y="45" class="num">1</text><text x="360" y="42" class="ink mid">信息采集</text><text x="312" y="78" class="muted small">正向信号 + 反向信号</text><text x="312" y="106" class="muted small">横纵分析、证据等级</text><text x="312" y="134" class="red small">关键事实需标来源</text>
-    <rect class="panel" x="576" y="0" width="252" height="150" rx="16"/><circle cx="610" cy="36" r="24" class="green"/><text x="602" y="45" class="num">2</text><text x="648" y="42" class="ink mid">行为改变</text><text x="600" y="78" class="muted small">谁从什么行为</text><text x="600" y="106" class="muted small">变成什么行为</text><text x="600" y="134" class="red small">写不出就不能创意</text>
-    <rect class="panel" x="864" y="0" width="252" height="150" rx="16"/><circle cx="898" cy="36" r="24" class="gold"/><text x="890" y="45" class="num">3</text><text x="936" y="42" class="ink mid">经营模型</text><text x="888" y="78" class="muted small">成本、回报、数据</text><text x="888" y="106" class="muted small">报名、赞助、销售承接</text><text x="888" y="134" class="red small">数字必须有来源</text>
-    <rect class="panel" x="1152" y="0" width="252" height="150" rx="16"/><circle cx="1186" cy="36" r="24" class="blue"/><text x="1178" y="45" class="num">4</text><text x="1224" y="42" class="ink mid">中国叙事</text><text x="1176" y="78" class="muted small">主叙事、核心冲突</text><text x="1176" y="106" class="muted small">情绪曲线、主场面</text><text x="1176" y="134" class="red small">不是文案润色</text>
-    <path class="line" d="M252 75 H288"/><path class="line" d="M540 75 H576"/><path class="line" d="M828 75 H864"/><path class="line" d="M1116 75 H1152"/>
+  <rect width="1400" height="840" class="bg"/><rect width="1400" height="840" fill="url(#dots)"/><rect width="1400" height="840" filter="url(#grain)"/><rect x="28" y="28" width="1344" height="784" fill="none" class="heavy"/>
+  <text x="58" y="82" class="ink small">10-STEP OPERATING SYSTEM</text>
+  <text x="58" y="150" class="ink big">从模糊 Brief 到可上交方案</text>
+  <rect x="58" y="170" width="780" height="18" class="yellow"/>
+  <text x="58" y="222" class="muted body">默认每次只推进一个 Step；每个硬暂停点必须等用户确认。说“直接写完整方案”不等于跳过门禁。</text>
+
+  <g transform="translate(58 282)">
+    <g>
+      <rect x="0" y="0" width="238" height="126" rx="18" class="yellow stroke"/><text x="22" y="42" class="ink h2">00 判局</text><text x="24" y="75" class="ink body">先判断这是什么局</text><text x="24" y="101" class="muted small">路线 / 体量 / 交付件</text>
+      <rect x="268" y="0" width="238" height="126" rx="18" class="white stroke"/><text x="290" y="42" class="ink h2">01 取证</text><text x="292" y="75" class="ink body">正向 + 反向信号</text><text x="292" y="101" class="muted small">来源绑定 / 证据等级</text>
+      <rect x="536" y="0" width="238" height="126" rx="18" class="yellow stroke"/><text x="558" y="42" class="ink h2">02 行为</text><text x="560" y="75" class="ink body">谁要改变什么</text><text x="560" y="101" class="muted small">阻力 / 收益 / 机制</text>
+      <rect x="804" y="0" width="238" height="126" rx="18" class="white stroke"/><text x="826" y="42" class="ink h2">03 经营</text><text x="828" y="75" class="ink body">目标能否被证明</text><text x="828" y="101" class="muted small">预算 / 数据 / 降级</text>
+      <rect x="1072" y="0" width="238" height="126" rx="18" class="yellow stroke"/><text x="1094" y="42" class="ink h2">04 叙事</text><text x="1096" y="75" class="ink body">能被老板复述</text><text x="1096" y="101" class="muted small">冲突 / 情绪 / 主场面</text>
+      <path d="M240 63H260" class="stroke" fill="none" marker-end="url(#arrow)"/><path d="M508 63H528" class="stroke" fill="none" marker-end="url(#arrow)"/><path d="M776 63H796" class="stroke" fill="none" marker-end="url(#arrow)"/><path d="M1044 63H1064" class="stroke" fill="none" marker-end="url(#arrow)"/>
+    </g>
+    <g transform="translate(0 190)">
+      <rect x="0" y="0" width="238" height="126" rx="18" class="white stroke"/><text x="22" y="42" class="ink h2">05 创意</text><text x="24" y="75" class="ink body">锚点 × 市场信号</text><text x="24" y="101" class="muted small">2-5 张创意闪卡</text>
+      <rect x="268" y="0" width="238" height="126" rx="18" class="yellow stroke"/><text x="290" y="42" class="ink h2">06 交付</text><text x="292" y="75" class="ink body">把创意变成项目</text><text x="292" y="101" class="muted small">关键路径 / RACI</text>
+      <rect x="536" y="0" width="238" height="126" rx="18" class="black"/><text x="558" y="42" fill="#ffe600" class="h2" font-family="Arial,'Microsoft YaHei',sans-serif">07 对抗</text><text x="560" y="75" fill="#fffdf0" class="body" font-family="Arial,'Microsoft YaHei',sans-serif">先攻击，再修正</text><text x="560" y="101" fill="#ffe600" class="small" font-family="Arial,'Microsoft YaHei',sans-serif">策略风险 / 交付矛盾</text>
+      <rect x="804" y="0" width="238" height="126" rx="18" class="yellow stroke"/><text x="826" y="42" class="ink h2">08 成案</text><text x="828" y="75" class="ink body">按用途裁剪输出</text><text x="828" y="101" class="muted small">一页 / 标准 / 全案</text>
+      <rect x="1072" y="0" width="238" height="126" rx="18" class="white stroke"/><text x="1094" y="42" class="ink h2">09 终审</text><text x="1096" y="75" class="ink body">模拟真实打回</text><text x="1096" y="101" class="muted small">老板 / 客户 / 执行</text>
+      <path d="M240 63H260" class="stroke" fill="none" marker-end="url(#arrow)"/><path d="M508 63H528" class="stroke" fill="none" marker-end="url(#arrow)"/><path d="M776 63H796" class="stroke" fill="none" marker-end="url(#arrow)"/><path d="M1044 63H1064" class="stroke" fill="none" marker-end="url(#arrow)"/>
+    </g>
   </g>
-  <g transform="translate(42,488)">
-    <rect class="panel" x="0" y="0" width="252" height="150" rx="16"/><circle cx="34" cy="36" r="24" class="gold"/><text x="26" y="45" class="num">5</text><text x="72" y="42" class="ink mid">创意机制</text><text x="24" y="78" class="muted small">锚点 × 六类信号</text><text x="24" y="106" class="muted small">2-5 张创意闪卡</text><text x="24" y="134" class="red small">必须等用户选择</text>
-    <rect class="panel" x="288" y="0" width="252" height="150" rx="16"/><circle cx="322" cy="36" r="24" class="teal"/><text x="314" y="45" class="num">6</text><text x="360" y="42" class="ink mid">交付系统</text><text x="312" y="78" class="muted small">关键路径、RACI</text><text x="312" y="106" class="muted small">报名/赞助/数据/销售</text><text x="312" y="134" class="red small">先可交付，再成案</text>
-    <rect class="panel" x="576" y="0" width="252" height="150" rx="16"/><circle cx="610" cy="36" r="24" class="red"/><text x="602" y="45" class="num">7</text><text x="648" y="42" class="ink mid">Red Team</text><text x="600" y="78" class="muted small">攻击策略风险</text><text x="600" y="106" class="muted small">攻击交付矛盾</text><text x="600" y="134" class="red small">风险必须给修法</text>
-    <rect class="panel" x="864" y="0" width="252" height="150" rx="16"/><circle cx="898" cy="36" r="24" class="green"/><text x="890" y="45" class="num">8</text><text x="936" y="42" class="ink mid">成案</text><text x="888" y="78" class="muted small">按交付件裁剪</text><text x="888" y="106" class="muted small">事实与假设清单</text><text x="888" y="134" class="red small">前置确认后才进入</text>
-    <rect class="panel" x="1152" y="0" width="252" height="150" rx="16"/><circle cx="1186" cy="36" r="24" class="blue"/><text x="1178" y="45" class="num">9</text><text x="1224" y="42" class="ink mid">终审模拟</text><text x="1176" y="78" class="muted small">老板/客户/执行/用户</text><text x="1176" y="106" class="muted small">叙事 + 交付一致性</text><text x="1176" y="134" class="red small">输出最终判词</text>
-    <path class="line" d="M252 75 H288"/><path class="line" d="M540 75 H576"/><path class="line" d="M828 75 H864"/><path class="line" d="M1116 75 H1152"/>
+
+  <g transform="translate(80 720)">
+    <rect x="0" y="0" width="370" height="46" rx="23" class="black"/><text x="28" y="30" fill="#ffe600" class="body" font-family="Arial,'Microsoft YaHei',sans-serif" font-weight="900">未到 Step 8，不输出完整方案</text>
+    <rect x="482" y="0" width="376" height="46" rx="23" class="yellow stroke"/><text x="510" y="30" class="ink body" font-weight="900">事实、预算、案例必须分级</text>
+    <rect x="890" y="0" width="376" height="46" rx="23" class="white stroke"/><text x="918" y="30" class="ink body" font-weight="900">活动后回填到案例库</text>
   </g>
-  <path class="line" d="M1300 432 V468"/>
-  <path class="dash" d="M1248 638 C1180 748 230 748 158 638"/>
-  <text x="410" y="765" class="muted small">活动后复盘：目标 vs 实际 → 数据回填 → 案例库 → 下一次 Step 1 / Step 5 更准</text>
 </svg>
