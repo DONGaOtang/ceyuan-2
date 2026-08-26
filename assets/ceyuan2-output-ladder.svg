@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760" role="img" aria-labelledby="title desc">
+  <title id="title">策元2最终会产出什么</title>
+  <desc id="desc">展示策元2按活动复杂度产出一页创意、标准方案、全案执行版、竞标招商版，以及复盘闭环。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.ink{fill:#102033;font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#526173;font-family:Arial,"Microsoft YaHei",sans-serif}
+      .panel{fill:#fff;stroke:#cbd5e1;stroke-width:2}.blue{fill:#1d4ed8}.teal{fill:#0f766e}.gold{fill:#b45309}.red{fill:#b91c1c}.green{fill:#15803d}
+      .big{font-size:38px;font-weight:800}.h2{font-size:26px;font-weight:800}.h3{font-size:22px;font-weight:800}.body{font-size:18px}.small{font-size:16px}
+      .arrow{stroke:#64748b;stroke-width:4;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+  </defs>
+  <rect class="bg" width="1400" height="760"/>
+  <text x="52" y="62" class="ink big">最终会产出什么？</text>
+  <text x="54" y="102" class="muted body">不是所有活动都套同一份大模板。策元2会先判定活动体量、读者和用途，再裁剪交付深度。</text>
+
+  <g transform="translate(54,150)">
+    <rect x="0" y="250" width="284" height="250" rx="18" class="panel"/>
+    <rect x="0" y="250" width="284" height="58" rx="18" class="teal"/>
+    <text x="28" y="287" fill="#fff" class="h2">A 一页创意</text>
+    <text x="28" y="348" class="ink body">适合：先看方向</text>
+    <text x="28" y="386" class="muted body">Big Idea</text>
+    <text x="28" y="420" class="muted body">核心玩法</text>
+    <text x="28" y="454" class="muted body">最大风险</text>
+
+    <rect x="336" y="170" width="284" height="330" rx="18" class="panel"/>
+    <rect x="336" y="170" width="284" height="58" rx="18" class="blue"/>
+    <text x="364" y="207" fill="#fff" class="h2">B 标准方案</text>
+    <text x="364" y="268" class="ink body">适合：常规活动</text>
+    <text x="364" y="306" class="muted body">背景与洞察</text>
+    <text x="364" y="340" class="muted body">叙事与创意</text>
+    <text x="364" y="374" class="muted body">流程与传播</text>
+    <text x="364" y="408" class="muted body">预算与风险</text>
+
+    <rect x="672" y="90" width="284" height="410" rx="18" class="panel"/>
+    <rect x="672" y="90" width="284" height="58" rx="18" class="gold"/>
+    <text x="700" y="127" fill="#fff" class="h2">C 全案执行</text>
+    <text x="700" y="188" class="ink body">适合：大型落地</text>
+    <text x="700" y="226" class="muted body">关键路径</text>
+    <text x="700" y="260" class="muted body">RACI 分工</text>
+    <text x="700" y="294" class="muted body">Run of Show</text>
+    <text x="700" y="328" class="muted body">物料与供应商</text>
+    <text x="700" y="362" class="muted body">应急与合规</text>
+    <text x="700" y="396" class="muted body">数据采集表</text>
+
+    <rect x="1008" y="10" width="284" height="490" rx="18" class="panel"/>
+    <rect x="1008" y="10" width="284" height="58" rx="18" class="red"/>
+    <text x="1036" y="47" fill="#fff" class="h2">D 竞标/招商</text>
+    <text x="1036" y="108" class="ink body">适合：要说服别人投</text>
+    <text x="1036" y="146" class="muted body">Pitch Battle</text>
+    <text x="1036" y="180" class="muted body">赞助权益</text>
+    <text x="1036" y="214" class="muted body">报价边界</text>
+    <text x="1036" y="248" class="muted body">履约证明</text>
+    <text x="1036" y="282" class="muted body">压价应对</text>
+    <text x="1036" y="316" class="muted body">客户老板打动点</text>
+    <text x="1036" y="350" class="muted body">中标力评分</text>
+
+    <path class="arrow" d="M288 375 H330"/>
+    <path class="arrow" d="M624 335 H666"/>
+    <path class="arrow" d="M960 295 H1002"/>
+  </g>
+
+  <rect x="84" y="668" width="1232" height="54" rx="16" fill="#dcfce7" stroke="#22c55e" stroke-width="2"/>
+  <text x="112" y="703" class="green h3">活动结束后：目标 vs 实际 → 四层指标回填 → 实验结论回填 → 下次复用/禁用，不直接污染 reference 方法文件。</text>
+</svg>

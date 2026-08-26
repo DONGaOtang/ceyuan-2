@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="820" viewBox="0 0 1400 820" role="img" aria-labelledby="title desc">
+  <title id="title">策元2在干什么</title>
+  <desc id="desc">说明普通 AI 会直接套活动流程，而策元2会先判局、取证、拆行为、建经营模型、做叙事、生成创意、设计交付、对抗审查，最后成案。</desc>
+  <defs>
+    <style>
+      .bg{fill:#f6f8fb}.ink{fill:#111827;font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#4b5563;font-family:Arial,"Microsoft YaHei",sans-serif}
+      .panel{fill:#fff;stroke:#d1d5db;stroke-width:2}.bad{fill:#fee2e2;stroke:#f87171;stroke-width:2}.good{fill:#dcfce7;stroke:#22c55e;stroke-width:2}
+      .blue{fill:#2563eb}.teal{fill:#0f766e}.red{fill:#b91c1c}.gold{fill:#b45309}.green{fill:#15803d}.grey{fill:#e5e7eb}
+      .big{font-size:40px;font-weight:800}.h2{font-size:28px;font-weight:800}.h3{font-size:22px;font-weight:800}.body{font-size:19px}.small{font-size:16px}
+      .arrow{stroke:#6b7280;stroke-width:4;fill:none;marker-end:url(#arrow)}
+      .thin{stroke:#9ca3af;stroke-width:2;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#6b7280"/></marker>
+  </defs>
+  <rect class="bg" width="1400" height="820"/>
+  <text x="52" y="64" class="ink big">策元2到底在干嘛？</text>
+  <text x="54" y="104" class="muted body">它不是“帮你写一个活动流程”，而是把一个模糊活动需求，拆成能判断、能验证、能执行、能上交的方案系统。</text>
+
+  <rect x="54" y="145" width="590" height="250" rx="18" class="bad"/>
+  <text x="86" y="190" class="red h2">普通 AI 常见错误</text>
+  <text x="92" y="238" class="ink body">输入：帮我做一个发布会方案</text>
+  <rect x="92" y="264" width="492" height="52" rx="12" fill="#fff"/>
+  <text x="116" y="298" class="muted body">签到 → 领导致辞 → 产品介绍 → 抽奖 → 合影</text>
+  <text x="92" y="354" class="red h3">看起来完整，但核心问题没判断</text>
+
+  <rect x="756" y="145" width="590" height="250" rx="18" class="good"/>
+  <text x="788" y="190" class="green h2">策元2先做判断</text>
+  <text x="794" y="238" class="ink body">这场活动到底要赢什么？</text>
+  <text x="794" y="274" class="ink body">谁付钱、谁拍板、谁到场、谁会反对？</text>
+  <text x="794" y="310" class="ink body">成功怎么证明？创意如何落地？</text>
+  <text x="794" y="354" class="green h3">先判局，再写方案</text>
+  <path class="arrow" d="M650 270 H748"/>
+
+  <rect x="54" y="455" width="1292" height="248" rx="22" class="panel"/>
+  <text x="86" y="502" class="ink h2">策元2的核心链路</text>
+  <g transform="translate(86,536)">
+    <rect x="0" y="0" width="130" height="86" rx="14" fill="#dbeafe"/><text x="24" y="34" class="blue h3">判局</text><text x="17" y="62" class="muted small">路线先定</text>
+    <rect x="158" y="0" width="130" height="86" rx="14" fill="#ccfbf1"/><text x="182" y="34" class="teal h3">取证</text><text x="173" y="62" class="muted small">别编事实</text>
+    <rect x="316" y="0" width="130" height="86" rx="14" fill="#dcfce7"/><text x="340" y="34" class="green h3">行为</text><text x="326" y="62" class="muted small">谁改变什么</text>
+    <rect x="474" y="0" width="130" height="86" rx="14" fill="#fef3c7"/><text x="498" y="34" class="gold h3">经营</text><text x="496" y="62" class="muted small">钱与指标</text>
+    <rect x="632" y="0" width="130" height="86" rx="14" fill="#e0e7ff"/><text x="656" y="34" class="blue h3">叙事</text><text x="645" y="62" class="muted small">能被复述</text>
+    <rect x="790" y="0" width="130" height="86" rx="14" fill="#fce7f3"/><text x="814" y="34" class="red h3">创意</text><text x="800" y="62" class="muted small">机制非换皮</text>
+    <rect x="948" y="0" width="130" height="86" rx="14" fill="#e5e7eb"/><text x="972" y="34" class="ink h3">交付</text><text x="962" y="62" class="muted small">谁何时做</text>
+    <rect x="1106" y="0" width="130" height="86" rx="14" fill="#fee2e2"/><text x="1130" y="34" class="red h3">对抗</text><text x="1121" y="62" class="muted small">先打再修</text>
+    <path class="thin" d="M130 43 H158"/><path class="thin" d="M288 43 H316"/><path class="thin" d="M446 43 H474"/><path class="thin" d="M604 43 H632"/><path class="thin" d="M762 43 H790"/><path class="thin" d="M920 43 H948"/><path class="thin" d="M1078 43 H1106"/>
+  </g>
+  <rect x="86" y="656" width="480" height="30" rx="15" class="grey"/>
+  <text x="112" y="677" class="muted small">每个硬暂停点等你确认，避免一路错到最后</text>
+  <rect x="600" y="656" width="424" height="30" rx="15" class="grey"/>
+  <text x="626" y="677" class="muted small">事实、数字、预算、案例都要有证据等级</text>
+  <rect x="1058" y="656" width="250" height="30" rx="15" class="grey"/>
+  <text x="1084" y="677" class="muted small">最后才进入成案</text>
+
+  <text x="54" y="764" class="muted body">一句话：策元2帮你从“我想办个活动”走到“这份方案为什么成立、怎么交付、失败怎么办”。</text>
+</svg>

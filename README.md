@@ -6,7 +6,7 @@
 
 **Language:** [中文](#先说人话它到底是干什么的) | [English](#english-version)
 
-![策元2从模糊 Brief 到可上交方案的 10 步状态机](assets/ceyuan2-os-map.svg)
+![策元2到底在干嘛：从普通 AI 套模板，到策元2先判局、取证、拆行为、建经营模型、再成案](assets/ceyuan2-what-it-does.svg)
 
 ## 先说人话：它到底是干什么的？
 
@@ -214,6 +214,8 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 根据活动复杂度，它可能产出不同深度的交付件。
 
+![策元2按活动复杂度裁剪最终交付件：一页创意、标准方案、全案执行、竞标招商版](assets/ceyuan2-output-ladder.svg)
+
 | 交付深度 | 适合场景 | 通常包含 |
 |---|---|---|
 | 一页创意 | 你只想先拿方向 | Big Idea、目标、核心机制、传播钩子 |
@@ -268,7 +270,9 @@ ceyuan-2/
 ├── SKILL.md
 ├── LICENSE
 ├── assets/
+│   ├── ceyuan2-what-it-does.svg
 │   ├── ceyuan2-os-map.svg
+│   ├── ceyuan2-output-ladder.svg
 │   └── ceyuan2-module-map.svg
 └── references/
     ├── triage-router.md
@@ -359,7 +363,7 @@ MIT License. See `LICENSE`.
 
 > Ceyuan2 is an AI Skill for China-market event planning. Think of it as a senior event-planning sparring partner: it helps you triage the brief, gather evidence, define behavior change, build the business model and narrative, attack weak assumptions, and turn the result into a plan people can actually use.
 
-![Ceyuan2 event planning OS](assets/ceyuan2-os-map.svg)
+![What Ceyuan2 does: from generic AI templates to triage, evidence, behavior change, business model, delivery, red-team review, and final proposal](assets/ceyuan2-what-it-does.svg)
 
 ## What Is Ceyuan2?
 
@@ -567,6 +571,8 @@ Only after that does it move into adversarial review, budget, schedule, material
 
 The output depth depends on event complexity.
 
+![Ceyuan2 output ladder: one-page idea, standard proposal, full execution plan, pitch or sponsorship version](assets/ceyuan2-output-ladder.svg)
+
 | Output Depth | Best For | Usually Includes |
 |---|---|---|
 | One-page idea | You only need a direction first | Big Idea, goal, core mechanism, communication hook |
@@ -621,7 +627,9 @@ ceyuan-2/
 ├── SKILL.md
 ├── LICENSE
 ├── assets/
+│   ├── ceyuan2-what-it-does.svg
 │   ├── ceyuan2-os-map.svg
+│   ├── ceyuan2-output-ladder.svg
 │   └── ceyuan2-module-map.svg
 └── references/
     ├── triage-router.md
