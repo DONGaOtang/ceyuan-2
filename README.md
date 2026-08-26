@@ -1,12 +1,12 @@
 # 策元2 Ceyuan2
 
-> 一个给活动策划用的 AI Skill。它不会一上来套模板，而是先帮你把需求问清楚，再一步步生成能落地、能解释、能被老板或客户质疑后仍站得住的活动方案。
+> 一个面向中国市场活动策划的 AI Skill。它不会一上来套模板，而是先帮你判局、查证、拆行为、建经营模型、搭叙事，再一步步生成能落地、能解释、能被老板或客户质疑后仍站得住的活动方案。
 >
-> An AI Skill for event planning. It does not start with a template. It first clarifies the brief, then helps you build an event plan that can be executed, explained, and defended under scrutiny.
+> An AI Skill for China-market event planning. It does not start with a template. It triages the situation, checks evidence, defines behavior change, builds the business model and narrative, then helps you produce an event plan that can be executed, explained, and defended under scrutiny.
 
 **Language:** [中文](#先说人话它到底是干什么的) | [English](#english-version)
 
-![策元2从扩散到收口的活动策划 OS](assets/ceyuan2-skill-scope-map.png)
+![策元2从模糊 Brief 到可上交方案的 10 步状态机](assets/ceyuan2-os-map.svg)
 
 ## 先说人话：它到底是干什么的？
 
@@ -27,7 +27,7 @@ AI：好的，以下是发布会流程：签到、领导致辞、产品介绍、
 - 创意只是换个主题包装，还是改变了用户行为？
 - 方案被老板、客户、赞助商、政府、执行团队质疑时，能不能扛住？
 
-策元2做的事，就是把这些问题提前拆开，然后再写方案。
+策元2做的事，就是把这些问题提前拆开：先判局，拿证据，确定要改变谁的行为，再处理预算、报名、赞助、销售、叙事、创意和交付。
 
 ## 适合谁用？
 
@@ -99,7 +99,7 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 帮我做一个公司年会方案
 ```
 
-只要你的需求里有“活动、策划、方案、发布会、年会、招商会、快闪、峰会、campaign”等信号，它就应该被触发。
+只要你的需求里有“活动策划、活动方案、发布会、年会、招商会、快闪、峰会、campaign、直播活动、仪式活动、文旅节庆”等活动组合信号，它就应该被触发。单独出现“方案”不构成触发，必须能判断为活动、营销 campaign、会议会务、仪式、展会、节庆、赞助或线上/线下参与机制相关需求。
 
 ### 第三步：回答问题
 
@@ -160,19 +160,22 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 策元2不是“写方案机器”，而是一个从混乱到收口的流程。
 
-![策元2完整流程图](assets/ceyuan2-skill-full-flow-mindmap.png)
+![策元2完整流程图](assets/ceyuan2-os-map.svg)
 
-简单说，它会走 7 个阶段：
+简单说，它会走 10 个阶段。默认分步运行，每到硬暂停点都会等你确认；只有你明确说“允许跳过所有暂停点、按假设完整输出、接受未经确认风险”，它才会连续跑完。
 
 | 阶段 | 它在做什么 | 你会看到什么 |
 |---|---|---|
 | Step 0 判局分流 | 先判断这是甲方自用、乙方提案、To C、To B、To G、内部活动还是 campaign | 分流判断表、主路由、风险预判 |
-| Step 1 拆 Brief | 把模糊需求拆成真实动机、受众、资源、钱流、合规和创意禁区 | 需求字段表、缺失信息清单 |
-| Step 2 建目标 | 把“办得好”改成可衡量目标 | 主判据、辅助指标、四层指标链 |
-| Step 3 发散创意 | 用交叉网络生成多个不落俗套的方向 | 3 到 5 张创意闪卡 |
-| Step 3.5 反陈旧审查 | 检查创意是不是只换皮、不换机制 | 陈旧风险、审美风险、身份错位风险 |
-| Step 4 Red Team 对抗 | 先把创意说到最强，再攻击它 | 根本缺陷、修法、降级方案 |
-| Step 5/6 成案与终审 | 写成能上交的方案，并模拟老板/客户打回 | 完整方案、预算、时间线、风险、终审意见 |
+| Step 1 信息采集与横纵分析 | 拿正向案例、反向吐槽、平台玩法和竞品空白 | 外部信号、纵向分析、横向分析、证据等级 |
+| Step 2 行为改变 | 把“目标人群”拆成谁要改变什么行为 | 行为改变表、关键阻力、待确认项 |
+| Step 3 经营模型 | 把“办得好”改成可证明、可采集、可取舍的目标 | 主判据、四层传导链、预算/数据/降级模型 |
+| Step 4 中国市场叙事 | 找到老板、客户、媒体和用户能复述的故事主线 | 主叙事、核心冲突、情绪曲线、记忆点 |
+| Step 5 创意机制 | 用交叉网络生成多个不落俗套的方向 | 2 到 5 张创意闪卡，等待你选择 |
+| Step 6 交付系统 | 把方向变成能排产、能验收、能降级的执行系统 | 关键路径、RACI、报名/赞助/数据/销售承接 |
+| Step 7 Red Team 对抗 | 先把方案说到最强，再攻击策略风险和交付矛盾 | 根本缺陷、修法、失败降级 |
+| Step 8 成案 | 按用途写成一页创意、标准方案、全案执行或招商/政企版 | 可上交方案主体 |
+| Step 9 终审模拟 | 模拟老板、客户、赞助商、执行团队和用户打回 | 必改项、可选增强、最终判词 |
 
 ## 一个极简例子
 
@@ -240,10 +243,16 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 |---|---|
 | 直接生成方案 | 先判局，再生成 |
 | 容易套模板 | 有反陈旧审查 |
-| 只问活动类型 | 会问钱流、资源、决策人、合规边界 |
-| 创意靠灵感 | 用“锚点 × 热点/文化/情绪/跨界/感官/冲突”生成 |
-| 方案看起来完整 | 会模拟质疑，把根本缺陷打出来 |
-| 活动结束就结束 | 要求指标回填和案例库回流 |
+| 只问活动类型 | 会问钱流、资源、决策人、合规边界、数据采集和交付边界 |
+| 创意靠灵感 | 先定义行为改变和经营判据，再用“锚点 × 热点/文化/情绪/跨界/感官/冲突”生成 |
+| 方案看起来完整 | 会同时攻击策略风险和交付矛盾 |
+| 活动结束就结束 | 要求指标回填、数据采集和案例库回流 |
+
+## 模块地图
+
+策元2现在有 34 个 `references/` 模块。你不需要全读，它会按 Step 和场景触发：判局用判局模块，预算用经营模块，文旅强叙事用文旅模块，赞助招商用赞助履约模块。
+
+![策元2 reference 模块地图](assets/ceyuan2-module-map.svg)
 
 ## 文件结构
 
@@ -259,10 +268,15 @@ ceyuan-2/
 ├── SKILL.md
 ├── LICENSE
 ├── assets/
-│   ├── ceyuan2-skill-scope-map.png
-│   └── ceyuan2-skill-full-flow-mindmap.png
+│   ├── ceyuan2-os-map.svg
+│   └── ceyuan2-module-map.svg
 └── references/
     ├── triage-router.md
+    ├── anti-hallucination-and-evidence.md
+    ├── stakeholder-behavior-change.md
+    ├── business-model-and-budget.md
+    ├── china-market-narrative.md
+    ├── critical-path-delivery.md
     ├── ai-role-prompts.md
     ├── creative-inputs.md
     ├── anti-stale-creative.md
@@ -276,11 +290,20 @@ ceyuan-2/
 | 文件 | 作用 |
 |---|---|
 | `triage-router.md` | 判断这是什么活动局 |
+| `anti-hallucination-and-evidence.md` | 管事实分级、来源绑定和防编造 |
 | `ai-role-prompts.md` | 让 AI 在不同阶段切换角色 |
+| `stakeholder-behavior-change.md` | 把目标人群拆成具体行为改变 |
+| `business-model-and-budget.md` | 处理预算、成本、回报和降级模型 |
+| `china-market-narrative.md` | 建中国市场可复述的主叙事 |
 | `creative-inputs.md` | 生成创意方向 |
 | `anti-stale-creative.md` | 检查创意是不是陈旧模板 |
+| `critical-path-delivery.md` | 把方案压成关键路径、RACI 和交付节点 |
+| `registration-and-attendance.md` | 处理报名、邀约、到场和 no-show |
+| `sponsorship-fulfillment.md` | 处理赞助权益、履约和 ROI 回报 |
+| `data-capture-and-review.md` | 处理数据采集、复盘和证据沉淀 |
 | `experiment-validation.md` | 设计 AB 测试或低成本预检 |
 | `boardroom-proposal-schema.md` | 写能上交的正式方案 |
+| `pitch-winning-proposal.md` | 强化老板过会、竞标、中标力和年度事件叙事 |
 | `pitch-battle.md` | 乙方竞标、比稿、招商提案 |
 | `metrics-flow.md` | 建立活动后的指标闭环 |
 
@@ -292,7 +315,7 @@ ceyuan-2/
 
 ### 我什么信息都没有怎么办？
 
-直接说“不知道”。策元2会把未知项标出来，并先按最可能的情况做轻量版判断。它不会因为你答不上预算就停止工作。
+直接说“不知道”。策元2会把未知项标出来，并先按最可能的情况做轻量版判断。信息缺口影响分流时，它会停在问题门禁；信息缺口不影响当前 Step 时，才会继续推进并标注假设。
 
 ### 它会不会问太多？
 
@@ -303,7 +326,7 @@ ceyuan-2/
 可以。你可以说：
 
 ```text
-用策元2直接跑完整流程，中间不要暂停。信息不足的地方请标注假设。
+用策元2直接跑完整流程；允许跳过所有暂停点，允许基于假设生成，接受未经确认风险。信息不足的地方请标注假设。
 ```
 
 但更推荐你至少在创意方向出来后选一次。否则它可能把一个你根本不喜欢的方向打磨得很完整。
@@ -334,9 +357,9 @@ MIT License. See `LICENSE`.
 
 # English Version
 
-> Ceyuan2 is an AI Skill for event planning. Think of it as a senior event-planning sparring partner: it helps you clarify the brief, rebuild the goal, generate sharper ideas, attack weak assumptions, and turn the result into a plan people can actually use.
+> Ceyuan2 is an AI Skill for China-market event planning. Think of it as a senior event-planning sparring partner: it helps you triage the brief, gather evidence, define behavior change, build the business model and narrative, attack weak assumptions, and turn the result into a plan people can actually use.
 
-![Ceyuan2 event planning OS](assets/ceyuan2-skill-scope-map.png)
+![Ceyuan2 event planning OS](assets/ceyuan2-os-map.svg)
 
 ## What Is Ceyuan2?
 
@@ -357,7 +380,7 @@ Ceyuan2 starts earlier. Before writing the plan, it asks the questions that deci
 - Is the idea actually changing participant behavior, or just repainting an old format?
 - Can the plan survive questions from the boss, client, sponsor, government stakeholder, or execution team?
 
-Ceyuan2 breaks those questions down first, then writes.
+Ceyuan2 breaks those questions down first: situation, evidence, behavior change, budget, registration, sponsorship, sales handoff, narrative, creative mechanism, and delivery.
 
 ## Who Is It For?
 
@@ -490,19 +513,22 @@ Start with the participation mechanism, not just content topics.
 
 Ceyuan2 is not a “write me a plan” machine. It is a process that moves from messy input to a submit-ready output.
 
-![Ceyuan2 full workflow](assets/ceyuan2-skill-full-flow-mindmap.png)
+![Ceyuan2 full workflow](assets/ceyuan2-os-map.svg)
 
-In plain terms, it works in 7 stages:
+In plain terms, it works in 10 stages. By default, it runs step by step and stops at each hard checkpoint for confirmation. It only runs continuously when you explicitly allow skipping all checkpoints, generating from assumptions, and accepting unconfirmed-risk tradeoffs.
 
 | Stage | What It Does | What You See |
 |---|---|---|
 | Step 0 Triage | Determines whether this is client-side, agency-side, To C, To B, To G, internal, or campaign work | Routing table, main route, risk forecast |
-| Step 1 Deconstruct Brief | Breaks a vague request into motive, audience, resources, money flow, compliance, and creative boundaries | Brief field table, missing information list |
-| Step 2 Rebuild Goal | Turns “make it good” into measurable success criteria | Primary criterion, supporting metrics, four-layer metric chain |
-| Step 3 Diverge Ideas | Uses a cross-network method to generate non-template directions | 3 to 5 idea cards |
-| Step 3.5 Anti-Stale Review | Checks whether the idea is just old wine in a new package | Stale-template risks, aesthetic risks, identity mismatch |
-| Step 4 Red Team | Steelmans the idea first, then attacks it | Fatal assumption, repairs, fallback versions |
-| Step 5/6 Final Plan and Review | Turns the result into a proposal and simulates approval-room objections | Full plan, budget, timeline, risks, final review |
+| Step 1 Research and Signal Analysis | Collects positive cases, negative feedback, platform mechanics, and competitor gaps | External signals, longitudinal analysis, horizontal analysis, evidence levels |
+| Step 2 Behavior Change | Turns “target audience” into who must change which observable behavior | Behavior-change table, key resistance, open assumptions |
+| Step 3 Business Model | Turns “make it good” into measurable, collectable, and tradeoff-ready goals | Primary criterion, metric chain, budget/data/fallback model |
+| Step 4 China-Market Narrative | Builds a story that executives, clients, media, and users can repeat | Main narrative, core conflict, emotional arc, memory point |
+| Step 5 Creative Mechanism | Uses a cross-network method to generate non-template directions | 2 to 5 idea cards for selection |
+| Step 6 Delivery System | Turns the chosen direction into schedulable, accountable delivery | Critical path, RACI, registration/sponsorship/data/sales handoff |
+| Step 7 Red Team | Steelmans the plan first, then attacks strategy risks and delivery contradictions | Fatal assumption, repairs, fallback versions |
+| Step 8 Final Plan | Turns the confirmed work into the right proposal format | Submit-ready proposal body |
+| Step 9 Final Review | Simulates approval-room objections | Required fixes, optional enhancements, final verdict |
 
 ## A Tiny Example
 
@@ -570,10 +596,16 @@ A formal plan usually includes:
 |---|---|
 | Generates immediately | Triage first, then generates |
 | Easily falls into templates | Has an anti-stale review |
-| Only asks for event type | Asks about money flow, resources, decision-makers, compliance boundaries |
-| Treats creativity as inspiration | Uses anchor x topic/culture/emotion/cross-industry/senses/conflict |
-| Looks complete on paper | Simulates objections and exposes fatal assumptions |
-| Ends when the event ends | Requires metric feedback and case-library learning |
+| Only asks for event type | Asks about money flow, resources, decision-makers, compliance, data capture, and delivery boundaries |
+| Treats creativity as inspiration | Defines behavior change and business criteria before generating ideas |
+| Looks complete on paper | Attacks both strategy risks and delivery contradictions |
+| Ends when the event ends | Requires metric feedback, data capture, and case-library learning |
+
+## Module Map
+
+Ceyuan2 now has 34 `references/` modules. You do not need to read them all. They are loaded by step and scenario: triage modules for triage, business modules for budget, narrative modules for strong China-market storytelling, and sponsorship modules for sponsorship delivery.
+
+![Ceyuan2 reference module map](assets/ceyuan2-module-map.svg)
 
 ## File Structure
 
@@ -589,10 +621,15 @@ ceyuan-2/
 ├── SKILL.md
 ├── LICENSE
 ├── assets/
-│   ├── ceyuan2-skill-scope-map.png
-│   └── ceyuan2-skill-full-flow-mindmap.png
+│   ├── ceyuan2-os-map.svg
+│   └── ceyuan2-module-map.svg
 └── references/
     ├── triage-router.md
+    ├── anti-hallucination-and-evidence.md
+    ├── stakeholder-behavior-change.md
+    ├── business-model-and-budget.md
+    ├── china-market-narrative.md
+    ├── critical-path-delivery.md
     ├── ai-role-prompts.md
     ├── creative-inputs.md
     ├── anti-stale-creative.md
@@ -606,11 +643,20 @@ Common reference modules:
 | File | Purpose |
 |---|---|
 | `triage-router.md` | Decides what kind of event situation this is |
+| `anti-hallucination-and-evidence.md` | Manages fact levels, source binding, and anti-fabrication rules |
 | `ai-role-prompts.md` | Switches the AI into the right professional role at each step |
+| `stakeholder-behavior-change.md` | Turns target audiences into observable behavior changes |
+| `business-model-and-budget.md` | Handles budget, cost, return, and fallback models |
+| `china-market-narrative.md` | Builds a repeatable China-market narrative |
 | `creative-inputs.md` | Generates creative directions |
 | `anti-stale-creative.md` | Checks whether an idea is just a stale template |
+| `critical-path-delivery.md` | Turns the plan into critical path, RACI, and delivery milestones |
+| `registration-and-attendance.md` | Handles registration, invitation, attendance, and no-show risk |
+| `sponsorship-fulfillment.md` | Handles sponsorship rights, fulfillment, and ROI reporting |
+| `data-capture-and-review.md` | Handles data capture, review, and evidence storage |
 | `experiment-validation.md` | Designs A/B tests or low-cost pretests |
 | `boardroom-proposal-schema.md` | Builds a proposal that can be submitted |
+| `pitch-winning-proposal.md` | Strengthens executive approval, pitch power, and annual-event narrative |
 | `pitch-battle.md` | Supports agency pitches, tenders, and sponsorship proposals |
 | `metrics-flow.md` | Builds the post-event metric feedback loop |
 
@@ -633,7 +679,7 @@ It will ask, but for a reason. Most event failures are hidden in the early brief
 Yes. Use:
 
 ```text
-Use Ceyuan2 to run the full process without pausing. Mark assumptions wherever information is missing.
+Use Ceyuan2 to run the full process. I allow all checkpoints to be skipped, allow assumption-based generation, and accept unconfirmed-risk tradeoffs. Mark assumptions wherever information is missing.
 ```
 
 Still, it is usually better to choose a creative direction once before it writes the full plan.

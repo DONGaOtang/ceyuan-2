@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="840" viewBox="0 0 1400 840" role="img" aria-labelledby="title desc">
+  <title id="title">Ceyuan2 activity planning operating system</title>
+  <desc id="desc">A bilingual overview of Ceyuan2: triage, research, behavior change, business model, China-market narrative, creative mechanism, delivery system, red team, final proposal, and final review.</desc>
+  <defs>
+    <style>
+      .bg{fill:#f8fafc}.ink{fill:#102033;font-family:Arial,"Microsoft YaHei",sans-serif}.muted{fill:#526173;font-family:Arial,"Microsoft YaHei",sans-serif}
+      .panel{fill:#fff;stroke:#cbd5e1;stroke-width:2}.teal{fill:#0f766e}.blue{fill:#1d4ed8}.red{fill:#b91c1c}.gold{fill:#b45309}.green{fill:#15803d}
+      .line{stroke:#64748b;stroke-width:3;fill:none;marker-end:url(#arrow)}.dash{stroke:#94a3b8;stroke-width:2;stroke-dasharray:7 7;fill:none;marker-end:url(#arrow)}
+      .small{font-size:18px}.mid{font-size:22px;font-weight:700}.big{font-size:36px;font-weight:800}.num{fill:#fff;font-size:26px;font-weight:800;font-family:Arial,sans-serif}
+    </style>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="8" refY="3" orient="auto" markerUnits="strokeWidth"><path d="M0,0 L0,6 L9,3 z" fill="#64748b"/></marker>
+  </defs>
+  <rect class="bg" width="1400" height="840"/>
+  <text x="48" y="58" class="ink big">策元2 / Ceyuan2：从模糊 Brief 到可上交方案</text>
+  <text x="50" y="94" class="muted small">先判局，不套模板；先行为改变，再创意；先交付系统，再成案。</text>
+  <rect x="40" y="125" width="1320" height="116" rx="18" class="panel"/>
+  <text x="68" y="160" class="ink mid">默认运行规则 / Default Operating Rule</text>
+  <text x="68" y="195" class="muted small">每次默认只执行一个 Step；硬暂停点必须等用户确认。</text>
+  <text x="68" y="222" class="muted small">One step per turn by default. Hard checkpoints must stop for confirmation.</text>
+  <rect x="910" y="154" width="410" height="54" rx="12" fill="#fee2e2" stroke="#ef4444" stroke-width="2"/>
+  <text x="936" y="188" class="red mid">“直接写完整方案” ≠ 跳过门禁</text>
+  <g transform="translate(42,282)">
+    <rect class="panel" x="0" y="0" width="252" height="150" rx="16"/><circle cx="34" cy="36" r="24" class="blue"/><text x="26" y="45" class="num">0</text><text x="72" y="42" class="ink mid">判局分流</text><text x="24" y="78" class="muted small">甲方/乙方/To C/To B/To G</text><text x="24" y="106" class="muted small">体量、交付件、叙事强度</text><text x="24" y="134" class="red small">缺 3 项以上：停下提问</text>
+    <rect class="panel" x="288" y="0" width="252" height="150" rx="16"/><circle cx="322" cy="36" r="24" class="teal"/><text x="314" y="45" class="num">1</text><text x="360" y="42" class="ink mid">信息采集</text><text x="312" y="78" class="muted small">正向信号 + 反向信号</text><text x="312" y="106" class="muted small">横纵分析、证据等级</text><text x="312" y="134" class="red small">关键事实需标来源</text>
+    <rect class="panel" x="576" y="0" width="252" height="150" rx="16"/><circle cx="610" cy="36" r="24" class="green"/><text x="602" y="45" class="num">2</text><text x="648" y="42" class="ink mid">行为改变</text><text x="600" y="78" class="muted small">谁从什么行为</text><text x="600" y="106" class="muted small">变成什么行为</text><text x="600" y="134" class="red small">写不出就不能创意</text>
+    <rect class="panel" x="864" y="0" width="252" height="150" rx="16"/><circle cx="898" cy="36" r="24" class="gold"/><text x="890" y="45" class="num">3</text><text x="936" y="42" class="ink mid">经营模型</text><text x="888" y="78" class="muted small">成本、回报、数据</text><text x="888" y="106" class="muted small">报名、赞助、销售承接</text><text x="888" y="134" class="red small">数字必须有来源</text>
+    <rect class="panel" x="1152" y="0" width="252" height="150" rx="16"/><circle cx="1186" cy="36" r="24" class="blue"/><text x="1178" y="45" class="num">4</text><text x="1224" y="42" class="ink mid">中国叙事</text><text x="1176" y="78" class="muted small">主叙事、核心冲突</text><text x="1176" y="106" class="muted small">情绪曲线、主场面</text><text x="1176" y="134" class="red small">不是文案润色</text>
+    <path class="line" d="M252 75 H288"/><path class="line" d="M540 75 H576"/><path class="line" d="M828 75 H864"/><path class="line" d="M1116 75 H1152"/>
+  </g>
+  <g transform="translate(42,488)">
+    <rect class="panel" x="0" y="0" width="252" height="150" rx="16"/><circle cx="34" cy="36" r="24" class="gold"/><text x="26" y="45" class="num">5</text><text x="72" y="42" class="ink mid">创意机制</text><text x="24" y="78" class="muted small">锚点 × 六类信号</text><text x="24" y="106" class="muted small">2-5 张创意闪卡</text><text x="24" y="134" class="red small">必须等用户选择</text>
+    <rect class="panel" x="288" y="0" width="252" height="150" rx="16"/><circle cx="322" cy="36" r="24" class="teal"/><text x="314" y="45" class="num">6</text><text x="360" y="42" class="ink mid">交付系统</text><text x="312" y="78" class="muted small">关键路径、RACI</text><text x="312" y="106" class="muted small">报名/赞助/数据/销售</text><text x="312" y="134" class="red small">先可交付，再成案</text>
+    <rect class="panel" x="576" y="0" width="252" height="150" rx="16"/><circle cx="610" cy="36" r="24" class="red"/><text x="602" y="45" class="num">7</text><text x="648" y="42" class="ink mid">Red Team</text><text x="600" y="78" class="muted small">攻击策略风险</text><text x="600" y="106" class="muted small">攻击交付矛盾</text><text x="600" y="134" class="red small">风险必须给修法</text>
+    <rect class="panel" x="864" y="0" width="252" height="150" rx="16"/><circle cx="898" cy="36" r="24" class="green"/><text x="890" y="45" class="num">8</text><text x="936" y="42" class="ink mid">成案</text><text x="888" y="78" class="muted small">按交付件裁剪</text><text x="888" y="106" class="muted small">事实与假设清单</text><text x="888" y="134" class="red small">前置确认后才进入</text>
+    <rect class="panel" x="1152" y="0" width="252" height="150" rx="16"/><circle cx="1186" cy="36" r="24" class="blue"/><text x="1178" y="45" class="num">9</text><text x="1224" y="42" class="ink mid">终审模拟</text><text x="1176" y="78" class="muted small">老板/客户/执行/用户</text><text x="1176" y="106" class="muted small">叙事 + 交付一致性</text><text x="1176" y="134" class="red small">输出最终判词</text>
+    <path class="line" d="M252 75 H288"/><path class="line" d="M540 75 H576"/><path class="line" d="M828 75 H864"/><path class="line" d="M1116 75 H1152"/>
+  </g>
+  <path class="line" d="M1300 432 V468"/>
+  <path class="dash" d="M1248 638 C1180 748 230 748 158 638"/>
+  <text x="410" y="765" class="muted small">活动后复盘：目标 vs 实际 → 数据回填 → 案例库 → 下一次 Step 1 / Step 5 更准</text>
+</svg>
