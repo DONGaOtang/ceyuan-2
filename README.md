@@ -6,7 +6,7 @@
 
 **Language:** [中文](#先说人话它到底是干什么的) | [English](#english-version)
 
-![策元2到底在干嘛：从普通 AI 套模板，到策元2先判局、取证、拆行为、建经营模型、再成案](assets/ceyuan2-what-it-does.svg)
+![策元2到底在干嘛：从普通 AI 套模板，到策元2先判局、取证、拆行为、建经营模型、再成案](assets/ceyuan2-what-it-does.png)
 
 ## 先说人话：它到底是干什么的？
 
@@ -160,7 +160,7 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 策元2不是“写方案机器”，而是一个从混乱到收口的流程。
 
-![策元2完整流程图](assets/ceyuan2-os-map.svg)
+![策元2完整流程图](assets/ceyuan2-os-map.png)
 
 简单说，它会走 10 个阶段。默认分步运行，每到硬暂停点都会等你确认；只有你明确说“允许跳过所有暂停点、按假设完整输出、接受未经确认风险”，它才会连续跑完。
 
@@ -214,7 +214,7 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 根据活动复杂度，它可能产出不同深度的交付件。
 
-![策元2按活动复杂度裁剪最终交付件：一页创意、标准方案、全案执行、竞标招商版](assets/ceyuan2-output-ladder.svg)
+![策元2按活动复杂度裁剪最终交付件：一页创意、标准方案、全案执行、竞标招商版](assets/ceyuan2-output-ladder.png)
 
 | 交付深度 | 适合场景 | 通常包含 |
 |---|---|---|
@@ -254,7 +254,7 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 策元2现在有多个 `references/` 模块。你不需要全读，它会按 Step 和场景触发：判局用判局模块，预算用经营模块，文旅强叙事先过边界模块，赞助招商用赞助履约模块，信息采集会先走来源访问与登录工作流。
 
-![策元2 reference 模块地图](assets/ceyuan2-module-map.svg)
+![策元2 reference 模块地图](assets/ceyuan2-module-map.png)
 
 ## 文件结构
 
@@ -377,7 +377,7 @@ MIT License. See `LICENSE`.
 
 > Ceyuan2 is an AI Skill for China-market event planning. Think of it as a senior event-planning sparring partner: it helps you triage the brief, gather evidence, define behavior change, build the business model and narrative, attack weak assumptions, and turn the result into a plan people can actually use.
 
-![What Ceyuan2 does: from generic AI templates to triage, evidence, behavior change, business model, delivery, red-team review, and final proposal](assets/ceyuan2-what-it-does.svg)
+![What Ceyuan2 does: from generic AI templates to triage, evidence, behavior change, business model, delivery, red-team review, and final proposal](assets/ceyuan2-what-it-does.png)
 
 ## What Is Ceyuan2?
 
@@ -531,7 +531,7 @@ Start with the participation mechanism, not just content topics.
 
 Ceyuan2 is not a “write me a plan” machine. It is a process that moves from messy input to a submit-ready output.
 
-![Ceyuan2 full workflow](assets/ceyuan2-os-map.svg)
+![Ceyuan2 full workflow](assets/ceyuan2-os-map.png)
 
 In plain terms, it works in 10 stages. By default, it runs step by step and stops at each hard checkpoint for confirmation. It only runs continuously when you explicitly allow skipping all checkpoints, generating from assumptions, and accepting unconfirmed-risk tradeoffs.
 
@@ -585,7 +585,7 @@ Only after that does it move into adversarial review, budget, schedule, material
 
 The output depth depends on event complexity.
 
-![Ceyuan2 output ladder: one-page idea, standard proposal, full execution plan, pitch or sponsorship version](assets/ceyuan2-output-ladder.svg)
+![Ceyuan2 output ladder: one-page idea, standard proposal, full execution plan, pitch or sponsorship version](assets/ceyuan2-output-ladder.png)
 
 | Output Depth | Best For | Usually Includes |
 |---|---|---|
@@ -625,7 +625,7 @@ A formal plan usually includes:
 
 Ceyuan2 has multiple `references/` modules. You do not need to read them all. They are loaded by step and scenario: triage modules for triage, business modules for budget, source-access modules for research, boundary modules for culture-tourism narrative, and sponsorship modules for sponsorship delivery.
 
-![Ceyuan2 reference module map](assets/ceyuan2-module-map.svg)
+![Ceyuan2 reference module map](assets/ceyuan2-module-map.png)
 
 ## File Structure
 
