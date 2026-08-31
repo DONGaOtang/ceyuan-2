@@ -74,7 +74,7 @@
 原假设 → 测试版本 → 测试结果 → 实际活动表现 → 结论 → 下次复用/禁用
 ```
 
-写回独立案例库时至少记录，不得直接写回 reference 方法文件：
+写回 `output/case-library/` 或用户指定复盘文档时至少记录，不得直接写回 `references/` 方法文件。跑测偏差写入 `output/run-reviews/`，方法论改进建议写入 `output/improvement-log/`：
 
 - 哪个假设被验证 / 被推翻。
 - 哪个版本赢，为什么可能赢。

@@ -52,11 +52,20 @@ description: 中国市场活动策划总监级方案系统。先判局分流，�
 
 ## 特定场景示例的使用边界
 
-文旅、艺术文化、海边社区、阿那亚类项目的强叙事处理见 `references/culture-tourism-strong-narrative.md`。该示例只在用户需求明确命中文旅/艺术文化/海边社区/年度节庆时加载，不得污染普通年会、发布会、宠物活动、招商会或内部活动。
+文旅、艺术文化、海边社区、阿那亚类项目的强叙事处理先读 `references/culture-tourism-boundary.md`，确认命中后再加载 `references/culture-tourism-strong-narrative.md`。该示例只在用户需求明确命中文旅/艺术文化/海边社区/年度节庆/城市文化资产时加载，不得污染普通年会、发布会、宠物活动、招商会或内部活动。
 
 ## 复盘写入边界
 
-活动复盘、案例沉淀和推导路径断点只能写入独立案例库，默认位置为 `output/case-library/` 或用户指定的项目复盘文件。不得直接改写 `references/` 下的方法论文件。
+活动复盘、案例沉淀、跑测记录、用户项目过程稿和推导路径断点只能写入 `output/` 下的沉淀目录或用户指定的项目复盘文件，不得直接改写 `references/` 下的方法论文件。
+
+| 目录 | 写入内容 |
+|---|---|
+| `output/case-library/` | 活动案例、可复用机制、禁用动作、推导路径断点 |
+| `output/run-reviews/` | 跑测记录、失败样本、调用偏差、验证结果 |
+| `output/user-projects/` | 用户项目过程稿、阶段输出、上交稿草案 |
+| `output/improvement-log/` | Skill 改进建议、待采纳规则、人工审核前的修法 |
+
+`references/` 是稳定方法论区。任何复盘内容必须先沉淀到 `output/`，经人工审核后才允许升级为 `references/` 方法论。
 
 ## 八条铁律
 
@@ -86,8 +95,8 @@ description: 中国市场活动策划总监级方案系统。先判局分流，�
 
 ## Step 0 · 判局分流
 
-**角色**：市场活动总监。  
-**加载**：`references/triage-router.md`、`references/ai-role-prompts.md`、`references/anti-hallucination-and-evidence.md`。  
+**角色**：市场活动总监。
+**加载**：`references/triage-router.md`、`references/ai-role-prompts.md`、`references/role-overlays-by-scenario.md`、`references/anti-hallucination-and-evidence.md`。
 **目的**：先决定这份方案应该长成什么样。
 
 每次先输出“分流判断表”，并写清本次主路由、辅路由、排除路由和待确认风险：
@@ -107,11 +116,15 @@ description: 中国市场活动策划总监级方案系统。先判局分流，�
 
 Step 0 信息不足时，只输出：分流判断表、主路由、辅路由、排除路由、关键缺口、最多 5 个优先问题、下一步建议。不得直接进入完整活动流程、Big Idea 全案、执行排期、预算表、传播矩阵或 Step 8 上交版方案。
 
+Step 0 完成分流后，必须按主路由加载 `references/role-overlays-by-scenario.md` 中的 1 个场景角色补丁；辅路由最多叠加 2 个。场景补丁只改变判断优先级，不改变状态机、硬暂停点和输出门禁。
+
 ## Step 1 · 信息采集与横纵分析
 
-**角色**：市场研究负责人 + 创意策略。  
-**加载**：`references/search-paths.md`、`references/creative-inputs.md`、`references/event-types.md`、`references/anti-hallucination-and-evidence.md`。  
+**角色**：市场研究负责人 + 创意策略。
+**加载**：`references/search-paths.md`、`references/source-access-and-login-workflow.md`、`references/creative-inputs.md`、`references/event-types.md`、`references/anti-hallucination-and-evidence.md`。
 **目的**：先拿市场活水，再进入判断；保留原有横纵向分析并前置强化。
+
+信息采集开始前，必须先执行采集能力预检：判断是否可用联网搜索、浏览器自动化、页面读取、截图、已登录浏览器/Profile 或专用平台/API。AI 先按活动类型生成最小必要平台清单并尝试验证访问状态；只有登录、验证码、账号授权、付费墙、机构权限等必须由人介入时，才提示用户取舍。用户不登录或不授权时，自动降级到公开网页、搜索引擎 `site:`、官方/媒体/报告源，并标注来源限制。
 
 必须输出：
 
@@ -121,13 +134,15 @@ Step 0 信息不足时，只输出：分流判断表、主路由、辅路由、�
 | 纵向分析 | 品牌/品类过去怎么做、翻车史、为什么现在要变 |
 | 横向分析 | 同类活动最近怎么做、主要玩家是谁、用户真实反馈是什么 |
 | 可碰撞信号 | 每条信息拆成底层情绪、可用动作、失效边界 |
+| 采集状态 | 平台/来源、用途、访问方式、访问状态、已取得内容、限制/下一步 |
 | 证据等级 | 用户确认 / 来源验证 / 推断 / 待验证 |
 
 硬规则：
 
 - 至少 1 个正向信号 + 1 个反向信号。只有正向案例没有反向信号，不得进入创意。
 - 关键事实至少 2 个独立来源；不足时标“待验证”。
-- 外部信息必须逐条绑定来源，格式为：`事实/信号 | 来源名称与链接或用户原话 | 日期/检索时间 | 证据等级 | 对方案影响`。不能只在文末堆来源。
+- 外部信息必须逐条绑定来源，格式为：`事实/信号 | 来源名称与链接或用户原话 | 日期/检索时间 | 访问方式/状态 | 证据等级 | 对方案影响`。不能只在文末堆来源。
+- 不能把“未登录/未授权/抓不到/只看到搜索结果”的平台内容写成已验证事实。
 - 案例只能拆机制，不能照搬。
 - 不熟悉的法规、审批、消防、广告法、城市管理、食品酒类、医疗金融、未成年人事项，必须联网核实或标“需当地核实”。
 
@@ -135,8 +150,8 @@ Step 0 信息不足时，只输出：分流判断表、主路由、辅路由、�
 
 ## Step 2 · 利益相关方行为改变
 
-**角色**：需求诊断顾问 + 行为设计负责人。  
-**加载**：`references/stakeholder-behavior-change.md`、`references/client-vendor-perspectives.md`、`references/dimensions.md`、`references/axes.md`、`references/creative-inputs.md` 的 5 Whys。  
+**角色**：需求诊断顾问 + 行为设计负责人。
+**加载**：`references/stakeholder-behavior-change.md`、`references/client-vendor-perspectives.md`、`references/dimensions.md`、`references/axes.md`、`references/creative-inputs.md` 的 5 Whys。
 **目的**：把“目标人群是谁”升级成“谁必须改变什么行为”。
 
 必须覆盖：
@@ -157,8 +172,8 @@ Step 0 信息不足时，只输出：分流判断表、主路由、辅路由、�
 
 ## Step 3 · 经营模型
 
-**角色**：增长负责人 + 财务控制 + 数据负责人。  
-**加载**：`references/metrics-flow.md`、`references/business-model-and-budget.md`、`references/data-capture-and-review.md`、`references/market-track-cards.md`、`references/anti-hallucination-and-evidence.md`；To B 场景加读 `references/b2b-sales-event-chain.md`。  
+**角色**：增长负责人 + 财务控制 + 数据负责人。
+**加载**：`references/metrics-flow.md`、`references/business-model-and-budget.md`、`references/data-capture-and-review.md`、`references/market-track-cards.md`、`references/anti-hallucination-and-evidence.md`；To B 场景加读 `references/b2b-sales-event-chain.md`。
 **目的**：把活动目标变成可证明、可采集、可取舍的经营模型。
 
 输出：
@@ -186,8 +201,8 @@ Step 0 信息不足时，只输出：分流判断表、主路由、辅路由、�
 
 ## Step 4 · 中国市场叙事主线
 
-**角色**：提案叙事总监 + 中国市场品牌策略。  
-**加载**：`references/china-market-narrative.md`、`references/pitch-winning-proposal.md`（强叙事/年度叙事时）、`references/aesthetic-identity-risk.md`（高审美风险时）。  
+**角色**：提案叙事总监 + 中国市场品牌策略。
+**加载**：`references/china-market-narrative.md`、`references/pitch-winning-proposal.md`（强叙事/年度叙事时）、`references/aesthetic-identity-risk.md`（高审美风险时）。
 **目的**：把活动从执行清单升级成能被老板、客户、媒体和用户复述的故事主线。
 
 正式方案、强叙事、年度叙事、高预算、老板过会、乙方竞标、文旅节庆、政企活动、品牌年度项目、发布会、城市事件必须输出：
@@ -207,8 +222,8 @@ Step 0 信息不足时，只输出：分流判断表、主路由、辅路由、�
 
 ## Step 5 · 创意机制
 
-**角色**：创意总监 + 新媒体策划 + 跨界导演。  
-**加载**：`references/creative-inputs.md`、`references/anti-stale-creative.md`、`references/new-media-campaign.md`、`references/ab-test-routing.md`、`references/experiment-validation.md`。  
+**角色**：创意总监 + 新媒体策划 + 跨界导演。
+**加载**：`references/creative-inputs.md`、`references/anti-stale-creative.md`、`references/new-media-campaign.md`、`references/ab-test-routing.md`、`references/experiment-validation.md`。
 **目的**：在 Step 1 的市场活水、Step 2 的行为改变、Step 3 的经营模型、Step 4 的叙事主线约束下生成创意机制。
 
 流程：
@@ -236,8 +251,8 @@ Step 0 信息不足时，只输出：分流判断表、主路由、辅路由、�
 
 ## Step 6 · 交付系统设计
 
-**角色**：项目总监 + 执行制片 + 商务负责人。  
-**加载**：按触发条件加载 `registration-and-attendance.md`、`business-model-and-budget.md`、`sponsorship-fulfillment.md`、`session-meeting-design.md`、`critical-path-delivery.md`、`data-capture-and-review.md`、`scope-and-commercial-boundary.md`、`b2b-sales-event-chain.md`。  
+**角色**：项目总监 + 执行制片 + 商务负责人。
+**加载**：按触发条件加载 `registration-and-attendance.md`、`business-model-and-budget.md`、`sponsorship-fulfillment.md`、`session-meeting-design.md`、`critical-path-delivery.md`、`data-capture-and-review.md`、`scope-and-commercial-boundary.md`、`b2b-sales-event-chain.md`。
 **目的**：在对抗审查前先把方案变成可排产、可验收、可降级的交付系统。
 
 按触发加载：
@@ -258,8 +273,8 @@ Step 0 信息不足时，只输出：分流判断表、主路由、辅路由、�
 
 ## Step 7 · Red Team 对抗审查
 
-**角色**：Red Team + 执行制片 + 合规负责人 + 中国市场审美审查官。  
-**加载**：`references/adversarial.md`、`references/ab-test-routing.md`、`references/experiment-validation.md`、`references/scope-and-commercial-boundary.md`、`references/anti-hallucination-and-evidence.md`；高审美风险场景加读 `references/aesthetic-identity-risk.md`；高预算/正式提案/年度事件加读 `references/pitch-winning-proposal.md`。  
+**角色**：Red Team + 执行制片 + 合规负责人 + 中国市场审美审查官。
+**加载**：`references/adversarial.md`、`references/ab-test-routing.md`、`references/experiment-validation.md`、`references/scope-and-commercial-boundary.md`、`references/anti-hallucination-and-evidence.md`；高审美风险场景加读 `references/aesthetic-identity-risk.md`；高预算/正式提案/年度事件加读 `references/pitch-winning-proposal.md`。
 **目的**：攻击最强版本，修成可落地方案。
 
 保留原有策略攻击，并新增交付攻击。必须攻击：
@@ -280,8 +295,8 @@ Step 0 信息不足时，只输出：分流判断表、主路由、辅路由、�
 
 ## Step 8 · 成案
 
-**角色**：提案总监 + 项目经理。  
-**加载**：`references/boardroom-proposal-schema.md`、`references/proposal-schema.md`、`references/client-vendor-perspectives.md`、`references/market-track-cards.md`、`references/new-media-campaign.md`、`references/scope-and-commercial-boundary.md`、`references/anti-hallucination-and-evidence.md`；按 Step 6 已触发模块加载对应交付 reference。  
+**角色**：提案总监 + 项目经理。
+**加载**：`references/boardroom-proposal-schema.md`、`references/proposal-schema.md`、`references/client-vendor-perspectives.md`、`references/market-track-cards.md`、`references/new-media-campaign.md`、`references/scope-and-commercial-boundary.md`、`references/anti-hallucination-and-evidence.md`；按 Step 6 已触发模块加载对应交付 reference。
 **目的**：按 Step 0 判定的交付件，生成可上交方案。
 
 Step 8 只能在 Step 0-7 的硬暂停点已确认后进入。未完成前置确认时，不得使用上交版完整结构。
@@ -303,8 +318,8 @@ Step 8 只能在 Step 0-7 的硬暂停点已确认后进入。未完成前置确
 
 ## Step 9 · 终审模拟
 
-**角色**：老板 / 客户 / 政府 / 赞助商 / 执行团队 / 用户模拟评审，按 Step 0 的读者选择。  
-**加载**：`references/ai-role-prompts.md`、`references/boardroom-proposal-schema.md`、`references/client-vendor-perspectives.md`、`references/china-market-narrative.md`、`references/data-capture-and-review.md`；高预算/正式提案/年度事件加读 `references/pitch-winning-proposal.md`。  
+**角色**：老板 / 客户 / 政府 / 赞助商 / 执行团队 / 用户模拟评审，按 Step 0 的读者选择。
+**加载**：`references/ai-role-prompts.md`、`references/boardroom-proposal-schema.md`、`references/client-vendor-perspectives.md`、`references/china-market-narrative.md`、`references/data-capture-and-review.md`；高预算/正式提案/年度事件加读 `references/pitch-winning-proposal.md`。
 **目的**：模拟真实过会，找出上交前最可能被打回的地方。
 
 终审分两类：
@@ -329,8 +344,8 @@ Step 8 只能在 Step 0-7 的硬暂停点已确认后进入。未完成前置确
 | 触发条件 | 加载文件 |
 |---|---|
 | 全流程事实约束 | `anti-hallucination-and-evidence.md` |
-| Step 0 判局 | `triage-router.md` + `ai-role-prompts.md` |
-| Step 1 信息采集与横纵分析 | `search-paths.md` + `creative-inputs.md` + `event-types.md` |
+| Step 0 判局 | `triage-router.md` + `ai-role-prompts.md` + `role-overlays-by-scenario.md` |
+| Step 1 信息采集与横纵分析 | `search-paths.md` + `source-access-and-login-workflow.md` + `creative-inputs.md` + `event-types.md` |
 | Step 2 行为改变 | `stakeholder-behavior-change.md` + `client-vendor-perspectives.md` |
 | Step 3 经营模型 | `metrics-flow.md` + `business-model-and-budget.md` + `data-capture-and-review.md` |
 | Step 4 中国市场叙事 | `china-market-narrative.md` |
@@ -348,7 +363,7 @@ Step 8 只能在 Step 0-7 的硬暂停点已确认后进入。未完成前置确
 | 实验、AB、预检 | `ab-test-routing.md` + `experiment-validation.md` |
 | Step 8 最终上交方案 | `boardroom-proposal-schema.md` + `proposal-schema.md`；仅在 Step 0-7 硬暂停点已确认后加载 |
 | 乙方竞标/比稿/招商赞助 | `pitch-battle.md` + `sponsorship-fulfillment.md` + `client-vendor-perspectives.md` |
-| 高预算/老板过会/年度事件/文化文旅正式提案 | `pitch-winning-proposal.md` + `china-market-narrative.md` + `culture-tourism-strong-narrative.md`（命中文旅/艺术文化时）+ `pitch-battle.md`（若为乙方/比稿） |
+| 高预算/老板过会/年度事件/文化文旅正式提案 | `pitch-winning-proposal.md` + `china-market-narrative.md` + `culture-tourism-boundary.md` + `culture-tourism-strong-narrative.md`（边界确认命中文旅/艺术文化时）+ `pitch-battle.md`（若为乙方/比稿） |
 | 行业校准 | `industries.md` |
 | 对抗审查 | `adversarial.md` |
 | 本地能力增强 | `skill-routing.md` |

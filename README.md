@@ -27,7 +27,7 @@ AI：好的，以下是发布会流程：签到、领导致辞、产品介绍、
 - 创意只是换个主题包装，还是改变了用户行为？
 - 方案被老板、客户、赞助商、政府、执行团队质疑时，能不能扛住？
 
-策元2做的事，就是把这些问题提前拆开：先判局，拿证据，确定要改变谁的行为，再处理预算、报名、赞助、销售、叙事、创意和交付。
+策元2做的事，就是把这些问题提前拆开：先判局，拿证据，确定要改变谁的行为，再处理预算、报名、赞助、销售、叙事、创意和交付。遇到需要市场信息时，它应先自动检索和验证；只有登录、验证码、付费墙、账号权限等必须由人处理的节点，才请求你做取舍。
 
 ## 适合谁用？
 
@@ -167,7 +167,7 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 | 阶段 | 它在做什么 | 你会看到什么 |
 |---|---|---|
 | Step 0 判局分流 | 先判断这是甲方自用、乙方提案、To C、To B、To G、内部活动还是 campaign | 分流判断表、主路由、风险预判 |
-| Step 1 信息采集与横纵分析 | 拿正向案例、反向吐槽、平台玩法和竞品空白 | 外部信号、纵向分析、横向分析、证据等级 |
+| Step 1 信息采集与横纵分析 | 先检测采集能力和来源访问状态，再拿正向案例、反向吐槽、平台玩法和竞品空白 | 采集状态表、外部信号、纵向分析、横向分析、证据等级 |
 | Step 2 行为改变 | 把“目标人群”拆成谁要改变什么行为 | 行为改变表、关键阻力、待确认项 |
 | Step 3 经营模型 | 把“办得好”改成可证明、可采集、可取舍的目标 | 主判据、四层传导链、预算/数据/降级模型 |
 | Step 4 中国市场叙事 | 找到老板、客户、媒体和用户能复述的故事主线 | 主叙事、核心冲突、情绪曲线、记忆点 |
@@ -248,11 +248,11 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 | 只问活动类型 | 会问钱流、资源、决策人、合规边界、数据采集和交付边界 |
 | 创意靠灵感 | 先定义行为改变和经营判据，再用“锚点 × 热点/文化/情绪/跨界/感官/冲突”生成 |
 | 方案看起来完整 | 会同时攻击策略风险和交付矛盾 |
-| 活动结束就结束 | 要求指标回填、数据采集和案例库回流 |
+| 活动结束就结束 | 要求指标回填、数据采集和 `output/` 案例库回流 |
 
 ## 模块地图
 
-策元2现在有 34 个 `references/` 模块。你不需要全读，它会按 Step 和场景触发：判局用判局模块，预算用经营模块，文旅强叙事用文旅模块，赞助招商用赞助履约模块。
+策元2现在有多个 `references/` 模块。你不需要全读，它会按 Step 和场景触发：判局用判局模块，预算用经营模块，文旅强叙事先过边界模块，赞助招商用赞助履约模块，信息采集会先走来源访问与登录工作流。
 
 ![策元2 reference 模块地图](assets/ceyuan2-module-map.svg)
 
@@ -262,6 +262,7 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 - `SKILL.md` 是入口，相当于总导演。
 - `references/` 是工具箱，相当于不同专家的工作手册。
+- `output/` 是沉淀区，案例、跑测、用户项目稿和改进建议先写这里。
 - README 是给人看的说明书，不参与实际运行。
 
 ```text
@@ -274,6 +275,11 @@ ceyuan-2/
 │   ├── ceyuan2-os-map.svg
 │   ├── ceyuan2-output-ladder.svg
 │   └── ceyuan2-module-map.svg
+├── output/
+│   ├── case-library/
+│   ├── run-reviews/
+│   ├── user-projects/
+│   └── improvement-log/
 └── references/
     ├── triage-router.md
     ├── anti-hallucination-and-evidence.md
@@ -282,6 +288,9 @@ ceyuan-2/
     ├── china-market-narrative.md
     ├── critical-path-delivery.md
     ├── ai-role-prompts.md
+    ├── role-overlays-by-scenario.md
+    ├── source-access-and-login-workflow.md
+    ├── culture-tourism-boundary.md
     ├── creative-inputs.md
     ├── anti-stale-creative.md
     ├── experiment-validation.md
@@ -296,6 +305,9 @@ ceyuan-2/
 | `triage-router.md` | 判断这是什么活动局 |
 | `anti-hallucination-and-evidence.md` | 管事实分级、来源绑定和防编造 |
 | `ai-role-prompts.md` | 让 AI 在不同阶段切换角色 |
+| `role-overlays-by-scenario.md` | 按乙方竞标、政企、To B、文旅、年会、发布会等场景叠加角色判断 |
+| `source-access-and-login-workflow.md` | 管联网、浏览器、登录、权限、验证码、降级和采集状态 |
+| `culture-tourism-boundary.md` | 管文旅强叙事示例的加载边界，防止污染普通活动 |
 | `stakeholder-behavior-change.md` | 把目标人群拆成具体行为改变 |
 | `business-model-and-budget.md` | 处理预算、成本、回报和降级模型 |
 | `china-market-narrative.md` | 建中国市场可复述的主叙事 |
@@ -342,6 +354,8 @@ ceyuan-2/
 ### 需要联网吗？
 
 不一定。普通内部活动可以不联网。涉及行业法规、城市报批、消防、广告法、竞品案例、近期热点时，应该联网核实，不能凭印象写。
+
+对于小红书、抖音、微博、B站、知乎评论区或付费数据平台，策元2不应默认都能自动采集。它会先检测访问状态；如果需要登录、验证码或账号权限，只列本次最小必要清单让你选择。你不登录时，它会降级到公开网页、搜索引擎 `site:`、官方/媒体/报告源，并标注证据限制。
 
 ## 关键词
 
@@ -609,7 +623,7 @@ A formal plan usually includes:
 
 ## Module Map
 
-Ceyuan2 now has 34 `references/` modules. You do not need to read them all. They are loaded by step and scenario: triage modules for triage, business modules for budget, narrative modules for strong China-market storytelling, and sponsorship modules for sponsorship delivery.
+Ceyuan2 has multiple `references/` modules. You do not need to read them all. They are loaded by step and scenario: triage modules for triage, business modules for budget, source-access modules for research, boundary modules for culture-tourism narrative, and sponsorship modules for sponsorship delivery.
 
 ![Ceyuan2 reference module map](assets/ceyuan2-module-map.svg)
 
