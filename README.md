@@ -271,10 +271,14 @@ ceyuan-2/
 ├── SKILL.md
 ├── LICENSE
 ├── assets/
-│   ├── ceyuan2-what-it-does.svg
-│   ├── ceyuan2-os-map.svg
-│   ├── ceyuan2-output-ladder.svg
-│   └── ceyuan2-module-map.svg
+│   ├── ceyuan2-what-it-does-zh.svg
+│   ├── ceyuan2-os-map-zh.svg
+│   ├── ceyuan2-output-ladder-zh.svg
+│   ├── ceyuan2-module-map-zh.svg
+│   ├── ceyuan2-what-it-does.png
+│   ├── ceyuan2-os-map.png
+│   ├── ceyuan2-output-ladder.png
+│   └── ceyuan2-module-map.png
 ├── output/
 │   ├── case-library/
 │   ├── run-reviews/
@@ -641,10 +645,14 @@ ceyuan-2/
 ├── SKILL.md
 ├── LICENSE
 ├── assets/
-│   ├── ceyuan2-what-it-does.svg
-│   ├── ceyuan2-os-map.svg
-│   ├── ceyuan2-output-ladder.svg
-│   └── ceyuan2-module-map.svg
+│   ├── ceyuan2-what-it-does-zh.svg
+│   ├── ceyuan2-os-map-zh.svg
+│   ├── ceyuan2-output-ladder-zh.svg
+│   ├── ceyuan2-module-map-zh.svg
+│   ├── ceyuan2-what-it-does.png
+│   ├── ceyuan2-os-map.png
+│   ├── ceyuan2-output-ladder.png
+│   └── ceyuan2-module-map.png
 └── references/
     ├── triage-router.md
     ├── anti-hallucination-and-evidence.md
