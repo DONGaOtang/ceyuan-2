@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">策元2如何工作</title>
+  <desc id="desc">策元2从判局、取证、拆行为、建经营模型到生成可辩护方案的流程图。</desc>
+  <rect width="1672" height="941" fill="#f4f1ea"/>
+  <g font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',Arial,sans-serif">
+    <text x="104" y="166" fill="#151515" font-size="86" font-weight="800" letter-spacing="8">策元2</text>
+    <text x="108" y="214" fill="#78766f" font-size="25" font-weight="500" letter-spacing="3">中国市场活动策划总监级方案系统</text>
+
+    <g fill="#151515" font-weight="800">
+      <text x="108" y="364" font-size="56">01</text>
+      <text x="215" y="346" font-size="31" letter-spacing="2">判局</text>
+      <text x="108" y="501" font-size="56">02</text>
+      <text x="215" y="483" font-size="31" letter-spacing="2">取证</text>
+      <text x="108" y="638" font-size="56">03</text>
+      <text x="215" y="620" font-size="31" letter-spacing="2">行为</text>
+      <text x="108" y="775" font-size="56">04</text>
+      <text x="215" y="757" font-size="31" letter-spacing="2">成案</text>
+    </g>
+    <g fill="#6f6d66" font-size="20" line-height="1.5">
+      <text x="215" y="382">先判断委托、对象、场域、体量和交付件。</text>
+      <text x="215" y="519">拿正向信号、反向吐槽和可验证来源。</text>
+      <text x="215" y="656">定义谁要从什么行为变成什么行为。</text>
+      <text x="215" y="793">把叙事、创意、执行和复盘连成闭环。</text>
+    </g>
+    <g stroke="#e24b35" stroke-width="2.4" fill="none" stroke-linecap="round">
+      <path d="M629 199 C760 432 905 522 1119 535"/>
+      <path d="M629 267 C760 442 913 521 1119 535"/>
+      <path d="M629 335 C760 455 920 524 1119 535"/>
+      <path d="M629 403 C763 469 930 526 1119 535"/>
+      <path d="M629 471 C777 499 944 531 1119 535"/>
+      <path d="M629 539 C777 535 951 535 1119 535"/>
+      <path d="M629 607 C777 571 944 539 1119 535"/>
+      <path d="M629 675 C763 601 930 544 1119 535"/>
+      <path d="M629 743 C760 615 920 546 1119 535"/>
+      <path d="M629 811 C760 628 913 549 1119 535"/>
+      <path d="M1119 535 L1558 535"/>
+    </g>
+    <g fill="#111">
+      <circle cx="1370" cy="480" r="17"/>
+      <path d="M1341 517 L1399 517 L1416 604 L1388 604 L1378 548 L1362 548 L1352 604 L1324 604 Z"/>
+      <path d="M1333 499 L1287 455" stroke="#111" stroke-width="13" stroke-linecap="round" fill="none"/>
+      <path d="M1407 499 L1453 455" stroke="#111" stroke-width="13" stroke-linecap="round" fill="none"/>
+    </g>
+    <text x="1284" y="650" fill="#151515" font-size="28" font-weight="800" letter-spacing="3">可辩护方案</text>
+  </g>
+</svg>

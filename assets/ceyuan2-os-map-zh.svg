@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">策元2运行系统</title>
+  <desc id="desc">从活动需求到终审方案的十步运行路径。</desc>
+  <rect width="1672" height="941" fill="#f4f1ea"/>
+  <g font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',Arial,sans-serif">
+    <text x="70" y="108" fill="#151515" font-size="54" font-weight="900" letter-spacing="4">运行系统</text>
+    <text x="72" y="162" fill="#7b7972" font-size="28">从一句需求到经得起质疑的上交方案</text>
+    <path d="M72 486 C170 486 189 380 301 382 C407 384 375 584 484 584 C604 584 555 376 664 374 C779 372 717 590 832 590 C955 590 884 386 1010 383 C1130 380 1018 664 1166 662 C1295 660 1204 445 1321 443 C1437 441 1394 581 1503 581 C1560 581 1546 466 1600 466" fill="none" stroke="#e24b35" stroke-width="4" stroke-linecap="round"/>
+    <g fill="#e24b35">
+      <circle cx="112" cy="486" r="10"/>
+      <circle cx="301" cy="382" r="10"/>
+      <circle cx="484" cy="584" r="10"/>
+      <circle cx="664" cy="374" r="10"/>
+      <circle cx="832" cy="590" r="10"/>
+      <circle cx="1010" cy="383" r="10"/>
+      <circle cx="1166" cy="662" r="10"/>
+      <circle cx="1321" cy="443" r="10"/>
+      <circle cx="1503" cy="581" r="10"/>
+      <circle cx="1600" cy="466" r="10"/>
+    </g>
+    <g fill="#151515" font-size="25" font-weight="800">
+      <text x="84" y="454">判局</text>
+      <text x="270" y="346">调研</text>
+      <text x="448" y="638">行为</text>
+      <text x="630" y="337">经营</text>
+      <text x="796" y="645">叙事</text>
+      <text x="974" y="346">创意</text>
+      <text x="1128" y="716">交付</text>
+      <text x="1274" y="405">对抗审查</text>
+      <text x="1470" y="634">成案</text>
+      <text x="1543" y="429">终审</text>
+    </g>
+  </g>
+</svg>

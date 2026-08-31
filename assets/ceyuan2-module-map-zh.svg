@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">策元2模块地图</title>
+  <desc id="desc">策元2的判局、调研和交付三大模块及周边能力。</desc>
+  <rect width="1672" height="941" fill="#f4f1ea"/>
+  <g font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',Arial,sans-serif">
+    <text x="72" y="438" fill="#151515" font-size="50" font-weight="900" letter-spacing="7">模块地图</text>
+    <text x="74" y="490" fill="#807e77" font-size="29">策元2 references 系统</text>
+    <g stroke="#e24b35" stroke-width="3" fill="none" stroke-linecap="round">
+      <line x1="616" y1="462" x2="722" y2="462"/>
+      <line x1="896" y1="462" x2="1002" y2="462"/>
+      <line x1="1176" y1="462" x2="1282" y2="462"/>
+      <path d="M755 376 C755 330 716 336 716 274"/>
+      <path d="M755 548 C708 590 715 635 695 704"/>
+      <path d="M1036 376 C1036 324 1008 315 1014 252"/>
+      <path d="M1036 548 C1004 602 973 606 973 690"/>
+      <path d="M1316 376 C1316 322 1280 315 1308 254"/>
+      <path d="M1316 548 C1356 590 1356 641 1356 704"/>
+      <path d="M722 462 C682 432 649 432 616 462"/>
+      <path d="M1455 462 C1400 428 1362 430 1316 462"/>
+    </g>
+    <g fill="#e24b35">
+      <circle cx="616" cy="462" r="9"/>
+      <circle cx="722" cy="462" r="9"/>
+      <circle cx="896" cy="462" r="9"/>
+      <circle cx="1002" cy="462" r="9"/>
+      <circle cx="1176" cy="462" r="9"/>
+      <circle cx="1282" cy="462" r="9"/>
+      <circle cx="716" cy="274" r="10"/>
+      <circle cx="695" cy="704" r="10"/>
+      <circle cx="1014" cy="252" r="10"/>
+      <circle cx="973" cy="690" r="10"/>
+      <circle cx="1308" cy="254" r="10"/>
+      <circle cx="1356" cy="704" r="10"/>
+      <circle cx="1455" cy="462" r="10"/>
+    </g>
+    <g fill="none" stroke="#e24b35" stroke-width="4" stroke-dasharray="2 12">
+      <circle cx="809" cy="462" r="86"/>
+      <circle cx="1089" cy="462" r="86"/>
+      <circle cx="1369" cy="462" r="86"/>
+    </g>
+    <g fill="#151515" font-size="30" font-weight="900" text-anchor="middle">
+      <text x="809" y="474">判局</text>
+      <text x="1089" y="474">调研</text>
+      <text x="1369" y="474">交付</text>
+    </g>
+    <g fill="#6f6d66" font-size="27" text-anchor="middle">
+      <text x="716" y="230">证据</text>
+      <text x="695" y="755">预算</text>
+      <text x="1014" y="208">角色</text>
+      <text x="973" y="741">数据</text>
+      <text x="1308" y="210">叙事</text>
+      <text x="1356" y="755">对抗</text>
+      <text x="1512" y="472">提案</text>
+      <text x="548" y="472">行为</text>
+    </g>
+  </g>
+</svg>

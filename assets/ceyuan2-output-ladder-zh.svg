@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1672 941" role="img" aria-labelledby="title desc">
+  <title id="title">策元2交付阶梯</title>
+  <desc id="desc">按活动复杂度选择一页创意、标准方案、全案执行和终审模拟。</desc>
+  <rect width="1672" height="941" fill="#f4f1ea"/>
+  <g font-family="'Noto Sans SC','Microsoft YaHei','PingFang SC',Arial,sans-serif" text-anchor="middle">
+    <text x="836" y="150" fill="#151515" font-size="57" font-weight="900" letter-spacing="8">交付阶梯</text>
+    <text x="836" y="205" fill="#77756e" font-size="28" letter-spacing="3">按复杂度选择正确深度</text>
+    <g stroke="#6f6d66" stroke-width="3">
+      <line x1="147" y1="292" x2="147" y2="775"/>
+      <line x1="484" y1="292" x2="484" y2="775"/>
+      <line x1="836" y1="292" x2="836" y2="775"/>
+      <line x1="1188" y1="292" x2="1188" y2="775"/>
+      <line x1="1525" y1="292" x2="1525" y2="775"/>
+    </g>
+    <g fill="#151515" font-size="32" font-weight="900" letter-spacing="3">
+      <text x="315" y="414">一页创意</text>
+      <text x="660" y="414">标准方案</text>
+      <text x="1012" y="414">全案执行</text>
+      <text x="1360" y="414">终审模拟</text>
+    </g>
+    <g fill="#e24b35" font-size="160" font-weight="900">
+      <text x="315" y="620">1</text>
+      <text x="660" y="620">2</text>
+      <text x="1012" y="620">3</text>
+      <text x="1360" y="620">4</text>
+    </g>
+    <g fill="#6f6d66" font-size="27">
+      <text x="315" y="684">概念</text>
+      <text x="660" y="684">策略</text>
+      <text x="1012" y="684">执行</text>
+      <text x="1360" y="684">辩护</text>
+    </g>
+    <g stroke="#e24b35" stroke-width="4" fill="none" stroke-linecap="round">
+      <path d="M484 466 C542 466 542 598 484 598"/>
+      <path d="M836 466 C894 466 894 598 836 598"/>
+      <path d="M1188 466 C1246 466 1246 598 1188 598"/>
+    </g>
+  </g>
+</svg>

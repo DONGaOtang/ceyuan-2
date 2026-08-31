@@ -6,7 +6,7 @@
 
 **Language:** [中文](#先说人话它到底是干什么的) | [English](#english-version)
 
-![策元2到底在干嘛：从普通 AI 套模板，到策元2先判局、取证、拆行为、建经营模型、再成案](assets/ceyuan2-what-it-does.png)
+![策元2到底在干嘛：从普通 AI 套模板，到策元2先判局、取证、拆行为、建经营模型、再成案](assets/ceyuan2-what-it-does-zh.svg)
 
 ## 先说人话：它到底是干什么的？
 
@@ -160,7 +160,7 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 策元2不是“写方案机器”，而是一个从混乱到收口的流程。
 
-![策元2完整流程图](assets/ceyuan2-os-map.png)
+![策元2完整流程图](assets/ceyuan2-os-map-zh.svg)
 
 简单说，它会走 10 个阶段。默认分步运行，每到硬暂停点都会等你确认；只有你明确说“允许跳过所有暂停点、按假设完整输出、接受未经确认风险”，它才会连续跑完。
 
@@ -214,7 +214,7 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 根据活动复杂度，它可能产出不同深度的交付件。
 
-![策元2按活动复杂度裁剪最终交付件：一页创意、标准方案、全案执行、竞标招商版](assets/ceyuan2-output-ladder.png)
+![策元2按活动复杂度裁剪最终交付件：一页创意、标准方案、全案执行、竞标招商版](assets/ceyuan2-output-ladder-zh.svg)
 
 | 交付深度 | 适合场景 | 通常包含 |
 |---|---|---|
@@ -254,7 +254,7 @@ git clone https://github.com/DONGaOtang/ceyuan-2.git
 
 策元2现在有多个 `references/` 模块。你不需要全读，它会按 Step 和场景触发：判局用判局模块，预算用经营模块，文旅强叙事先过边界模块，赞助招商用赞助履约模块，信息采集会先走来源访问与登录工作流。
 
-![策元2 reference 模块地图](assets/ceyuan2-module-map.png)
+![策元2 reference 模块地图](assets/ceyuan2-module-map-zh.svg)
 
 ## 文件结构
 
