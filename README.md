@@ -331,6 +331,7 @@ ceyuan-2/
 | `data-capture-and-review.md` | 处理数据采集、复盘和证据沉淀 |
 | `experiment-validation.md` | 设计 AB 测试或低成本预检 |
 | `boardroom-proposal-schema.md` | 写能上交的正式方案 |
+| `activity-word-template-and-adaptation.md` | 处理 Word 输出模板、4A 产出逻辑、思考范围和不同活动适配 |
 | `pitch-winning-proposal.md` | 强化老板过会、竞标、中标力和年度事件叙事 |
 | `pitch-battle.md` | 乙方竞标、比稿、招商提案 |
 | `metrics-flow.md` | 建立活动后的指标闭环 |
@@ -673,6 +674,7 @@ ceyuan-2/
     ├── anti-stale-creative.md
     ├── experiment-validation.md
     ├── proposal-schema.md
+    ├── activity-word-template-and-adaptation.md
     └── ...
 ```
 
@@ -694,6 +696,7 @@ Common reference modules:
 | `data-capture-and-review.md` | Handles data capture, review, and evidence storage |
 | `experiment-validation.md` | Designs A/B tests or low-cost pretests |
 | `boardroom-proposal-schema.md` | Builds a proposal that can be submitted |
+| `activity-word-template-and-adaptation.md` | Handles Word output templates, 4A-style production logic, planning scope, and event-type adaptation |
 | `pitch-winning-proposal.md` | Strengthens executive approval, pitch power, and annual-event narrative |
 | `pitch-battle.md` | Supports agency pitches, tenders, and sponsorship proposals |
 | `metrics-flow.md` | Builds the post-event metric feedback loop |

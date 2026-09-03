@@ -21,6 +21,20 @@ description: 中国市场活动策划总监级方案系统。先判局分流，�
 
 “写完整方案 / 出全案 / 直接给一版 / 帮我做完 / 直接写完整方案”不等于授权跳过硬暂停点。只有用户明确同时表达“允许跳过所有暂停点、按假设直接完整输出、接受未经确认风险”时，才可以连续跑完。连续跑完时必须把“事实与假设清单”和主要风险写入思考过程文件；正式方案开头只保留必要风险摘要。
 
+## 文档交付触发协议
+
+当用户要求“输出文档 / 生成报告 / 给我文件 / 可下载 / Word / docx / 不要只在聊天里回答”，或当前任务明显是可交付报告、复盘、分析稿、提案稿时，必须把交付物写入真实文件，不能只在聊天中给正文。
+
+当用户要求“完整输出模板 / Word 模板 / 思考范围 / 什么活动怎么适配 / 4A 产出逻辑 / 方法论模板”时，加载 `references/activity-word-template-and-adaptation.md`。这类任务属于方法论或模板交付，不等同于某个具体活动执行方案；可以生成 `.md`/`.docx`，但不得借此绕过真实活动方案的 Step 0-7 门禁。
+
+文件输出按风险分层：
+
+- 非活动执行方案类任务，例如案例分析、传播逻辑拆解、复盘报告、方法论审计：不受 Step 0-9 硬暂停点限制。默认生成一个 `.md` 源稿；用户提到 Word、docx、文档、报告、可下载或质疑未输出文档时，必须同时生成 `.docx`。聊天只给结论摘要和文件路径。
+- 活动执行方案类任务：仍遵守 Step 0-9。到 Step 8 默认生成两个 `.md` 文件；到 Step 9 终审后，如用户要求 Word/docx/可下载文件，必须把干净方案导出为 `.docx`，思考过程仅在用户明确要求时导出为 `.docx`。
+- 如果当前环境无法生成 `.docx`，必须明确说“未生成 docx”，说明失败原因，并保留 `.md` 源稿路径；不得假装已经生成 Word 文档。
+
+生成 `.docx` 时优先使用当前环境可用的文档能力：先检查本地文档/Office/docx 生成工具或工作区依赖；可用时直接生成。生成后必须确认文件存在、大小大于 0，并在回复中给出绝对路径。
+
 ## 运行状态机
 
 本节优先级高于所有 reference 和示例。
@@ -403,7 +417,7 @@ Step 0 完成分流后，必须按主路由加载 `references/role-overlays-by-s
 ## Step 8 · 成案
 
 **角色**：提案总监 + 项目经理。
-**加载**：`references/boardroom-proposal-schema.md`、`references/proposal-schema.md`、`references/client-vendor-perspectives.md`、`references/market-track-cards.md`、`references/new-media-campaign.md`、`references/scope-and-commercial-boundary.md`、`references/anti-hallucination-and-evidence.md`；按 Step 6 已触发模块加载对应交付 reference。
+**加载**：`references/boardroom-proposal-schema.md`、`references/proposal-schema.md`、`references/activity-word-template-and-adaptation.md`、`references/client-vendor-perspectives.md`、`references/market-track-cards.md`、`references/new-media-campaign.md`、`references/scope-and-commercial-boundary.md`、`references/anti-hallucination-and-evidence.md`；按 Step 6 已触发模块加载对应交付 reference。
 **目的**：按 Step 0 判定的交付件，生成可上交方案，并把推导、审计和依据沉淀到单独的思考过程文件。
 
 Step 8 只能在 Step 0-7 的硬暂停点已确认后进入。未完成前置确认时，不得使用上交版完整结构。
@@ -473,7 +487,8 @@ Step 8 默认生成双文件：
 | To C / To B / To G / To E / B2B2C | `market-track-cards.md` |
 | 高端/To G/金融/医疗/奢侈品/艺术文化/私享会审查 | `aesthetic-identity-risk.md` |
 | 实验、AB、预检 | `ab-test-routing.md` + `experiment-validation.md` |
-| Step 8 最终上交方案 | `boardroom-proposal-schema.md` + `proposal-schema.md`；仅在 Step 0-7 硬暂停点已确认后加载 |
+| Step 8 最终上交方案 | `boardroom-proposal-schema.md` + `proposal-schema.md` + `activity-word-template-and-adaptation.md`；仅在 Step 0-7 硬暂停点已确认后加载 |
+| 输出模板 / Word模板 / 思考范围 / 活动适配方法 / 4A产出逻辑 | `activity-word-template-and-adaptation.md`；作为方法论交付或 Step 8 成案辅助，不得替代 Step 0-7 |
 | 乙方竞标/比稿/招商赞助 | `pitch-battle.md` + `sponsorship-fulfillment.md` + `client-vendor-perspectives.md` |
 | 高预算/老板过会/年度事件/文化文旅正式提案 | `pitch-winning-proposal.md` + `china-market-narrative.md` + `culture-tourism-boundary.md` + `culture-tourism-strong-narrative.md`（边界确认命中文旅/艺术文化时）+ `pitch-battle.md`（若为乙方/比稿） |
 | 行业校准 | `industries.md` |
