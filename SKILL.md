@@ -30,6 +30,7 @@ description: 中国市场活动策划总监级方案系统。先判局分流，�
 文件输出按风险分层：
 
 - 非活动执行方案类任务，例如案例分析、传播逻辑拆解、复盘报告、方法论审计：不受 Step 0-9 硬暂停点限制。默认生成一个 `.md` 源稿；用户提到 Word、docx、文档、报告、可下载或质疑未输出文档时，必须同时生成 `.docx`。聊天只给结论摘要和文件路径。
+- 案例拆解转方案类任务：如果用户给出爆款帖子、竞品案例、活动截图、案例复盘，并要求“分析为什么火 / 为什么接到询盘 / 我能不能照这个做 / 给我拆成可用方案 / 这个方案缺什么”，必须先判断用户要的是「传播逻辑报告」还是「可复用活动方案」。若用户要求产出可执行方案、指出“方案不完整”、追问游戏细则、物料、预算、执行或交付件，立即切入活动执行方案路径；到 Step 8 必须生成双文件，不能只输出案例分析。
 - 活动执行方案类任务：仍遵守 Step 0-9。到 Step 8 默认生成两个 `.md` 文件；到 Step 9 终审后，如用户要求 Word/docx/可下载文件，必须把干净方案导出为 `.docx`，思考过程仅在用户明确要求时导出为 `.docx`。
 - 如果当前环境无法生成 `.docx`，必须明确说“未生成 docx”，说明失败原因，并保留 `.md` 源稿路径；不得假装已经生成 Word 文档。
 
@@ -135,7 +136,7 @@ Step 0-7 的内部思考必须做完整，但给用户看的阶段输出必须�
 | Step 2 行为改变 | 必须写清“谁从什么行为变成什么行为”；写不出目标行为，不能进创意 |
 | Step 3 经营模型 | 有预算/报名/赞助/销售/票务任一项，就必须写成本、回报、数据采集和责任人 |
 | Step 4 叙事主线 | 正式方案必须有一句主叙事、一个核心冲突、一个情绪递进和一个可复述记忆点 |
-| Step 5 创意机制 | 每个创意必须对应目标行为、经营判据、现场动作、传播钩子、数据采集点 |
+| Step 5 创意机制 | 每个进入成案的主创意必须对应目标行为、经营判据、现场动作、传播钩子、数据采集点，并通过创意总监质量门禁；发散阶段不得用评分压制候选 |
 | Step 6 交付系统 | 大型/正式/To B/赞助活动必须有关键路径、RACI、报名/赞助/数据/销售承接 |
 | Step 7 Red Team | 必须同时攻击策略风险和交付矛盾；高风险项必须给修法，不准只写“注意” |
 | Step 8 成案 | 按交付件裁剪；不能给轻量活动套全案，也不能给正式提案漏预算、风险、复盘 |
@@ -175,7 +176,7 @@ Step 0 完成分流后，必须按主路由加载 `references/role-overlays-by-s
 ## Step 1 · 信息采集与横纵分析
 
 **角色**：市场研究负责人 + 创意策略。
-**加载**：`references/search-paths.md`、`references/source-access-and-login-workflow.md`、`references/creative-inputs.md`、`references/event-types.md`、`references/anti-hallucination-and-evidence.md`。
+**加载**：`references/search-paths.md`、`references/source-access-and-login-workflow.md`、`references/creative-inputs.md`、`references/event-types.md`、`references/activity-mechanism-search.md`（涉及爆款案例、互动、游戏化、平台玩法时）、`references/anti-hallucination-and-evidence.md`。
 **目的**：先拿市场活水，再进入判断；保留原有横纵向分析并前置强化。
 
 信息采集开始前，必须先执行采集能力预检：判断是否可用联网搜索、浏览器自动化、页面读取、截图、已登录浏览器/Profile 或专用平台/API。AI 先按活动类型生成最小必要平台清单并尝试验证访问状态；只有登录、验证码、账号授权、付费墙、机构权限等必须由人介入时，才提示用户取舍。用户不登录或不授权时，自动降级到公开网页、搜索引擎 `site:`、官方/媒体/报告源，并标注来源限制。
@@ -314,7 +315,7 @@ Step 0 完成分流后，必须按主路由加载 `references/role-overlays-by-s
 ## Step 5 · 创意机制
 
 **角色**：创意总监 + 新媒体策划 + 跨界导演。
-**加载**：`references/creative-inputs.md`、`references/anti-stale-creative.md`、`references/new-media-campaign.md`、`references/ab-test-routing.md`、`references/experiment-validation.md`。
+**加载**：`references/creative-inputs.md`、`references/anti-stale-creative.md`、`references/activity-mechanism-search.md`（涉及互动、游戏化、爆款机制拆解时）、`references/creative-director-quality-bar.md`、`references/new-media-campaign.md`、`references/ab-test-routing.md`、`references/experiment-validation.md`。
 **目的**：在 Step 1 的市场活水、Step 2 的行为改变、Step 3 的经营模型、Step 4 的叙事主线约束下生成创意机制。
 
 流程：
@@ -323,6 +324,7 @@ Step 0 完成分流后，必须按主路由加载 `references/role-overlays-by-s
 2. 强制保留 6 类破常规组合：用户吐槽反转、跨界移植、平台玩法改造、感官异常、权力关系反转、时间结构打破。
 3. 用动机与经营判据粗筛，动机不对、经营贡献不清的创意不进闪卡。
 4. 每个创意必须先过反陈旧初筛。
+5. 收敛后的主创意必须过创意总监质量门禁：可复述、专属性、现场唯一性、传播画面、资产延展、审美适配和执行抓手。发散阶段不得套质量评分提前杀掉候选。
 
 内部创意闪卡升级为：
 
@@ -337,6 +339,7 @@ Step 0 完成分流后，必须按主路由加载 `references/role-overlays-by-s
 | 数据采集点 | 如何证明发生 |
 | 最小预检 | 怎么低成本验证 |
 | 最大风险 | 最可能死在哪里 |
+| 创意质量 | 对照 `creative-director-quality-bar.md` 标出最大短板 |
 
 给用户的 Step 5 阶段输出默认只给 2-3 张候选创意卡。每张卡控制在 6 行以内：
 
@@ -366,20 +369,38 @@ Step 0 完成分流后，必须按主路由加载 `references/role-overlays-by-s
 | 有赞助/招商 | `sponsorship-fulfillment.md` |
 | 有峰会/论坛/闭门会 | `session-meeting-design.md` |
 | 有大型执行 | `critical-path-delivery.md` |
+| 有设计制作/搭建/供应商 Brief | `critical-path-delivery.md` 的“设计制作交接边界” |
+| 有多供应商/多点位/直播/舞台/政府接待 | `critical-path-delivery.md` 的“现场制片 SOP 边界” |
 | 有数据证明要求 | `data-capture-and-review.md` |
 | To B 销售活动 | `b2b-sales-event-chain.md` |
+| 有互动/游戏化/爆款机制拆解 | `activity-mechanism-search.md` |
 
-大型/正式/To B/赞助活动内部必须完成关键路径、RACI、报名/赞助/数据/销售承接。轻量活动只完成最小可执行版本，避免过度工程化。
+大型/正式/To B/赞助活动内部必须完成关键路径、RACI、报名/赞助/数据/销售承接。轻量活动只完成最小可执行版本，避免过度工程化。设计规格和现场 SOP 是执行交付条件触发项，不是每个创意方案的默认正文；未知规格必须标“待场地/供应商确认”，不得编造。
+
+含游戏、闯关、市集、游园会、抽奖、拍卖、积分、筹码、银票、兑换、排名、打卡任务的活动，Step 6 必须额外完成「互动机制落地表」。不能只写玩法名称或一句话规则。每个互动点必须写清：
+
+| 字段 | 最低要求 |
+|---|---|
+| 参与门槛 | 谁能玩、是否消耗票券/积分/银票、每人次数限制 |
+| 单轮流程 | 排队、开始、计时/计数、结束、登记、发奖的动作顺序 |
+| 成功判定 | 完成什么状态算参与、成功、高分、满贯、失败 |
+| 奖励/扣罚 | 每个状态对应什么奖品、积分、银票、抽奖资格或物料数量 |
+| 道具物料 | 道具、印章、票券、桌牌、消耗品和备用量 |
+| 人员配置 | 摊主、计分、发奖、控队、机动人员 |
+| 并发与时长 | 每轮人数、单轮时长、预计吞吐、排队上限 |
+| 风险与降级 | 奖池失控、排队过长、道具损坏、争议判定的处理 |
+
+如果互动机制涉及概率、下注、拍卖、抽奖或兑换，必须补「经济系统表」：初始发放量、总发行量、获取方式、消耗方式、回收方式、奖池上限、单人封顶、库存数量、结束清算规则。没有这些字段，不得判定为可执行方案。
 
 给用户的 Step 6 阶段输出默认只给：
 
 - 最小可执行版本。
 - 关键路径 5-8 个节点。
 - 责任分工摘要。
-- 预算/物料/系统/审批的最大卡点。
+- 预算/物料/系统/审批的最大卡点；若含互动游戏，必须点名最容易失控的 1-3 个规则缺口。
 - 失败降级方案。
 
-完整 RACI、物料表、供应商表、Run of Show、数据承接表进入思考过程文件或过程记录。
+完整 RACI、物料表、供应商表、Run of Show、数据承接表、互动机制落地表和经济系统表进入思考过程文件或过程记录；到 Step 8 时，和用户/执行团队直接相关的互动细则必须进入干净方案正文或执行附录，不能只藏在思考过程文件。
 
 **硬暂停点**：输出到这里必须停止，等待用户确认交付系统、预算/报名/赞助/数据/销售承接；未确认前不得进入 Step 7。
 
@@ -417,7 +438,7 @@ Step 0 完成分流后，必须按主路由加载 `references/role-overlays-by-s
 ## Step 8 · 成案
 
 **角色**：提案总监 + 项目经理。
-**加载**：`references/boardroom-proposal-schema.md`、`references/proposal-schema.md`、`references/activity-word-template-and-adaptation.md`、`references/client-vendor-perspectives.md`、`references/market-track-cards.md`、`references/new-media-campaign.md`、`references/scope-and-commercial-boundary.md`、`references/anti-hallucination-and-evidence.md`；按 Step 6 已触发模块加载对应交付 reference。
+**加载**：`references/boardroom-proposal-schema.md`、`references/proposal-schema.md`、`references/activity-word-template-and-adaptation.md`、`references/creative-director-quality-bar.md`、`references/client-vendor-perspectives.md`、`references/market-track-cards.md`、`references/new-media-campaign.md`、`references/scope-and-commercial-boundary.md`、`references/anti-hallucination-and-evidence.md`；按 Step 6 已触发模块加载对应交付 reference。
 **目的**：按 Step 0 判定的交付件，生成可上交方案，并把推导、审计和依据沉淀到单独的思考过程文件。
 
 Step 8 只能在 Step 0-7 的硬暂停点已确认后进入。未完成前置确认时，不得使用上交版完整结构。
@@ -462,6 +483,7 @@ Step 8 默认生成双文件：
 - 可选增强：锦上添花但不阻塞提交。
 - 叙事终审：主叙事、核心冲突、主场面、领导可读性、社媒可传播性的判定。
 - 交付一致性表：人数、预算、时间、权益、数据、销售承接。
+- 创意质量评分：正式提案、老板过会、高预算、乙方竞标和依赖传播出圈的活动，按 `creative-director-quality-bar.md` 给主创意评分；低于 80 分不得判“可上交”。
 - 中标力评分：高预算/正式提案/年度事件按 `pitch-winning-proposal.md` 的 100 分制评分；低于 80 分不得判“可上交”。
 - 最终判词：`可上交 / 小修后上交 / 需重做关键模块`。
 
@@ -475,19 +497,21 @@ Step 8 默认生成双文件：
 | Step 2 行为改变 | `stakeholder-behavior-change.md` + `client-vendor-perspectives.md` |
 | Step 3 经营模型 | `metrics-flow.md` + `business-model-and-budget.md` + `data-capture-and-review.md` |
 | Step 4 中国市场叙事 | `china-market-narrative.md` |
-| Step 5 创意机制 | `creative-inputs.md` + `anti-stale-creative.md` + `new-media-campaign.md` + `experiment-validation.md` |
+| Step 5 创意机制 | `creative-inputs.md` + `anti-stale-creative.md` + `activity-mechanism-search.md`（触发时） + `creative-director-quality-bar.md` + `new-media-campaign.md` + `experiment-validation.md` |
 | Step 6 报名/票务 | `registration-and-attendance.md` |
 | Step 6 预算/报价 | `business-model-and-budget.md` |
 | Step 6 赞助/招商 | `sponsorship-fulfillment.md` |
 | Step 6 峰会/论坛/闭门会 | `session-meeting-design.md` |
 | Step 6 大型执行 | `critical-path-delivery.md` |
+| Step 6 设计制作/现场 SOP | `critical-path-delivery.md`（条件触发，不作为轻量方案默认项） |
 | Step 6 数据证明 | `data-capture-and-review.md` |
+| Step 6 互动/游戏化机制 | `activity-mechanism-search.md` |
 | To B 销售协同 | `b2b-sales-event-chain.md` |
 | 甲方/乙方/竞标/赞助/政企 | `client-vendor-perspectives.md` + `scope-and-commercial-boundary.md` |
 | To C / To B / To G / To E / B2B2C | `market-track-cards.md` |
 | 高端/To G/金融/医疗/奢侈品/艺术文化/私享会审查 | `aesthetic-identity-risk.md` |
 | 实验、AB、预检 | `ab-test-routing.md` + `experiment-validation.md` |
-| Step 8 最终上交方案 | `boardroom-proposal-schema.md` + `proposal-schema.md` + `activity-word-template-and-adaptation.md`；仅在 Step 0-7 硬暂停点已确认后加载 |
+| Step 8 最终上交方案 | `boardroom-proposal-schema.md` + `proposal-schema.md` + `activity-word-template-and-adaptation.md` + `creative-director-quality-bar.md`；仅在 Step 0-7 硬暂停点已确认后加载 |
 | 输出模板 / Word模板 / 思考范围 / 活动适配方法 / 4A产出逻辑 | `activity-word-template-and-adaptation.md`；作为方法论交付或 Step 8 成案辅助，不得替代 Step 0-7 |
 | 乙方竞标/比稿/招商赞助 | `pitch-battle.md` + `sponsorship-fulfillment.md` + `client-vendor-perspectives.md` |
 | 高预算/老板过会/年度事件/文化文旅正式提案 | `pitch-winning-proposal.md` + `china-market-narrative.md` + `culture-tourism-boundary.md` + `culture-tourism-strong-narrative.md`（边界确认命中文旅/艺术文化时）+ `pitch-battle.md`（若为乙方/比稿） |
